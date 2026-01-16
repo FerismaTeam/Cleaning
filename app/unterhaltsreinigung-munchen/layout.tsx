@@ -1,0 +1,12 @@
+import { company_name } from "@/data/about"
+import { Metadata } from "next"
+import React from "react"
+
+export const metadata: Metadata = {
+    title: "Unterhaltsreinigung Munchen | " + company_name,
+    description: "" // page description
+}
+
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => children
+
+export default Layout
