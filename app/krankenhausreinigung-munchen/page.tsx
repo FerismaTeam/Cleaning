@@ -1,7 +1,9 @@
 'use client'
 
+import Counter from "@/components/counter.component";
 import SectionEndDesign from "@/components/design.component";
 import Faq from "@/components/faq.component";
+import Loader from "@/components/loader.component";
 import { awards_won, company_name, medical_facilites, years_of_experiense } from "@/data/about";
 import { address, mobile, official_mail, telephone } from "@/data/contact";
 import hospitalCleaningFAQs from "@/data/hospital_cleaning_faqs.list";
@@ -10,16 +12,55 @@ import { establishmentsList, hospitalCleaninServicesList, locationsList } from "
 import { officeCleaningContactServiceOptions } from "@/data/office-cleaning";
 import { Badge, Box, Button, Center, Flex, Grid, GridItem, Heading, HStack, Image, Input, List, Separator, Text, Textarea, VStack } from "@chakra-ui/react";
 import Link from "next/link";
+import { useRef, useState } from "react";
 import { BsSendFill } from "react-icons/bs";
 import { FaAmbulance, FaAward, FaCheck, FaClock, FaFirstAid, FaLock, FaMobileAlt, FaPhoneAlt, FaProcedures, FaQuestionCircle, FaShieldAlt, FaStar, FaStethoscope } from "react-icons/fa";
 import { FaCalendarCheck, FaCertificate, FaCheckDouble, FaClipboardCheck, FaClipboardList, FaDoorOpen, FaEnvelope, FaFlask, FaHandshake, FaHospital, FaLocationDot, FaMedal, FaMessage, FaShieldVirus, FaUserDoctor, FaUserGraduate } from "react-icons/fa6";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 const HospitalCleaningServicePage = () => {
+
+    const formRef = useRef<HTMLFormElement | null>(null);
+    const [loading, setLoading] = useState(false);
+
+    const handleContact = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if(!formRef.current){ return }
+
+        const formData = new FormData(formRef.current)
+
+        if(!formRef.current.establishment.value.length){ return alert("Select establishment") }
+        if(!formRef.current.location.value.length){ return alert("Select location") }
+        
+        try {
+            setLoading(true);
+            const res = await fetch("https://formspree.io/f/mkorlynk", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            })
+            if(!res.ok){ throw new Error("error"); }
+            setLoading(false);
+            alert("Nachricht gesendet.");
+            formRef.current?.reset();
+
+        } catch(err) {
+            console.log(err);
+            setLoading(false);
+            alert("Ihre Anfrage konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.")
+        }
+    }
+
+
     return (
         <>
+            {loading && <Loader />}
+
             {/* hero section */}
-            <Box as={"section"} pos={"relative"} className="gradient_mix_three py-32!">
+            <Box as={"section"} pos={"relative"} className="gradient_mix_three md:py-32!">
     
                 <Flex gap={12} gapY={24} align={"center"} flexDir={{ base: "column-reverse", lg: "row" }}>
     
@@ -27,7 +68,7 @@ const HospitalCleaningServicePage = () => {
                         <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
     
                             <Badge color={"bg"} bg={"bg/15"} className="backdrop_blur" rounded={"full"} px={4} py={2} fontSize={"14px"} gap={2}> <Text color={"green.500"}><FaCertificate /></Text> RKI & HACCP ZERTIFIZIERT</Badge>
-                            <Heading as={"h1"} color={"bg"} my={3} fontSize={"5xl"} lineHeight={1.25} fontWeight={"bolder"}
+                            <Heading as={"h1"} color={"bg"} my={3} fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }} lineHeight={1.25} fontWeight={"bolder"}
                             ><Text as={"span"} color={"green.400"}>Krankenhausreinigung</Text> München</Heading>
     
                             <Text my={3}>
@@ -37,7 +78,7 @@ const HospitalCleaningServicePage = () => {
                             <Grid
                                 gapX={6}
                                 gapY={3}
-                                templateColumns={"repeat(2, 1fr)"}
+                                templateColumns={{ base: "1fr", md:"repeat(2, 1fr)" }}
                                 fontSize={"sm"}
                             >
                                 <GridItem asChild>
@@ -98,7 +139,7 @@ const HospitalCleaningServicePage = () => {
 
                             <Separator w={"full"} my={3} />
     
-                            <HStack gap={3} mt={1} fontSize={"13px"}>
+                            <HStack gap={3} flexWrap={"wrap"} mt={1} fontSize={"13px"}>
     
                                 <HStack gap={2} align={"start"}>
                                     <Text color={"yellow.200"} mt={1}><FaAward /></Text>
@@ -198,7 +239,7 @@ const HospitalCleaningServicePage = () => {
                 <VStack w="full">
                     <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaStethoscope /></Text>  Spezialisierte Medizinische Reinigung</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                         Unsere  
                         <Text as={"span"} color={"blue.600"}> Krankenhausreinigung München </Text> 
                          Leistungen
@@ -287,11 +328,11 @@ const HospitalCleaningServicePage = () => {
             </Box>
 
             {/* details section */}
-            <Box as="section" bg={"blue.100/30"}>
+            <Box as="section" overflowX={"hidden"} bg={"blue.100/30"}>
                 <VStack w="full">
-                    <Badge mb={3} shadow={"lg"} color={"bg"} className="gradient_dark_background" rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaClipboardCheck /></Text>   Spezialisiert auf medizinische Einrichtungen</Badge>
+                    <Badge mb={3} shadow={"lg"} color={"bg"} className="gradient_dark_background" rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"} gap={2}><Text as={"span"} scale={0.9} mr={0.5}><FaClipboardCheck /></Text>   Spezialisiert auf medizinische Einrichtungen</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md:"3xl" }} lineHeight={1.4}>
                         Praxisreinigung – Hygienische Sauberkeit & Dokumentation 
                     </Heading>
                     <Text maxW={"500px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -305,7 +346,7 @@ const HospitalCleaningServicePage = () => {
     
                             <VStack w={"full"} align={"start"} gap={6}>
     
-                                <HStack gap={3}>
+                                <HStack gap={4}>
                                     <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                         <FaDoorOpen />
                                     </Center>
@@ -314,7 +355,7 @@ const HospitalCleaningServicePage = () => {
                                     </Text>
                                 </HStack>
     
-                                <HStack gap={3}>
+                                <HStack gap={4}>
                                     <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                         <FaShieldVirus />
                                     </Center>
@@ -323,7 +364,7 @@ const HospitalCleaningServicePage = () => {
                                     </Text>
                                 </HStack>
     
-                                <HStack gap={3}>
+                                <HStack gap={4}>
                                     <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                         <FaCalendarCheck />
                                     </Center>
@@ -332,7 +373,7 @@ const HospitalCleaningServicePage = () => {
                                     </Text>
                                 </HStack>
     
-                                <HStack gap={3}>
+                                <HStack gap={4}>
                                     <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                         <IoDocumentTextOutline />
                                     </Center>
@@ -379,7 +420,7 @@ const HospitalCleaningServicePage = () => {
     
                     <Box w={{ base: "full", xl: "50%" }} pos={"relative"}>
     
-                        <HStack zIndex={1} pos={"absolute"} bg={"bg"} p={3} px={5} bottom={{ base: 32, xl: 36 }} left={-3} rounded={"md"} gap={4} shadow={"sm"}>
+                        <HStack zIndex={1} pos={"absolute"} bg={"bg"} p={3} px={5} bottom={{ base: 80, md: 32, xl: 36 }} left={-3} rounded={"md"} gap={4} shadow={"sm"}>
                             <Text fontWeight={"bolder"} color={"blue.500"} fontSize={"3xl"}><FaHospital /></Text>
                             <Text fontSize={"sm"}>
                                 <Text as={"span"} display={"block"} fontWeight={"bolder"} fontSize={"2xl"}>100%</Text>
@@ -401,7 +442,7 @@ const HospitalCleaningServicePage = () => {
                             <Grid
                                 gap={5}
                                 w={"full"}
-                                templateColumns={"repeat(3, 1fr)"}
+                                templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
                                 mt={5}
                             >
 
@@ -441,7 +482,7 @@ const HospitalCleaningServicePage = () => {
                             VERTRAUEN & EXPERTISE IN MÜNCHEN
                         </Badge>
                         
-                        <Heading as={"h4"} fontSize={"4xl"} lineHeight={1.5} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>medizinische Einrichtungen </Text> in München uns wählen</Heading>
+                        <Heading as={"h4"} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.5} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>medizinische Einrichtungen </Text> in München uns wählen</Heading>
 
                         <Text>Seit über 15 Jahren vertrauen Krankenhäuser, Kliniken und Praxen in München, Schwabing, Sendling, Giesing, Maxvorstadt und dem gesamten Münchner Umland auf unsere professionelle <b>Krankenhausreinigung München</b>.</Text>
     
@@ -455,7 +496,7 @@ const HospitalCleaningServicePage = () => {
                             }}
                         >
                             <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{medical_facilites}+</Text>
+                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={medical_facilites}  suffix="+"/></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Medizinische Einrichtungen</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>in München betreut</Text>
                             </GridItem>
@@ -473,7 +514,7 @@ const HospitalCleaningServicePage = () => {
                             </GridItem>
 
                             <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{years_of_experiense}+</Text>
+                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={years_of_experiense} suffix="+" /></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Jahre Erfahrung</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>im Gesundheitswesen</Text>
                             </GridItem>
@@ -532,7 +573,7 @@ const HospitalCleaningServicePage = () => {
 
                         <VStack textAlign={"center"} _hover={{ bg: "bg/8" }} w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             
-                            <Heading as={"h3"} fontSize={"2xl"} display={"flex"} gap={2} mt={4}>
+                            <Heading as={"h3"} fontSize={{ base: "xl", md: "2xl"}} display={"flex"} gap={2} mt={4}>
                                 <Text color={"blue.400"}><FaLocationDot /></Text>
                                  Unser Einzugsgebiet in München
                             </Heading>
@@ -578,7 +619,7 @@ const HospitalCleaningServicePage = () => {
                             
                         </VStack>
     
-                        <Box textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        {/* <Box textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             <VStack align={"center"} w={"full"} gap={3}>
                                 <HStack mb={2} gap={0.5} color={"yellow.300"}>
                                     {
@@ -593,7 +634,7 @@ const HospitalCleaningServicePage = () => {
                                 </Text>
                                 <Text fontStyle={"italic"} opacity={0.8} textAlign={"center"} fontSize={"sm"}> - Dr. Schmidt, Klinikleitung München</Text>
                             </VStack>
-                        </Box>
+                        </Box> */}
 
                         <VStack gap={3} w={"full"} color={"bg"} rounded={"xl"} _hover={{ bg: "bg/7.5" }} py={6} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} shadow={"xl"} px={6}>
     
@@ -634,7 +675,7 @@ const HospitalCleaningServicePage = () => {
                     
                     <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaQuestionCircle /></Text>  Häufig gestellte Fragen</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                         FAQ zur  
                         <Text as={"span"} color={"blue.600"}> Krankenhausreinigung München </Text> 
                     </Heading>
@@ -689,7 +730,7 @@ const HospitalCleaningServicePage = () => {
                     
                     <Badge mb={5} shadow={"lg"} color={"bg"} bg={"bg/5"} border={"1px solid"} borderColor={"bg"} rounded={"full"} px={4} py={2} size={"lg"}><Text as={"span"} color={"green.400"} scale={0.9} mr={0.5}><FaCalendarCheck /></Text>  JETZT KONTAKT AUFNEHMEN</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"4xl"} lineHeight={1.4}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "4xl" }} lineHeight={1.4}>
                         Kostenlose  
                         <Text as={"span"} color={"green.400"}> Hygienebesichtigung </Text> für Ihre medizinische Einrichtung
                     </Heading>
@@ -699,15 +740,15 @@ const HospitalCleaningServicePage = () => {
 
                     <Flex gap={12} gapY={24} align={"start"} flexDir={{ base: "column", xl: "row" }} w={"full"}>
     
-                    <Box w={{ base: "full", xl: "60%" }} p={{ base: 4, md: 8 }} bg={"bg/5"} border={"1px solid"} borderColor={"bg/20"} color={"bg"} pos={"relative"} shadow={"2xl"} rounded={"xl"}>
+                    <Box w={{ base: "full", xl: "60%" }} p={{ base: 0, md: 8 }} md={{ bg: "bg/5", border: "1px solid", shadow: "2xl" }} borderColor={"bg/20"} color={"bg"} pos={"relative"} rounded={"xl"}>
 
-                        <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={2.5} fontSize={"xl"} mb={9}>
+                        <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={2.5} fontSize={{ base: "lg", md: "xl" }} mb={9}>
                             <Text color={"green.400"}><FaClipboardCheck /></Text>
                             Hygienebesichtigung anfragen
                         </Heading>
                         
                         {/* contact form */}
-                        <form onSubmit={(e) => e.preventDefault()}>
+                        <form ref={formRef} onSubmit={handleContact}>
 
                             <Grid
                                 gap={6}
@@ -742,7 +783,7 @@ const HospitalCleaningServicePage = () => {
 
                             <VStack gap={2} align={"start"} my={6}>
                                 <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Art der Einrichtung *</Text>
-                                <select name="establishment" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
+                                <select required name="establishment" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
                                     {
                                         establishmentsList.map((opt, i) => {
                                             return <option key={i} value={opt.value}>{opt.label}</option>
@@ -775,7 +816,7 @@ const HospitalCleaningServicePage = () => {
 
                             <VStack gap={2} align={"start"} my={6}>
                                 <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort in München</Text>
-                                <select name="location" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
+                                <select required name="location" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
                                     {
                                         locationsList.map((opt, i) => {
                                             return <option key={i} value={opt.value}>{opt.label}</option>
@@ -791,6 +832,7 @@ const HospitalCleaningServicePage = () => {
                                     h={"200px"}
                                     placeholder="Teilen Sie uns weitere Details zu Ihrer Einrichtung und Ihren Anforderungen mit..."
                                     name="message"
+                                    required
                                     className="form_input"
                                 >
                                     
@@ -816,7 +858,7 @@ const HospitalCleaningServicePage = () => {
                             templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)", xl: "1fr" }}
                         >
 
-                            <VStack rounded={"xl"} p={6} bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
+                        <VStack rounded={"xl"} p={{ base: 3, md: 6 }} bg={"bg/5"} border={"1px solid"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
 
                             <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={4} fontSize={"lg"} mb={1}>
                                 <Text color={"blue.400"}><FaPhoneAlt /></Text>
@@ -865,7 +907,7 @@ const HospitalCleaningServicePage = () => {
 
                         </VStack>
 
-                        <VStack rounded={"xl"} p={6} bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
+                        <VStack rounded={"xl"} p={{ base: 3, md: 6 }} bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
 
                             <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={4} fontSize={"lg"} mb={1}>
                                 <Text color={"yellow.400"}><FaShieldAlt /></Text>

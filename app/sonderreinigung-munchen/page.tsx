@@ -1,7 +1,9 @@
 'use client'
 
+import Counter from "@/components/counter.component";
 import SectionEndDesign from "@/components/design.component";
 import Faq from "@/components/faq.component";
+import Loader from "@/components/loader.component";
 import { awards_won, company_name, properties_cleaned, satisfied_customers } from "@/data/about";
 import { address, mobile, official_mail, telephone } from "@/data/contact";
 import specialCleaningServicesInDetail from "@/data/special_cleaning_data";
@@ -10,23 +12,62 @@ import { additionalServicesList, specialServiceList } from "@/data/special_conta
 import boldMarkdownToHtml from "@/utils/boldMarkdown.utils";
 import { Badge, Box, Button, Center, Flex, Grid, GridItem, Heading, HStack, Input, List, Separator, Text, Textarea, VStack } from "@chakra-ui/react";
 import Link from "next/link";
+import { useRef, useState } from "react";
 import { FaAward, FaBoxes, FaCheck, FaClipboardCheck, FaClock, FaHome, FaMobileAlt, FaPhoneAlt, FaQuestionCircle, FaShieldAlt, FaStar, FaTools } from "react-icons/fa";
 import { FaBox, FaBroom, FaBuilding, FaCalendarCheck, FaCircleCheck, FaDroplet, FaEnvelope, FaFire, FaHandshake, FaHelmetSafety, FaHospital, FaIndustry, FaLocationDot, FaMessage, FaSprayCan, FaStethoscope, FaStopwatch, FaWater } from "react-icons/fa6";
 import { IoShieldCheckmark, IoWarning } from "react-icons/io5";
 
 const SpecialServicePage = () => {
+
+    const formRef = useRef<HTMLFormElement | null>(null);
+    const [loading, setLoading] = useState(false);
+    
+    const handleContact = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if(!formRef.current){ return }
+
+        const formData = new FormData(formRef.current)
+
+        if(!formRef.current.establishment.value.length){ return alert("Select establishment") }
+        
+        try {
+            setLoading(true);
+            const res = await fetch("https://formspree.io/f/mdagrbaq", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            })
+            
+            if(!res.ok){ throw new Error("error"); }
+
+            setLoading(false);
+            alert("Nachricht gesendet.");
+            formRef.current?.reset();
+
+        } catch(err) {
+            console.log(err);
+            setLoading(false);
+            alert("Ihre Anfrage konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.")
+        }
+    }
+
     return (
         <>
+
+            {loading && <Loader />}
             {/* hero section */}
-            <Box as={"section"} pos={"relative"} className="gradient_mix_one py-32!">
+            <Box as={"section"} overflowX={"hidden"} pos={"relative"} className="gradient_mix_one md:py-32!">
 
                 <Flex gap={20} w={"full"} gapY={24} align={"center"} flexDir={{ base: "column-reverse", lg: "row" }}>
 
                     <Box  w={{ base: "full", lg: "50%" }} color={"bg"}>
                         <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                            <Badge color={"bg"} bg={"bg/15"} className="backdrop_blur" rounded={"full"} px={4} py={2} fontSize={"14px"} gap={2}> <Text color={"red.500"}><FaClock /></Text> 24H NOTFALL-SERVICE VERFÜGBAR</Badge>
-                            <Heading as={"h1"} color={"bg"} my={3} fontSize={"5xl"} lineHeight={1.25} fontWeight={"bolder"}
+                            <Badge color={"bg"} bg={"bg/15"} className="backdrop_blur" rounded={"full"} px={4} py={2} fontSize={"14px"} gap={2} textWrap={"wrap"}> <Text color={"red.500"}><FaClock /></Text> 24H NOTFALL-SERVICE VERFÜGBAR</Badge>
+                            <Heading as={"h1"} color={"bg"} my={3} fontSize={{ base: "3xl", md: "5xl" }} lineHeight={1.25} fontWeight={"bolder"}
                             ><Text as={"span"} color={"green.400"}>Sonderreinigung</Text> München</Heading>
 
                             <Text my={3}>
@@ -36,7 +77,7 @@ const SpecialServicePage = () => {
                             <Grid
                                 gapX={6}
                                 gapY={3}
-                                templateColumns={"repeat(2, 1fr)"}
+                                templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
                                 fontSize={"sm"}
                             >
                                 <GridItem asChild>
@@ -97,7 +138,7 @@ const SpecialServicePage = () => {
 
                             <Separator w={"full"} my={3} />
 
-                            <HStack gap={3} mt={1} fontSize={"13px"}>
+                            <HStack gap={3} flexWrap={"wrap"} mt={1} fontSize={"13px"}>
 
                                 <HStack gap={2} align={"start"}>
                                     <Text color={"yellow.200"} mt={1}><FaAward /></Text>
@@ -201,9 +242,9 @@ const SpecialServicePage = () => {
 
                 <VStack w="full">
                     
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaTools /></Text>   Spezialisierte Reinigungsdienstleistungen</Badge>
+                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"} gap={2}><Text as={"span"} scale={0.9} mr={0.5}><FaTools /></Text>   Spezialisierte Reinigungsdienstleistungen</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md:"3xl" }} lineHeight={1.4}>
                         Unsere 
                         <Text as={"span"} color={"blue.600"}> Sonderreinigung München </Text> Leistungen
                     </Heading>
@@ -224,7 +265,7 @@ const SpecialServicePage = () => {
                                 const isLast = i == specialCleaningServicesInDetail.length - 1;
                                 return <GridItem asChild key={i}>
                                     <Box className="group">
-                                        <VStack w={"full"} h={"full"} className="group-hover:-translate-y-[10px]! duration-150 group-hover:shadow-lg" rounded={"lg"} bg={ isFirst || isLast ? "blue.100/30" : "bg"} border={"1px solid"} align={"start"} borderColor={"blue.500/10"} borderTop={"6px solid"} borderTopColor={"blue.500"} p={6}>
+                                        <VStack w={"full"} h={"full"} className="group-hover:-translate-y-[10px]! duration-150 group-hover:shadow-lg" rounded={"lg"} bg={ isFirst || isLast ? "blue.100/30" : "bg"} border={"1px solid"} align={"start"} borderColor={"blue.500/10"} borderTop={"6px solid"} borderTopColor={"blue.500"} p={{ base: 2, md: 6 }}>
 
                                             <HStack gap={6} w="full" align={"start"}>
 
@@ -339,7 +380,7 @@ const SpecialServicePage = () => {
                             <FaFire />NOTFALL-REINIGUNG
                         </Badge>
     
-                        <Heading as={"h6"} lineHeight={1.65} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Reinigung nach Umzug, Sanierung oder Brand-/Wasserschäden</Heading>
+                        <Heading as={"h6"} lineHeight={1.65} textAlign={"center"} fontWeight={"bolder"} fontSize={{ base: "xl", md: "2xl" }}>Reinigung nach Umzug, Sanierung oder Brand-/Wasserschäden</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} mt={-3} opacity={0.75}>
                             Professionelle Sofort-Hilfe bei Brand- und Wasserschäden mit 24h-Notfall-Service
@@ -479,9 +520,9 @@ const SpecialServicePage = () => {
     
                     </VStack>
 
-                    <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_light_background_one" py={12} px={6}>
+                    <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_light_background_one" py={{ base: 6, md: 12 }} px={{ base: 4, md: 6 }}>
     
-                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Komplexe Reinigungsherausforderung?</Heading>
+                        <Heading as={"h6"} mt={5} textWrap={"wrap"} textAlign={"center"} fontWeight={"bolder"} fontSize={{ base: "xl", md:"2xl" }}>Komplexe Reinigungsherausforderung?</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
                             Unsere <b>Spezialreinigung München</b> Expertise löst auch schwierigste Fälle. Kontaktieren Sie uns für eine kostenlose Objektbesichtigung und ein individuelles Angebot.
@@ -489,10 +530,10 @@ const SpecialServicePage = () => {
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild  bg={"yellow.500"} color={"bg.inverted"} rounded={"lg"}>
+                            <Button asChild  bg={"yellow.500"} gap={3} p={{ base: 8, md: 3 }} color={"bg.inverted"} rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
-                                     Kostenlose Objektbesichtigung sichern
+                                     Kostenlose <br className="md:hidden" /> Objektbesichtigung sichern
                                 </Link>
                             </Button>
                             
@@ -505,9 +546,9 @@ const SpecialServicePage = () => {
 
                         </HStack>
 
-                        <Badge py={2} px={4} rounded={"full"} bg={"red.600"} color={"bg"} size={"lg"} gap={2} shadow={"2xl"} className="fade_animation">
+                        <Badge py={{ base: 4, md: 2 }} px={{ base: 10, md: 4 }} rounded={"full"} bg={"red.600"} color={"bg"} size={"lg"} gap={{ base: 4, md: 2 }} shadow={"2xl"} className="fade_animation">
                             <IoWarning />
-                            Notfall? 24h-Service unter: 0176 6767 9634
+                            Notfall? <br className="md:hidden" /> 24h-Service <br className="md:hidden" /> unter: 0176 6767 9634
                         </Badge>
     
                     </VStack>
@@ -528,7 +569,7 @@ const SpecialServicePage = () => {
                             VERTRAUEN & EXPERTISE IN MÜNCHEN
                         </Badge>
                         
-                        <Heading as={"h4"} fontSize={"4xl"} lineHeight={1.5} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>Unternehmen in München </Text> uns wählen</Heading>
+                        <Heading as={"h4"} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.4} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>Unternehmen in München </Text> uns wählen</Heading>
 
                         <Text>Seit Jahren vertrauen Bauunternehmen, Hausverwaltungen und Gewerbeimmobilienbesitzer in München, Schwabing, Haidhausen, Obersendling und dem gesamten Münchner Umland auf unsere professionelle <b>Sonderreinigung München</b>.</Text>
     
@@ -542,13 +583,13 @@ const SpecialServicePage = () => {
                             }}
                         >
                             <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{awards_won}+</Text>
+                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={awards_won} suffix="+" /></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Auszeichnungen</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>für Qualität & Service</Text>
                             </GridItem>
     
                             <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{satisfied_customers}+</Text>
+                                <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={satisfied_customers} suffix="+" /></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Zufriedene Kunden</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>erfolgreich betreut</Text>
                             </GridItem>
@@ -736,9 +777,9 @@ const SpecialServicePage = () => {
 
                         </Grid>
     
-                        <VStack textAlign={"center"} w={"full"} h={"full"} className="gradient_light_background_one" border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <VStack textAlign={"center"} w={"full"} h={"full"} className="gradient_light_background_one" border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={{ base: 2.5, md: 5 }}>
                             
-                            <Heading as={"h3"} fontSize={"2xl"} mt={4}>
+                            <Heading as={"h3"} fontSize={{ base: "xl", md: "2xl" }} mt={4}>
                                  Weitere Reinigungsdienstleistungen
                             </Heading>
 
@@ -875,7 +916,7 @@ const SpecialServicePage = () => {
             </Box>
 
             {/* contact section */}
-            <Box as={"section"} className="gradient_mix_four" color={"bg"} id="contact" px={{base: "2vw", md: "5vw"}}>
+            <Box as={"section"} overflowX={"hidden"} className="gradient_mix_four" color={"bg"} id="contact">
 
                 <VStack w="full">
                     
@@ -883,7 +924,7 @@ const SpecialServicePage = () => {
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", sm: "3xl", md: "4xl" }} lineHeight={1.4}>
                         Kostenlose  
-                        <Text as={"span"} color={"green.400"}> Objektbesichtigung </Text> für Ihre Reinigungsherausforderung
+                        <Text as={"span"} color={"green.400"}> Objektbesichtigung </Text> <br className="md:hidden" /> für Ihre Reinigungsherausforderung
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
                         Professionelle <b>Sonderreinigung München, Baureinigung München</b> und <b>Grundreinigung München</b> mit 24h-Notfall-Service. Vereinbaren Sie noch heute einen kostenlosen Beratungstermin.
@@ -891,15 +932,15 @@ const SpecialServicePage = () => {
 
                     <Flex gap={12} gapY={16} align={"start"} flexDir={{ base: "column", xl: "row" }} w={"full"}>
     
-                    <Box w={{ base: "full", xl: "60%" }} p={{ base: 4, md: 8 }} bg={"bg/5"} border={"1px solid"} borderColor={"bg/20"} color={"bg"} pos={"relative"} shadow={"2xl"} rounded={"xl"}>
+                    <Box w={{ base: "full", xl: "60%" }} p={{ base: 0, md: 8 }} md={{ bg: "bg/5", border: "1px solid", shadow: "2xl" }} borderColor={"bg/20"} color={"bg"} pos={"relative"} rounded={"xl"}>
 
-                        <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={2.5} fontSize={"xl"} mb={9}>
+                        <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={2.5} fontSize={{ base: "lg", md: "xl" }} mb={9}>
                             <Text color={"green.400"}><FaClipboardCheck /></Text>
                             Objektbesichtigung anfragen
                         </Heading>
                         
                         {/* contact form */}
-                        <form onSubmit={(e) => e.preventDefault()}>
+                        <form ref={formRef} onSubmit={handleContact}>
 
                             <Grid
                                 gap={6}
@@ -924,7 +965,7 @@ const SpecialServicePage = () => {
 
                             <VStack gap={2} align={"start"} my={6}>
                                 <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Unternehmen/Organisation</Text>
-                                <Input type="text" name="company" required placeholder="Firmenname (optional)" className="form_input" />
+                                <Input type="text" name="company" placeholder="Firmenname (optional)" className="form_input" />
                             </VStack>
 
                             <VStack gap={2} align={"start"} my={6}>
@@ -939,7 +980,7 @@ const SpecialServicePage = () => {
 
                             <VStack gap={2} align={"start"} my={6}>
                                 <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Art der Sonderreinigung *</Text>
-                                <select name="establishment" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
+                                <select required name="establishment" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
                                     {
                                         specialServiceList.map((opt, i) => {
                                             return <option key={i} value={opt.value}>{opt.label}</option>
@@ -953,11 +994,11 @@ const SpecialServicePage = () => {
                                 <Grid
                                     gap={3}
                                     w={"full"}
-                                    templateColumns={"repeat(3, 1fr)"}
+                                    templateColumns={{ base: "1fr", md: "repeat(3, 1fr)" }}
                                 >
 
                                     <GridItem>
-                                        <input type="radio" name="time" value={"Normal (1-2 Wochen)"} id="normal" />
+                                        <input checked type="radio" name="time" value={"Normal (1-2 Wochen)"} id="normal" />
                                         <label className="ml-1!" htmlFor="normal">Normal (1-2 Wochen)</label>
                                     </GridItem>
 
@@ -982,6 +1023,7 @@ const SpecialServicePage = () => {
                                     placeholder="Straße, Hausnummer, Stadtteil..."
                                     name="address"
                                     className="form_input"
+                                    required
                                 >
                                     
                                 </Textarea>
@@ -995,6 +1037,7 @@ const SpecialServicePage = () => {
                                     placeholder="Beschreiben Sie die Räumlichkeiten, Art der Verschmutzung, besondere Herausforderungen, Quadratmeter (falls bekannt)..."
                                     name="description"
                                     className="form_input"
+                                    required
                                 >
                                     
                                 </Textarea>
@@ -1041,7 +1084,7 @@ const SpecialServicePage = () => {
                             templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)", xl: "1fr" }}
                         >
 
-                            <VStack rounded={"xl"} p={6} bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
+                        <VStack rounded={"xl"} p={{ base: 3, md: 6 }} bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
 
                             <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={4} fontSize={"lg"} mb={1}>
                                 <Text color={"blue.400"}><FaPhoneAlt /></Text>
@@ -1090,7 +1133,7 @@ const SpecialServicePage = () => {
 
                         </VStack>
 
-                        <VStack rounded={"xl"} p={5} color={"bg"} bg={"red.600/90"} w={"100%"} shadow={"2xl"} gap={4}>
+                        <VStack rounded={"xl"}  p={{ base: 3, md: 6 }}  color={"bg"} bg={"red.600/90"} w={"100%"} shadow={"2xl"} gap={4}>
 
                             <Text fontSize={"3xl"}><FaFire /></Text>
                                                 
@@ -1128,7 +1171,7 @@ const SpecialServicePage = () => {
 
                         </VStack>
 
-                        <VStack rounded={"xl"} p={6} bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
+                        <VStack rounded={"xl"}  p={{ base: 3, md: 6 }}  bg={"bg/5"} border={"1px solid"} w={"100%"} gap={4} borderColor={"bg/20"} shadow={"2xl"}>
 
                             <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={4} fontSize={"lg"} mb={1}>
                                 <Text color={"yellow.400"}><FaShieldAlt /></Text>
@@ -1201,7 +1244,7 @@ const SpecialServicePage = () => {
 
                         </VStack>
 
-                        <Center h={"full"} rounded={"xl"} p={5} py={7} color={"green.800"} bg={"green.400"} shadow={"2xl"} >
+                        <Center h={"full"} rounded={"xl"}  p={{ base: 3, md: 6 }}  py={7} color={"green.800"} bg={"green.400"} shadow={"2xl"} >
                             <VStack  w={"100%"} gap={4}>
                             
                                 <Text fontSize={"3xl"}><FaStopwatch /></Text>

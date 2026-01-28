@@ -1,12 +1,17 @@
 'use client'
 
+import Counter from "@/components/counter.component";
+import ReviewCard from "@/components/review.component";
+import Stars from "@/components/stars.component";
 import { awards_won, company_name, hours_worked, owner_name, properties_cleaned, satisfied_customers } from "@/data/about";
 import { mobile, official_mail, service_area, telephone } from "@/data/contact";
 import { whatsAppContact } from "@/data/footer";
 import { contactServiceOptions, reviews } from "@/data/home";
 import services from "@/data/services.list";
 import { Badge, Box, Button, Center, Flex, Grid, GridItem, Heading, HStack, Image, Input, List, Separator, Text, Textarea, VStack } from "@chakra-ui/react";
+import Loader from "@/components/loader.component";
 import Link from "next/link";
+import { useRef, useState } from "react";
 import { BsSendFill } from "react-icons/bs";
 import { FaArrowRight, FaCheckCircle, FaClock, FaCrown, FaEnvelope, FaGift, FaHandshake, FaHeart, FaInfoCircle, FaMobile, FaPhoneAlt, FaQuoteLeft, FaShieldAlt, FaShieldVirus, FaStar, FaSuitcase } from "react-icons/fa";
 import { FaAward, FaBuilding, FaCar, FaCertificate, FaCheck, FaClipboardCheck, FaDiamond, FaEuroSign, FaLocationPin, FaUserGroup, FaWhatsapp } from "react-icons/fa6";
@@ -15,11 +20,48 @@ import { MdRestaurant, MdSchool } from "react-icons/md";
 
 const Page = () => {
 
+    const formRef = useRef<HTMLFormElement | null>(null);
+    const [loading, setLoading] = useState(false);
+
+    const handleContact = async (e: React.FormEvent) => {
+
+        e.preventDefault();
+
+        if(!formRef.current){ return }
+
+        const formData = new FormData(formRef.current)
+
+        if(!formRef.current.service.value.length){ return alert("Select service") }
+        
+        try {
+            setLoading(true);
+            const res = await fetch("https://formspree.io/f/mvzadgro", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            })
+            if(!res.ok){ throw new Error("error"); }
+            setLoading(false);
+            alert("Nachricht gesendet.");
+            formRef.current?.reset();
+
+        } catch(err) {
+            console.log(err);
+            setLoading(false);
+            alert("Ihre Anfrage konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.")
+        }
+
+    }
+
     return (
         <>
         
+        { loading && <Loader /> }
+
         {/* hero section */}
-        <Box as={"section"}>
+        <Box as={"section"} overflowX={"hidden"}>
 
             <Flex gap={12} align={"center"} flexDir={{ base: "column-reverse", lg: "row" }}>
 
@@ -96,14 +138,14 @@ const Page = () => {
 
                         </HStack>
 
-                        <HStack gap={3} fontSize={"13px"}>
+                        <HStack gap={3} flexWrap={"wrap"} mt={{ base: 2, md: 0 }} fontSize={"13px"}>
 
-                            <HStack gap={1}>
+                            <HStack gap={2}>
                                 <Text color={"blue.600"}><FaUserGroup /></Text>
                                 <Text fontWeight={"medium"} opacity={0.4}>Über {satisfied_customers} zufriedene Kunden</Text>
                             </HStack>
 
-                            <HStack gap={1}>
+                            <HStack gap={2}>
                                 <Text color={"blue.600"}><FaLocationPin /></Text>
                                 <Text fontWeight={"medium"} opacity={0.4}>{service_area}</Text>
                             </HStack>
@@ -146,9 +188,9 @@ const Page = () => {
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                     Spezialist für 
-                    <Text as={"span"} color={"blue.600"}> Büroreinigung München </Text> 
+                    <Text as={"span"} color={"green.600"}> Büroreinigung München </Text> 
                     &
-                    <Text as={"span"} color={"green.500"}> Fahrzeugaufbereitung München </Text> 
+                    <Text as={"span"} color={"blue.500"}> Fahrzeugaufbereitung München </Text> 
                 </Heading>
                 <Text textAlign={"center"} mt={3} mb={6} lineHeight={1.65} w={"full"} fontSize={"sm"} opacity={0.65}>
                     Mit über 15 Jahren Erfahrung sind wir Ihr vertrauensvoller Partner für maßgeschneiderte Reinigungslösungen in München und Umgebung
@@ -162,19 +204,19 @@ const Page = () => {
                     my={{ base: 12, lg: 24 }}
                 >
 
-                    <GridItem _hover={{ bg: "blue.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={5}>
+                    <GridItem _hover={{ bg: "green.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={{ base: 3, sm: 5 }}>
                         
                         <VStack align={"start"} gap={5}>
 
                             <HStack gap={3} mb={2}>
                             
-                                <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"blue.800"}>
+                                <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"green.600"}>
                                     <FaBuilding />
                                 </Center>
 
                                 <Box>
                                     <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Büroreinigung München</Heading>
-                                    <Text as={"span"} fontSize={"xs"} fontWeight={"bolder"} color={"blue.800"} >Premium-Service</Text>
+                                    <Text as={"span"} fontSize={"xs"} fontWeight={"bolder"} color={"green.600"} >Premium-Service</Text>
                                 </Box>
 
                             </HStack>
@@ -227,12 +269,102 @@ const Page = () => {
 
                             {/* rating */}
 
-                            <HStack bg={"blue.100"} p={3} color={"blue.600"} justify={"space-between"} w="full" rounded={"lg"} fontSize={"sm"}>
+                            <HStack bg={"green.100"} p={3} color={"green.600"} justify={"space-between"} w="full" rounded={"lg"} fontSize={"sm"}>
 
                             <HStack gap={2}>
-                                    <FaHandshake />
-                                    <Text fontWeight={"semibold"}>200+ zufriedene Bürokunden</Text>
+                                <FaHandshake />
+                                <Text fontWeight={"semibold"}>200+ zufriedene Bürokunden</Text>
                             </HStack>
+
+                                <HStack gap={0.5}>
+                                    {
+                                        Array.from({ length: 5 }).map((_, i) => {
+                                            return (
+                                                <FaStar key={i} />
+                                            )
+                                        })
+                                    }
+                                </HStack>
+
+                            </HStack>
+
+                            <Button asChild colorPalette={"green"} w="99%" mx={"auto"} shadow={"md"}>
+                                <Link href={"/buroreinigung-munchen"}>
+                                    <Text scale={0.75}><FaArrowRight /></Text>
+                                    Mehr zur Büroreinigung
+                                </Link>
+                            </Button>
+
+                        </VStack>
+
+                    </GridItem>
+
+                    <GridItem _hover={{ bg: "blue.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={{ base: 3, sm: 5 }}>
+                        
+                        <VStack align={"start"} gap={5}>
+
+                            <HStack gap={3} mb={2}>
+                            
+                                <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"blue.600"}>
+                                    <FaCar />
+                                </Center>
+
+                                <Box>
+                                    <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Fahrzeugaufbereitung München</Heading>
+                                    <Text as={"span"} fontSize={"xs"} fontWeight={"bolder"} color={"blue.600"} >Premium K2 Produkte</Text>
+                                </Box>
+
+                            </HStack>
+
+                            <Text fontSize={"sm"} opacity={0.80} lineHeight={1.45}>
+                                Professionelle Fahrzeugpflege mit über 1.200 Premium-Pflegeprodukten von K2. Für Autohäuser, Fuhrparks und anspruchsvolle Privatkunden.
+                            </Text>
+
+                            {/* points */}
+
+                            <List.Root gap={2} variant="plain" align="center" color={"bg.inverted/80"}>
+                                
+                                <List.Item>
+                                    <List.Indicator asChild color="blue.500">
+                                        <FaCheckCircle />
+                                    </List.Indicator>
+                                    <Text fontSize={"sm"}>  
+                                        Professionelle Innen- & Außenreinigung
+                                    </Text>
+                                </List.Item>
+
+                                <List.Item>
+                                    <List.Indicator asChild color="blue.500">
+                                        <FaCheckCircle />
+                                    </List.Indicator>
+                                    <Text fontSize={"sm"}>  
+                                        Spezielle Behandlung für Leder & Textil
+                                    </Text>
+                                </List.Item>
+
+                                <List.Item>
+                                    <List.Indicator asChild color="blue.500">
+                                        <FaCheckCircle />
+                                    </List.Indicator>
+                                    <Text fontSize={"sm"}>  
+                                        Lackaufbereitung & Versiegelung
+                                    </Text>
+                                </List.Item>
+
+                                <List.Item>
+                                    <List.Indicator asChild color="blue.500">
+                                        <FaCheckCircle />
+                                    </List.Indicator>
+                                    <Text fontSize={"sm"}>  
+                                        Mobile Aufbereitung vor Ort möglich
+                                    </Text>
+                                </List.Item>
+                                
+                            </List.Root>
+
+                            {/* rating */}
+
+                            <HStack bg={"blue.100"} p={3} color={"blue.500"}  w="99%" mx={"auto"}  rounded={"lg"} fontSize={"sm"}>
 
                                 <HStack gap={0.5}>
                                     {
@@ -247,96 +379,6 @@ const Page = () => {
                             </HStack>
 
                             <Button asChild colorPalette={"blue"} w="full" shadow={"md"}>
-                                <Link href={"/buroreinigung-munchen"}>
-                                    <Text scale={0.75}><FaArrowRight /></Text>
-                                    Mehr zur Büroreinigung
-                                </Link>
-                            </Button>
-
-                        </VStack>
-
-                    </GridItem>
-
-                    <GridItem _hover={{ bg: "green.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={5}>
-                        
-                        <VStack align={"start"} gap={5}>
-
-                            <HStack gap={3} mb={2}>
-                            
-                                <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"green.600"}>
-                                    <FaCar />
-                                </Center>
-
-                                <Box>
-                                    <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Fahrzeugaufbereitung München</Heading>
-                                    <Text as={"span"} fontSize={"xs"} fontWeight={"bolder"} color={"green.600"} >Premium K2 Produkte</Text>
-                                </Box>
-
-                            </HStack>
-
-                            <Text fontSize={"sm"} opacity={0.80} lineHeight={1.45}>
-                                Professionelle Fahrzeugpflege mit über 1.200 Premium-Pflegeprodukten von K2. Für Autohäuser, Fuhrparks und anspruchsvolle Privatkunden.
-                            </Text>
-
-                            {/* points */}
-
-                            <List.Root gap={2} variant="plain" align="center" color={"bg.inverted/80"}>
-                                
-                                <List.Item>
-                                    <List.Indicator asChild color="green.500">
-                                        <FaCheckCircle />
-                                    </List.Indicator>
-                                    <Text fontSize={"sm"}>  
-                                        Professionelle Innen- & Außenreinigung
-                                    </Text>
-                                </List.Item>
-
-                                <List.Item>
-                                    <List.Indicator asChild color="green.500">
-                                        <FaCheckCircle />
-                                    </List.Indicator>
-                                    <Text fontSize={"sm"}>  
-                                        Spezielle Behandlung für Leder & Textil
-                                    </Text>
-                                </List.Item>
-
-                                <List.Item>
-                                    <List.Indicator asChild color="green.500">
-                                        <FaCheckCircle />
-                                    </List.Indicator>
-                                    <Text fontSize={"sm"}>  
-                                        Lackaufbereitung & Versiegelung
-                                    </Text>
-                                </List.Item>
-
-                                <List.Item>
-                                    <List.Indicator asChild color="green.500">
-                                        <FaCheckCircle />
-                                    </List.Indicator>
-                                    <Text fontSize={"sm"}>  
-                                        Mobile Aufbereitung vor Ort möglich
-                                    </Text>
-                                </List.Item>
-                                
-                            </List.Root>
-
-                            {/* rating */}
-
-                            <HStack bg={"green.100"} p={3} color={"green.500"} w="full" rounded={"lg"} fontSize={"sm"}>
-
-                                <HStack gap={0.5}>
-                                    {
-                                        Array.from({ length: 5 }).map((_, i) => {
-                                            return (
-                                                <FaStar key={i} />
-                                            )
-                                        })
-                                    }
-                                </HStack>
-
-                            </HStack>
-
-                            <Button asChild colorPalette={"green"} w="full" shadow={"md"}>
                                 <Link href={"/fahrzeugaufbereitung-munchen"}>
                                     <Text scale={0.75}><FaArrowRight /></Text>
                                     Mehr zur Fahrzeugaufbereitung
@@ -398,24 +440,24 @@ const Page = () => {
                         }}
                     >
                         <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{hours_worked}</Text>
+                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={hours_worked} /></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Arbeitsstunden<br/> geleistete Arbeitszeit</Text>
                         </GridItem>
 
                         <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{satisfied_customers}</Text>
+                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={satisfied_customers}/></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Happy Customers<br />
 zufriedene Kunden</Text>
                         </GridItem>
 
                         <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{awards_won}</Text>
+                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={awards_won} /></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Awards <br />
 Auszeichnungen</Text>
                         </GridItem>
 
                         <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
-                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>{properties_cleaned}</Text>
+                            <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={properties_cleaned} /></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Gebäude gereinigt<br />
 erfolgreich abgeschlossen</Text>
                         </GridItem>
@@ -570,7 +612,7 @@ erfolgreich abgeschlossen</Text>
                         
                     </Grid>
 
-                    {
+                    {/* {
                         reviews.length ?
                         <Grid
                             w={"full"}
@@ -603,7 +645,7 @@ erfolgreich abgeschlossen</Text>
                             }
                         </Grid>
                         : ""
-                    }
+                    } */}
 
                     <VStack gap={2} p={8} px={6} rounded={"md"} w={"full"} className="gradient_light_background_one" color={"bg"}>
 
@@ -951,6 +993,33 @@ erfolgreich abgeschlossen</Text>
 
         </Box>
 
+        {/* reviews */}
+        <Box as={"section"} py={24}>
+            <VStack gap={2} w={"full"}>
+                <Heading fontSize={"3xl"}>Was unsere Kunden sagen</Heading>
+                <HStack mt={2} gap={3}>
+                    <Stars size="2xl" />
+                    <Text mt={1}>( {reviews?.length} Bewertungen )</Text>
+                </HStack>
+
+                <Grid
+                    mt={14}
+                    gap={5}
+                    w={"full"}
+                    templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}
+                >
+                    
+                    {
+                        reviews?.length ? reviews.map((review, i) => {
+                            return <GridItem key={i} asChild><ReviewCard review={review} /></GridItem>
+                        })
+                        : ""
+                    }
+
+                </Grid>
+            </VStack>                
+        </Box>
+
         {/* your advantages section */}
         <Box as={"section"}>
 
@@ -1145,7 +1214,7 @@ erfolgreich abgeschlossen</Text>
                      JETZT KONTAKT AUFNEHMEN
                 </Badge>
                 
-                <Heading as={"h2"} fontSize={"3xl"} color={"bg"} fontWeight={"bolder"} my={3}>Bereit für perfekte Sauberkeit?</Heading>
+                <Heading as={"h2"} fontSize={"3xl"} color={"bg"} fontWeight={"bolder"} textAlign={"center"} my={3}>Bereit für perfekte Sauberkeit?</Heading>
 
                 <Text textAlign={"center"} color={"bg"} maxW={"700px"}>
                     Lassen Sie uns Ihnen zeigen, wie professionelle Reinigung aussieht. Kontaktieren Sie uns noch heute für Ihr kostenloses Angebot!
@@ -1220,8 +1289,8 @@ erfolgreich abgeschlossen</Text>
 
                 {/* contact form */}
 
-                <Box asChild w={"full"} p={5} rounded={"md"} bg={"bg"}>
-                    <form onSubmit={(e) => e.preventDefault()}>
+                <Box asChild w={"full"} p={{ base: 3, md: 5 }} rounded={"md"} bg={"bg"}>
+                    <form onSubmit={handleContact} ref={formRef}>
 
                         <Heading as={"h5"} mb={5}>Schnellanfrage stellen</Heading>
 
@@ -1231,11 +1300,11 @@ erfolgreich abgeschlossen</Text>
                         >
                             
                             <GridItem asChild>
-                                <Input type="text" name="name" required placeholder="Ihr Name" />
+                                <Input aria-required type="text" name="name" required placeholder="Ihr Name" />
                             </GridItem>
 
                             <GridItem asChild>
-                                <Input type="email" name="email" required placeholder="Ihre E-Mail" />
+                                <Input aria-required type="email" name="email" required placeholder="Ihre E-Mail" />
                             </GridItem>
 
                         </Grid>
@@ -1247,11 +1316,11 @@ erfolgreich abgeschlossen</Text>
                         >
                             
                             <GridItem asChild>
-                                <Input type="tel" name="phone" required placeholder="Telefonnummer" />
+                                <Input aria-required type="tel" name="phone" required placeholder="Telefonnummer" />
                             </GridItem>
 
                             <GridItem asChild>
-                                <select name="service" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10!">
+                                <select aria-required name="service" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10!">
                                     {
                                         contactServiceOptions.map((service, i) => {
                                             return <option key={i} value={service.value}>{service.label}</option>
@@ -1268,6 +1337,7 @@ erfolgreich abgeschlossen</Text>
                             h={"200px"}
                             placeholder="Ihre Nachricht / Besondere Wünsche"
                             name="message"
+                            required
                         >
                             
                         </Textarea>

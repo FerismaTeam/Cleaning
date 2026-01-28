@@ -6,7 +6,7 @@ import services from "@/data/services.list";
 import { Box, Button, Flex, HStack, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCaretDown } from "react-icons/rx";
@@ -14,12 +14,19 @@ import { RxCaretDown } from "react-icons/rx";
 const Navbar = () => {
 
     const [showNavbar, setShowNavbar] = useState(false);
+    const [dropDownAllow, setDropDownAllow] = useState(false);
 
     const path = usePathname();
 
     useEffect(() => {
 
-       (()=>setShowNavbar(false))()
+       (() => setShowNavbar(false))();
+
+       (() => setDropDownAllow(false))(); // disable dropdown on path change
+
+       setTimeout(() => { // re-enable drop down after 500ms
+            setDropDownAllow(true);
+       }, 500)
 
     }, [path])
 
@@ -36,7 +43,7 @@ const Navbar = () => {
                 </Button>
 
                 {/* links */}
-                <Flex shadow={{ base: "lg", lg: "none" }} className={ !showNavbar ? "max-lg:hidden!" : "" } gap={0} pos={{ base: "absolute", lg: "relative" }} flexDirection={{ base: "column", lg: "row" }} top={{ base: "80px", lg: 0 }} bg={{ base: "gray.50", lg: "bg" }} width={{ base: "full", lg: "auto" }} left={{ base: "0", lg: "0" }} px={0} >
+                <Flex shadow={{ base: "lg", lg: "none" }} className={ !showNavbar ? "max-lg:hidden!" : "" } gap={0} pos={{ base: "absolute", lg: "relative" }} flexDirection={{ base: "column", lg: "row" }} top={{ base: "80px", lg: 0 }} bg={{ base: "gray.50", lg: "bg" }} width={{ base: "full", lg: "auto" }} left={{ base: "0", lg: "0" }} px={0} overflowY={{ base: "auto", lg: "visible" }} maxH={{ base: "calc( 100vh - 80px )", lg: "auto" }}>
 
                     <Link href={"/"} className="navlink">Home</Link>
                     
@@ -45,7 +52,7 @@ const Navbar = () => {
 
                         <VStack 
                             pos={{ base: "relative", lg: "absolute" }} 
-                            className="lg:opacity-0 lg:pointer-events-none lg:group-hover:pointer-events-auto lg:group-hover:opacity-100 duration-200 lg:hover:opacity-100 lg:hover:pointer-events-auto" 
+                            className={"lg:opacity-0 lg:pointer-events-none lg:group-hover:pointer-events-auto lg:group-hover:opacity-100 duration-200 lg:hover:opacity-100 lg:hover:pointer-events-auto " + ( !dropDownAllow ? "hidden!" : "" )} 
                             gap={0} 
                             top={{ base: 0, lg: "100%" }} 
                             bg={{ base: "transparent", lg: "bg" }} 

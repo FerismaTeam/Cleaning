@@ -53,7 +53,7 @@ const LegalPage = () => {
         {/* legal section */}
         <Box as={"section"} id="legal">
 
-            <VStack gap={5} w={"full"} p={5} align={"start"} >
+            <VStack gap={5} w={"full"} p={{ base: 2, md: 5 }} align={"start"} >
 
                 <HStack gap={4}>
 
@@ -72,7 +72,7 @@ const LegalPage = () => {
 
                 <VStack gap={2} align={"start"} w={"full"}>
                     <Heading as={"h3"} fontWeight={"bolder"} fontSize={"initial"}>Firmeninformationen</Heading>
-                    <VStack gap={3} align={"start"} fontSize={"sm"} w={"full"} p={5} rounded={"md"} bg={"blue.100/25"}>
+                    <VStack gap={3} align={"start"} fontSize={"sm"} w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"blue.100/25"}>
                         <Text> <b>Firmenname: </b> {company_name}</Text>
                         <Text whiteSpace={"pre-line"}> <b>Region: </b> {operational_region}</Text>
                         <Text whiteSpace={"pre-line"}> <b>Adresse:</b> {address}</Text>
@@ -82,7 +82,7 @@ const LegalPage = () => {
                 
                 <VStack gap={2} align={"start"} w={"full"}>
                     <Heading as={"h3"} fontWeight={"bolder"} fontSize={"initial"}>Kontakt</Heading>
-                    <VStack gap={3} align={"start"} fontSize={"sm"} w={"full"} p={5} rounded={"md"} bg={"blue.100/25"}>
+                    <VStack gap={3} align={"start"} fontSize={"sm"} w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"blue.100/25"}>
                         <HStack gap={2} align={"start"} w={"full"}>
                             <Text mt={1} color={"blue.600"} fontSize={"xs"}><FaPhoneAlt /></Text>
                             <Text fontWeight={"bold"}>Telefon: </Text>
@@ -114,7 +114,7 @@ const LegalPage = () => {
                     legal.map((item, i) => {
                         return <VStack key={i} gap={2} align={"start"} w={"full"}>
                             <Heading as={"h3"} fontWeight={"bolder"} fontSize={"initial"}>{item.title}</Heading>
-                            <VStack gap={3} align={"start"} w={"full"} p={5} rounded={"md"} bg={"blue.100/25"}>
+                            <VStack gap={3} align={"start"} w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"blue.100/25"}>
                                 {
                                     item.content.map((ele, j) => {
                                         return <Box fontSize={"sm"} opacity={0.85} lineHeight={1.7} key={j}>{renderFormattedText(ele)}</Box>
@@ -139,7 +139,7 @@ const LegalPage = () => {
         {/* privacy section */}
         <Box as={"section"} id="privacy" bg={"blue.100/30"}>
 
-            <VStack gap={5} w={"full"} p={5} align={"start"} >
+            <VStack gap={5} w={"full"}  p={{ base: 2, md: 5 }} align={"start"} >
 
                 <HStack gap={4}>
 
@@ -158,7 +158,7 @@ const LegalPage = () => {
                 
                 <VStack gap={2} align={"start"} w={"full"}>
                     <Heading as={"h3"} fontWeight={"bolder"} fontSize={"initial"}>1. Verantwortlicher</Heading>
-                    <VStack gap={3} align={"start"} fontSize={"sm"} w={"full"} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"blue.500/10"}>
+                    <VStack gap={3} align={"start"} fontSize={"sm"} w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"blue.500/10"}>
                         <Text fontWeight={"bolder"}>{company_name}</Text>
                         <Text whiteSpace={"pre-line"}>{service_area}</Text>
                         <Text whiteSpace={"pre-line"}>{address}</Text>
@@ -197,7 +197,7 @@ const LegalPage = () => {
                     privacy.map((item, i) => {
                         return <VStack key={i} gap={2} align={"start"} w={"full"}>
                             <Heading as={"h3"} fontWeight={"bolder"} fontSize={"initial"}>{i+2}. {item.title}</Heading>
-                            <VStack gap={3} align={"start"} w={"full"} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"blue.500/10"}>
+                            <VStack gap={3} align={"start"} w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"blue.500/10"}>
                                 {
                                     item.content.map((ele, j) => {
                                         return <Box fontSize={"sm"} opacity={0.85} lineHeight={1.7} key={j}>{renderFormattedText(ele)}</Box>
@@ -222,7 +222,7 @@ const LegalPage = () => {
         {/* tnc section */}
         <Box as={"section"} id="tnc">
 
-            <VStack gap={5} w={"full"} p={5} align={"start"} >
+            <VStack gap={5} w={"full"} p={{ base: 2, md: 5 }} align={"start"} >
 
                 <HStack gap={4}>
 
@@ -239,7 +239,7 @@ const LegalPage = () => {
 
                 <Separator w={"full"} opacity={0.5} my={3} />
                 
-                <Box w={"full"} p={5} rounded={"md"} bg={"blue.100/25"} color={"blue.500"}>
+                <Box w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"blue.100/25"} color={"blue.500"}>
                     <Text fontWeight={"bolder"}>{company_name}</Text>
                     <Text mt={2} fontWeight={"medium"} fontSize={"sm"} whiteSpace={"pre-line"}>{address}</Text>
                 </Box>
@@ -248,7 +248,7 @@ const LegalPage = () => {
                     tnc.map((item, i) => {
                         return <VStack key={i} gap={2} align={"start"} w={"full"}>
                             <Heading as={"h3"} fontWeight={"bolder"} fontSize={"initial"}>{i+1}. {item.title}</Heading>
-                            <VStack gap={3} align={"start"} w={"full"} p={5} rounded={"md"} bg={"blue.100/25"}>
+                            <VStack gap={3} align={"start"} w={"full"} p={{ base: 2, md: 5}} rounded={"md"} bg={"blue.100/25"}>
                                 {
                                     item.content.map((ele, j) => {
                                         return <Box fontSize={"sm"} opacity={0.85} lineHeight={1.7} key={j}>{renderFormattedText(ele)}</Box>

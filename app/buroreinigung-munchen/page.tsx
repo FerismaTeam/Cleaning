@@ -1,5 +1,6 @@
 'use client'
 
+import CommonServiceContactSection from "@/components/common-services-contact-section";
 import SectionEndDesign from "@/components/design.component";
 import { company_location, company_name, properties_cleaned, satisfied_customers } from "@/data/about";
 import { address, mobile, official_mail, service_area, telephone } from "@/data/contact";
@@ -16,7 +17,7 @@ const OfficeCleaningPage = () => {
         <>
         
         {/* hero section */}
-        <Box as={"section"} bg={"blue.100/30"}>
+        <Box as={"section"} overflowX={"hidden"} bg={"blue.100/30"}>
 
             <Flex gap={12} align={"center"} flexDir={{ base: "column-reverse", lg: "row" }}>
 
@@ -35,8 +36,8 @@ const OfficeCleaningPage = () => {
 
                         <Grid
                             gapX={6}
-                            gapY={1.5}
-                            templateColumns={"repeat(2, 1fr)"}
+                            gapY={3}
+                            templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
                             fontSize={"sm"}
                         >
                             <GridItem asChild>
@@ -95,7 +96,7 @@ const OfficeCleaningPage = () => {
 
                         </HStack>
 
-                        <HStack gap={3} mt={1} fontSize={"13px"}>
+                        <HStack gap={3} flexWrap={"wrap"} mt={{ base: 3, md: 1 }} fontSize={"13px"}>
 
                             <HStack gap={1}>
                                 <Text color={"blue.600"}><FaUserGear /></Text>
@@ -189,7 +190,7 @@ const OfficeCleaningPage = () => {
 
                 </Grid>
 
-                <Flex rounded={"md"} py={10} className="gradient_dark_background" w="full" gap={6} gapY={14} mt={4} px={8} flexDir={{ base: "column", lg: "row" }}>
+                <Flex rounded={"md"} py={{ base: 4, md: 10 }} className="gradient_dark_background" w="full" gap={{ base: 2, md: 6 }} gapY={14} mt={4} px={{ base: 4, md: 8 }} flexDir={{ base: "column", lg: "row" }}>
 
                     <Box color={"bg"} w={{ base: "full", lg: "50%" }}>
 
@@ -199,7 +200,7 @@ const OfficeCleaningPage = () => {
 
                             <HStack gap={5} alignItems={"start"}>
 
-                                <Center w={10} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
+                                <Center minW={{ base: 6, md: 10 }} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
                                     <FaCheck />
                                 </Center>
 
@@ -214,7 +215,7 @@ const OfficeCleaningPage = () => {
 
                             <HStack gap={5} alignItems={"start"}>
 
-                                <Center w={10} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
+                                <Center minW={{ base: 6, md: 10 }} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
                                     <FaCheck />
                                 </Center>
 
@@ -229,7 +230,7 @@ const OfficeCleaningPage = () => {
 
                             <HStack gap={5} alignItems={"start"}>
 
-                                <Center w={10} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
+                                <Center minW={{ base: 6, md: 10 }} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
                                     <FaCheck />
                                 </Center>
 
@@ -244,7 +245,7 @@ const OfficeCleaningPage = () => {
 
                             <HStack gap={5} alignItems={"start"}>
 
-                                <Center w={10} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
+                                <Center minW={{ base: 6, md: 10 }} mt={2} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} color={"bg"}>
                                     <FaCheck />
                                 </Center>
 
@@ -372,31 +373,31 @@ const OfficeCleaningPage = () => {
                 </Heading>
                 <Text my={6} textAlign={"center"} opacity={0.75}>Wir schaffen eine saubere, hygienische und angenehme Arbeitsumgebung für Ihr Team.</Text>
 
-                <VStack rounded={"md"} p={8} gap={5} bg={"blue.100/30"} mt={10} maxW={"800px"} mx={"auto"} align={"start"}>
+                <VStack rounded={"md"} p={{ base: 3, md: 8 }} gap={5} bg={"blue.100/30"} mt={10} maxW={"800px"} mx={"auto"} align={"start"}>
 
-                    <HStack gap={3} w={"full"}>
-                        <Center bg={"blue.800"} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
+                    <HStack gap={4} align={"start"} w={"full"}>
+                        <Center bg={"blue.800"} mt={1} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
                             <FaDesktop />
                         </Center>
                         <Text>Gründliche Reinigung aller Arbeitsflächen, Böden, Sanitäranlagen und Küchenbereiche</Text>
                     </HStack>
-
-                    <HStack gap={3} w={"full"}>
-                        <Center bg={"blue.800"} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
+                    <Separator w={"full"} />
+                    <HStack gap={4} align={"start"} w={"full"}>
+                        <Center bg={"blue.800"} mt={1} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
                             <FaTrash />
                         </Center>
                         <Text>Regelmäßige Entleerung der Abfallbehälter</Text>
                     </HStack>
-
-                    <HStack gap={3} w={"full"}>
-                        <Center bg={"blue.800"} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
+                    <Separator w={"full"} />
+                    <HStack gap={4} align={"start"} w={"full"}>
+                        <Center bg={"blue.800"} mt={1} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
                             <FaCalendar />
                         </Center>
                         <Text>Individuelle Reinigungspläne – täglich, wöchentlich oder monatlich</Text>
                     </HStack>
-
-                    <HStack gap={3} w={"full"}>
-                        <Center bg={"blue.800"} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
+                    <Separator w={"full"} />
+                    <HStack gap={4} align={"start"} w={"full"}>
+                        <Center bg={"blue.800"} mt={1} color={"bg"} minW={10} aspectRatio={"square"} rounded={"md"}>
                             <FaClipboardCheck />
                         </Center>
                         <Text>Alle Tätigkeiten werden im digitalen Leistungsverzeichnis protokolliert</Text>
@@ -554,7 +555,7 @@ const OfficeCleaningPage = () => {
 
             </VStack>
 
-            <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={12} rounded={"xl"} my={8}>
+            <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={{ base: 6, md: 12 }} rounded={"xl"} my={8}>
                 <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Vorteile Ihrer Büroreinigung München</Heading>
 
                 <Grid 
@@ -760,99 +761,7 @@ const OfficeCleaningPage = () => {
         </Box>
 
         {/* contact sectin */}
-        <Box as={"section"}>
-            <VStack>
-
-                <Badge bg={"blue.100"} color={"blue.600"} fontWeight={"semibold"} gap={2} p={2} px={3} rounded={"full"}>
-                    <FaEnvelope/>
-                    KONTAKTFORMULAR
-                </Badge>
-                
-                <Heading as={"h2"} fontSize={"4xl"} fontWeight={"bolder"} my={4}>Jetzt <Text as={"span"} color={"blue.600"}>unverbindlich anfragen</Text></Heading>
-
-                <Text textAlign={"center"} maxW={"700px"}>
-                    Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen zurück.
-                </Text>
-
-                {/* contact form */}
-
-                <Box asChild w={"full"} p={5} mt={6} rounded={"md"} bg={"bg"}>
-                    <form onSubmit={(e) => e.preventDefault()}>
-
-                        <Grid
-                            gap={3}
-                            templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}
-                        >
-                            
-                            <GridItem asChild>
-                                <Input type="text" name="name" required placeholder="Ihr Name" />
-                            </GridItem>
-
-                            <GridItem asChild>
-                                <Input type="email" name="email" required placeholder="Ihre@email.de" />
-                            </GridItem>
-
-                        </Grid>
-
-                        <Grid
-                            mt={3}
-                            gap={3}
-                            templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}
-                        >
-                            
-                            <GridItem asChild>
-                                <Input type="tel" name="phone" required placeholder="Ihre Telefonnummer" />
-                            </GridItem>
-
-                            <GridItem asChild>
-                                <select name="service" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10!">
-                                    {
-                                        officeCleaningContactServiceOptions.map((service, i) => {
-                                            return <option key={i} value={service.value}>{service.label}</option>
-                                        })
-                                    }
-                                </select>
-                            </GridItem>
-
-                        </Grid>
-
-                        <Textarea
-                            my={3}
-                            resize={"none"}
-                            h={"200px"}
-                            placeholder="Beschreiben Sie Ihr Anliegen..."
-                            name="message"
-                        >
-                            
-                        </Textarea>
-
-                        <HStack my={2} mb={6}>
-                            <input type="checkbox" name="tnc" id="tnc" />
-                            <Text asChild fontSize={"sm"} color={"bg.inverted/65"}>
-                                <label htmlFor="tnc">Ich habe die 
-                                    <Link className="text-blue-600! underline! mx-1!" href={"/rechtliches#data-privacy"}>Datenschutzerklärung</Link>
-                                     zur Kenntnis genommen und stimme der Verarbeitung meiner Daten zu. *
-                                </label>
-                            </Text>
-                        </HStack>
-                        
-                        <Button type="submit" colorPalette={"blue"} h={"45px !important"} w="full" rounded={"lg"}>
-                            <Text scale={0.75}><BsSendFill /></Text>
-                            Nachricht senden
-                        </Button>
-
-                        <HStack gap={1} fontSize={"sm"} my={3} opacity={0.65} justify={"center"} mt={5}>
-                            <FaLock />
-                            <Text>
-                                Ihre Daten werden verschlüsselt übertragen und vertraulich behandelt.
-                            </Text>
-                        </HStack>
-
-                    </form>
-                </Box>
-
-            </VStack>
-        </Box>
+        <CommonServiceContactSection />
 
         </>
     )

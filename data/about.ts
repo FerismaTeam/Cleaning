@@ -7,9 +7,9 @@
 const company_name: string = "Modern web";
 const established_year: number = 2008;
 const company_location: string = "München";
-const hours_worked: string = "9000"; // shown on home page
-const awards_won: string = "100"; // shown on home page
-const medical_facilites: string = "50"; // shown on hospital cleaning service page
+const hours_worked: number = 9000; // shown on home page
+const awards_won: number = 100; // shown on home page
+const medical_facilites: number = 50; // shown on hospital cleaning service page
 
 // about page realted info 
 

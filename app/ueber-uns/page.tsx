@@ -1,5 +1,6 @@
 "use client"
 
+import Counter from "@/components/counter.component";
 import { about_us_in_detail, companies_worked_with, company_ideology_or_goal, company_name, director_note, owner_name, properties_cleaned, satisfied_customers, singleReview, timeline, years_of_experiense } from "@/data/about";
 import { address, telephone } from "@/data/contact";
 import { Badge, Box, Button, Center, Flex, Grid, GridItem, Heading, HStack, Image, Separator, Text, VStack } from "@chakra-ui/react";
@@ -31,15 +32,15 @@ const AboutPage = () => {
                             md: "repeat(4, 1fr)" 
                         }}>
                             <Box p={5} bg={"bg/10"} color={"bg"} rounded={"md"}>
-                                <Heading as={"h3"} fontWeight={"semibold"} fontSize={"3xl"}>{satisfied_customers}+</Heading>
+                                <Heading as={"h3"} fontWeight={"semibold"} fontSize={"3xl"}><Counter end={satisfied_customers} suffix="+" /></Heading>
                                 <Text fontSize={"sm"} textWrap={"nowrap"} mt={4} opacity={0.75}>Zufriedene Kunden</Text>
                             </Box>
                             <Box p={5} bg={"bg/10"} color={"bg"} rounded={"md"}>
-                                <Heading as={"h3"} fontWeight={"semibold"} fontSize={"3xl"}>{properties_cleaned}+</Heading>
+                                <Heading as={"h3"} fontWeight={"semibold"} fontSize={"3xl"}><Counter end={properties_cleaned} suffix="+" /></Heading>
                                 <Text fontSize={"sm"} textWrap={"nowrap"} mt={4} opacity={0.75}>Betreute Objekte</Text>
                             </Box>
                             <Box p={5} bg={"bg/10"} color={"bg"} rounded={"md"}>
-                                <Heading as={"h3"} fontWeight={"semibold"} fontSize={"3xl"}>{years_of_experiense}+</Heading>
+                                <Heading as={"h3"} fontWeight={"semibold"} fontSize={"3xl"}><Counter end={years_of_experiense} suffix="+" /></Heading>
                                 <Text fontSize={"sm"} textWrap={"nowrap"} mt={4} opacity={0.75}>Jahre Erfahrung</Text>
                             </Box>
                             <Box p={5} bg={"bg/10"} color={"bg"} rounded={"md"}>
@@ -54,7 +55,7 @@ const AboutPage = () => {
             </Box>
 
             {/* about section */}
-            <Box as={"section"}>
+            <Box as={"section"} overflowX={"hidden"}>
                 <Flex gap={16} alignItems={"start"} flexDir={{ base: "column-reverse", xl: "row" }}>
                     <Box w={{ base: "full", xl: "50%" }}>
                         <Heading as={"h2"} mb={4} lineHeight={1.5} fontSize={"3xl"} fontWeight={"bold"}>Sauberkeit als Verantwortung – Qualität als Versprechen</Heading>
@@ -345,15 +346,15 @@ const AboutPage = () => {
                             lg: "repeat(4, 1fr)" 
                         }}>
                         <Box p={8} bg={"blue.100"} color={"bg.intverted"} rounded={"md"}>
-                            <Heading as={"h3"} color={"blue.500"} textAlign={"center"} fontWeight={"semibold"} fontSize={"3xl"}>{satisfied_customers}+</Heading>
+                            <Heading as={"h3"} color={"blue.500"} textAlign={"center"} fontWeight={"semibold"} fontSize={"3xl"}><Counter end={satisfied_customers} suffix="+" /></Heading>
                             <Text fontSize={"sm"} fontWeight={"bolder"} textAlign={"center"} textWrap={"nowrap"} mt={4} opacity={0.75}>Zufriedene Kunden</Text>
                         </Box>
                         <Box p={8} bg={"blue.100"} color={"bg.intverted"} rounded={"md"}>
-                            <Heading as={"h3"} color={"blue.500"} textAlign={"center"} fontWeight={"semibold"} fontSize={"3xl"}>{properties_cleaned}+</Heading>
+                            <Heading as={"h3"} color={"blue.500"} textAlign={"center"} fontWeight={"semibold"} fontSize={"3xl"}><Counter end={properties_cleaned} suffix="+" /></Heading>
                             <Text fontSize={"sm"} fontWeight={"bolder"} textAlign={"center"} textWrap={"nowrap"} mt={4} opacity={0.75}>Betreute Objekte</Text>
                         </Box>
                         <Box p={8} bg={"blue.100"} color={"bg.intverted"} rounded={"md"}>
-                            <Heading as={"h3"} color={"blue.500"} textAlign={"center"} fontWeight={"semibold"} fontSize={"3xl"}>{years_of_experiense}+</Heading>
+                            <Heading as={"h3"} color={"blue.500"} textAlign={"center"} fontWeight={"semibold"} fontSize={"3xl"}><Counter end={years_of_experiense} suffix="+" /></Heading>
                             <Text fontSize={"sm"} fontWeight={"bolder"} textAlign={"center"} textWrap={"nowrap"} mt={4} opacity={0.75}>Jahre Erfahrung</Text>
                         </Box>
                         <Box p={8} bg={"blue.100"} color={"bg.intverted"} rounded={"md"}>
@@ -490,7 +491,7 @@ const AboutPage = () => {
                         <GridItem>
                             <Flex  asChild _hover={{ bg: "blue.700", color: "bg" }} className="duration-150 group" gap={4} alignItems={"center"} p={6} bg={"bg"} rounded={"lg"} shadow={"3px 3px 0 0 var(--chakra-colors-blue-600), -3px -3px 0 0 var(--chakra-colors-blue-400)"} px={8} h={"full"}>
 
-                                <Link href={`tel:${telephone}`}>
+                                <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
 
                                 <Center w={14} fontSize={"2xl"} aspectRatio={"square"} bg={"blue.700"} rounded={"full"} color={"bg"} className="group-hover:bg-white! group-hover:text-blue-700! duration-150"><FaPhoneAlt /></Center>
 
@@ -527,7 +528,7 @@ const AboutPage = () => {
                     <HStack justify={"center"} gap={4} flexWrap={"wrap"} w={"full"} my={12}>
 
                         <Button asChild p={7} rounded={"lg"} display={"flex"} gap={5} fontSize={"lg"} variant={"solid"} colorPalette={"blue"}>
-                            <Link href={`tel:${telephone}`}>
+                            <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <FaPhoneAlt />
                                 <Text>Jetzt anrufen</Text>
                             </Link>

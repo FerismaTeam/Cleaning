@@ -143,7 +143,7 @@ const Footer = () => {
 
                 <Separator my={6} borderColor={"bg/10"} />
                 
-                <HStack gap={5} justifyContent={"space-between"} fontSize={"sm"}>
+                <HStack gap={5} flexWrap={"wrap"} justifyContent={"space-between"} fontSize={"sm"}>
                     
                     <Text>
                         {copyrightText}
@@ -155,7 +155,7 @@ const Footer = () => {
                         Impressum
                         </Link>
 
-                        <Link href={"/rechtliches#data_protection"}>
+                        <Link href={"/rechtliches#privacy"}>
                         Datenschutz
                         </Link>
 

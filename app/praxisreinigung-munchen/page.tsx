@@ -1,7 +1,9 @@
 'use client'
 
+import Counter from "@/components/counter.component";
 import SectionEndDesign from "@/components/design.component";
 import Faq from "@/components/faq.component";
+import Loader from "@/components/loader.component";
 import { awards_won, satisfied_customers } from "@/data/about";
 import { mobile, official_mail, telephone } from "@/data/contact";
 import practiceCleaningFAQs from "@/data/practice_cleaning_faqs.list";
@@ -10,14 +12,51 @@ import practiceCleaningServices from "@/data/practice_cleaning_services.list";
 import { practiceTypeList, praticeCleaninServicesList } from "@/data/practice_contact_form_datalist";
 import { Badge, Box, Button, Center, Flex, Grid, GridItem, Heading, HStack, Input, List, Text, Textarea, VStack } from "@chakra-ui/react";
 import Link from "next/link";
+import { useRef, useState } from "react";
 import { BsSendFill } from "react-icons/bs";
 import { FaArrowRight, FaAward, FaCertificate, FaCheck, FaClock, FaHeartbeat, FaMobileAlt, FaPhoneAlt, FaQuestionCircle, FaShieldAlt, FaStethoscope } from "react-icons/fa";
 import { FaBrain, FaCalendarCheck, FaChartLine, FaCircleCheck, FaEnvelope, FaHospital, FaKitMedical, FaLink, FaLocationDot, FaMessage, FaShieldVirus, FaTooth, FaUserCheck, FaUserDoctor } from "react-icons/fa6";
 import { IoShieldCheckmark, IoWarning } from "react-icons/io5";
 
 const MedicalPracticeServicePage = () => {
+
+    const formRef = useRef<HTMLFormElement | null>(null);
+    const [loading, setLoading] = useState(false);
+
+    const handleContact = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        if(!formRef.current){ return }
+
+        const formData = new FormData(formRef.current)
+
+        if(!formRef.current.praticetype.value.length){ return alert("Select practice type") }
+        
+        try {
+            setLoading(true);
+            const res = await fetch("https://formspree.io/f/mlgbyakn", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            })
+            if(!res.ok){ throw new Error("error"); }
+            setLoading(false);
+            alert("Nachricht gesendet.");
+            formRef.current?.reset();
+
+        } catch(err) {
+            console.log(err);
+            setLoading(false);
+            alert("Ihre Anfrage konnte nicht verarbeitet werden. Bitte versuchen Sie es erneut.")
+        }
+    }
+
     return (
         <>
+
+            { loading && <Loader /> }
 
             {/* hero section */}
 
@@ -27,10 +66,10 @@ const MedicalPracticeServicePage = () => {
 
                 <VStack w="full" gap={6} color={"bg.success"}>
                     
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"full"} px={4} fontWeight={"bold"} py={2} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaUserDoctor /></Text>  
+                    <Badge gap={2} mb={3} shadow={"lg"} color={"bg"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"full"} px={4} fontWeight={"bold"} py={2} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaUserDoctor /></Text>  
 MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"5xl"} lineHeight={1.4} fontWeight={"bolder"}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "3xl", md: "5xl" }} lineHeight={1.4} fontWeight={"bolder"}>
                         <Text as={"span"} color={"green.400"}> Praxisreinigung </Text> <br />
                             München
                     </Heading>
@@ -57,7 +96,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                     <HStack gap={6} justify={"center"} gapY={6} mt={12} flexWrap={"wrap"}>
     
-                        <Button asChild colorPalette={"blue"} py={6} px={5} rounded={"lg"} fontSize={"16px"}>
+                        <Button asChild colorPalette={"blue"} textWrap={"wrap"} py={6} px={5} rounded={"lg"} fontSize={"16px"}>
                             <Link href={"#contact"}>
                                 <Text scale={0.75}><FaStethoscope /></Text>
                                 Kostenlose Hygienebesichtigung
@@ -75,13 +114,13 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                     <HStack gap={8} justify={"center"} gapY={12} mt={12} flexWrap={"wrap"}>
                         <VStack gap={1}>
-                            <Heading color={"cyan.300"} as={"h6"} fontSize={"4xl"} mb={2}>{awards_won}+</Heading>
+                            <Heading color={"cyan.300"} as={"h6"} fontSize={"4xl"} mb={2}><Counter end={awards_won} suffix="+" /></Heading>
                             <Text fontWeight={"bold"}>Auszeichnungen</Text>
                             <Text fontSize={"sm"}>ür Qualität & Service</Text>
                         </VStack>
 
                         <VStack gap={1}>
-                            <Heading color={"cyan.300"} as={"h6"} fontSize={"4xl"} mb={2}>{satisfied_customers}+</Heading>
+                            <Heading color={"cyan.300"} as={"h6"} fontSize={"4xl"} mb={2}><Counter end={satisfied_customers} suffix="+" /></Heading>
                             <Text fontWeight={"bold"}>Zufriedene Praxen</Text>
                             <Text fontSize={"sm"}>erfolgreich betreut</Text>
                         </VStack>
@@ -106,7 +145,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
             {/* range of services */}
             <Box as="section">
                 <VStack w="full">
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaKitMedical /></Text>  SPEZIALISIERTE PRAXISREINIGUNG</Badge>
+                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaKitMedical /></Text>  SPEZIALISIERTE PRAXISREINIGUNG</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         Unser  
@@ -166,7 +205,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                         
                     </Grid>
     
-                    <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_mix_three" shadow={"2xl"} py={12} px={6}>
+                    <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_mix_three" shadow={"2xl"} py={{ base: 5, md: 12 }} px={{ base: 5, md: 6 }}>
     
                         <Heading as={"h6"} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>
 
@@ -182,7 +221,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                             w={"full"}
                             gapX={5}
                             mt={6}
-                            px={4}
+                            px={{ base: 1, md: 4 }}
                             templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", xl: "repeat(3, 1fr)" }}
                         >
 
@@ -228,7 +267,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                 <VStack w="full">
                     
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaLocationDot /></Text>    MÜNCHEN & UMGEBUNG</Badge>
+                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaLocationDot /></Text>    MÜNCHEN & UMGEBUNG</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         <Text as={"span"} color={"blue.600"}> Praxisreinigung München </Text>
@@ -238,7 +277,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                         Wir betreuen medizinische Einrichtungen, Arztpraxen und Zahnarztpraxen in ganz München und den angrenzenden Gemeinden - mit verlässlichen Hygiene-Standards.
                     </Text>
 
-                    <Grid templateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} w={"full"} gap={5} mb={12}>
+                    <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} w={"full"} gap={5} mb={12}>
                     
                         <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} p={3} py={6} textAlign={"center"}>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
@@ -354,7 +393,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                                     <GridItem>
                                         <VStack w={"full"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"md"} py={5} px={4} className="gradient_light_background_three">
-                                            <Text fontSize={"3xl"} fontWeight={"bold"} color={"blue.500"}>{satisfied_customers}+</Text>
+                                            <Text fontSize={"3xl"} fontWeight={"bold"} color={"blue.500"}><Counter end={satisfied_customers} suffix="+"/></Text>
                                             <Text fontWeight={"bold"}>Zufriedene Praxen</Text>
                                             <Text mt={-2} fontSize={"sm"} opacity={0.85}>erfolgreich betreut</Text>
                                         </VStack>
@@ -465,7 +504,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
             
                 <VStack w="full">
                     
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaQuestionCircle /></Text>   HÄUFIGE FRAGEN ZUR PRAXISREINIGUNG</Badge>
+                    <Badge gap={2} mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaQuestionCircle /></Text>   HÄUFIGE FRAGEN ZUR PRAXISREINIGUNG</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         FAQ zur  
@@ -518,7 +557,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
             {/* different services */}
             <Box as="section" bg={"blue.100/20"}>
                 <VStack w="full">
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaLink /></Text>  WEITERE REINIGUNGSDIENSTLEISTUNGEN</Badge>
+                    <Badge gap={2} mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaLink /></Text>  WEITERE REINIGUNGSDIENSTLEISTUNGEN</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         Unser komplettes 
@@ -608,9 +647,9 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
             
                 <VStack w="full">
                     
-                    <Badge mb={5} shadow={"lg"} color={"bg"} bg={"bg/5"} border={"1px solid"} borderColor={"bg"} rounded={"full"} px={4} py={2} size={"lg"}><Text as={"span"} color={"green.400"} scale={0.9} mr={0.5}><FaUserDoctor /></Text>   KONTAKT PRAXISREINIGUNG</Badge>
+                    <Badge mb={5} shadow={"lg"} color={"bg"} bg={"bg/5"} border={"1px solid"} borderColor={"bg"} rounded={"full"} px={4} py={2} size={"lg"} textWrap={"wrap"}><Text as={"span"} color={"green.400"} scale={0.9} mr={0.5}><FaUserDoctor /></Text>   KONTAKT PRAXISREINIGUNG</Badge>
                     
-                    <Heading as={"h2"} textAlign={"center"} fontSize={"4xl"} lineHeight={1.4}>
+                    <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "4xl" }} lineHeight={1.4}>
                          Jetzt  
                         <Text as={"span"} color={"green.400"}> kostenlose </Text> Hygienebesichtigung anfragen
                     </Heading>
@@ -620,7 +659,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                     <Flex gap={12} gapY={24} align={"start"} flexDir={{ base: "column", xl: "row" }} w={"full"}>
     
-                    <Box w={{ base: "full", xl: "60%" }} p={{ base: 4, md: 8 }} bg={"bg/5"} border={"1px solid"} borderColor={"bg/20"} color={"bg"} pos={"relative"} shadow={"2xl"} rounded={"xl"}>
+                    <Box w={{ base: "full", xl: "60%" }} p={{ base: 0, md: 8 }} md={{ bg: "bg/5", border: "1px solid", shadow: "2xl" }} borderColor={"bg/20"} color={"bg"} pos={"relative"} rounded={"xl"}>
 
                         <Heading w={"full"} as={"h3"} display={"flex"} alignItems={"center"} fontWeight={"bolder"} gap={2.5} fontSize={"xl"} mb={9}>
                             <Text color={"green.400"}><FaEnvelope /></Text>
@@ -628,7 +667,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                         </Heading>
                         
                         {/* contact form */}
-                        <form onSubmit={(e) => e.preventDefault()}>
+                        <form ref={formRef} onSubmit={handleContact}>
 
                             <Grid
                                 gap={6}
@@ -638,14 +677,14 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                                 <GridItem asChild>
                                     <VStack gap={2} align={"start"}>
                                         <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Praxisname *</Text>
-                                        <Input type="text" name="practicename" required placeholder="Dr. Mustermann Praxis" className="form_input" />
+                                        <Input aria-required type="text" name="practicename" required placeholder="Dr. Mustermann Praxis" className="form_input" />
                                     </VStack>
                                 </GridItem>
 
                                 <GridItem asChild>
                                     <VStack gap={2} align={"start"}>
                                         <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Praxistyp *</Text>
-                                        <select name="praticetype" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
+                                        <select required name="praticetype" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
                                             {
                                                 practiceTypeList.map((opt, i) => {
                                                     return <option key={i} value={opt.value}>{opt.label}</option>
@@ -667,13 +706,13 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                                 <GridItem asChild>
                                     <VStack gap={2} align={"start"}>
                                         <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Ansprechpartner *</Text>
-                                        <Input type="text" name="name" required placeholder="Dr. Max Mustermann" className="form_input" />
+                                        <Input aria-required type="text" name="name" required placeholder="Dr. Max Mustermann" className="form_input" />
                                     </VStack>
                                 </GridItem>
 
                                 <GridItem asChild>
                                     <VStack gap={2} align={"start"}>
-                                        <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>E-Mail Adresse *</Text>
+                                        <Text aria-required fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>E-Mail Adresse *</Text>
                                         <Input type="email" name="email" required placeholder="praxis@beispiel.de" className="form_input" />
                                     </VStack>
                                 </GridItem>
@@ -688,12 +727,12 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                                 <VStack gap={2} align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Telefon *</Text>
-                                    <Input type="tel" name="phone" required placeholder="089 12345678" className="form_input" />
+                                    <Input aria-required type="tel" name="phone" required placeholder="089 12345678" className="form_input" />
                                 </VStack>
 
                                 <VStack gap={2} align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Praxisgröße (m²) *</Text>
-                                    <Input type="number" name="practicesize" required placeholder="150" className="form_input" />
+                                    <Input aria-required type="number" name="practicesize" required placeholder="150" className="form_input" />
                                 </VStack>
 
                             </Grid>
@@ -704,8 +743,9 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                                     resize={"none"}
                                     h={"120px"}
                                     placeholder="Musterstraße 123, 80331 München"
-                                    name="message"
+                                    name="address"
                                     className="form_input"
+                                    required 
                                 >
                                     
                                 </Textarea>
@@ -742,6 +782,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                                     placeholder="Besondere Anforderungen, gewünschte Einsatzzeiten, Anzahl Behandlungsräume..."
                                     name="message"
                                     className="form_input"
+                                    required
                                 >
                                     
                                 </Textarea>

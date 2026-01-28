@@ -1,5 +1,6 @@
 'use client'
 
+import CommonServiceContactSection from "@/components/common-services-contact-section";
 import SectionEndDesign from "@/components/design.component";
 import { company_location, company_name, properties_cleaned, satisfied_customers } from "@/data/about";
 import carCleaningServices, { stepsList, whyCarCleaning } from "@/data/car_cleaning_services.list";
@@ -16,7 +17,7 @@ const CarCleaningServicePage = () => {
     return (
         <>
         {/* hero section */}
-        <Box as={"section"} bg={"blue.100/30"}>
+        <Box as={"section"} overflowX={"hidden"} bg={"blue.100/30"}>
 
             <Flex gap={12} align={"center"} flexDir={{ base: "column-reverse", lg: "row" }}>
 
@@ -24,7 +25,7 @@ const CarCleaningServicePage = () => {
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
                         <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaCar /> Reinigungsfirma München</Badge>
-                        <Heading as={"h1"} color={"blue.600"} my={3} fontSize={"4xl"} lineHeight={1.25} fontWeight={"bolder"}
+                        <Heading as={"h1"} color={"blue.600"} my={3} fontSize={{ base: "2xl", md: "4xl" }} lineHeight={1.25} fontWeight={"bolder"}
                         >Fahrzeugaufbereitung München</Heading>
 
                         <Text fontWeight={"bolder"}>Ihr Auto wie neu</Text>
@@ -35,8 +36,8 @@ const CarCleaningServicePage = () => {
 
                         <Grid
                             gapX={6}
-                            gapY={1.5}
-                            templateColumns={"repeat(2, 1fr)"}
+                            gapY={3}
+                            templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
                             fontSize={"sm"}
                         >
                             <GridItem asChild>
@@ -95,7 +96,7 @@ const CarCleaningServicePage = () => {
 
                         </HStack>
 
-                        <HStack gap={3} mt={1} fontSize={"13px"}>
+                        <HStack gap={3} flexWrap={"wrap"} mt={{ base: 3, md: 1 }} fontSize={"13px"}>
 
                             <HStack gap={1}>
                                 <Text color={"blue.600"}><FaUserGear /></Text>
@@ -138,7 +139,7 @@ const CarCleaningServicePage = () => {
             <VStack w="full">
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>   UNSERE LEISTUNGEN</Badge>
                 
-                <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                     Fahrzeugaufbereitung München – 
                     <Text as={"span"} color={"blue.600"}> Unsere Services</Text> 
                 </Heading>
@@ -201,11 +202,11 @@ const CarCleaningServicePage = () => {
         </Box>
 
         {/* details section */}
-        <Box as="section" bg={"blue.100/30"}>
+        <Box as="section" overflowX={"hidden"} bg={"blue.100/30"}>
             <VStack w="full">
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaCertificate /></Text>   Qualitätsnachweis Inklusive</Badge>
                 
-                <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                     Autoaufbereitung – Innen & Außen mit Qualitätsnachweis 
                 </Heading>
                 <Text maxW={"500px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -219,15 +220,15 @@ const CarCleaningServicePage = () => {
 
                         <VStack bg={"bg"} w={"full"} rounded={"md"} shadow={"sm"} p={6} align={"start"} gap={6}>
 
-                            <HStack gap={4}>
-                                <FaListCheck />
+                            <HStack align={{ base: "start", md: "center" }} gap={4}>
+                                <Text mt={{ base: 2, md: 0 }}><FaListCheck /></Text>
                                 <Heading as={"h5"} fontSize={"lg"}>Unsere Leistungen im Detail</Heading>
                             </HStack>
 
                             <Separator w="full" opacity={0.75} />
 
-                            <HStack gap={3}>
-                                <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
+                            <HStack align={{ base: "start", md: "center" }} gap={3}>
+                                <Center  mt={{ base: 1, md: 0 }} bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                     <FaCar />
                                 </Center>
                                 <Text>
@@ -236,8 +237,8 @@ const CarCleaningServicePage = () => {
                                 </Text>
                             </HStack>
 
-                            <HStack gap={3}>
-                                <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
+                            <HStack align={{ base: "start", md: "center" }} gap={3}>
+                                <Center  mt={{ base: 1, md: 0 }} bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                     <FaCouch />
                                 </Center>
                                 <Text>
@@ -246,8 +247,8 @@ const CarCleaningServicePage = () => {
                                 </Text>
                             </HStack>
 
-                            <HStack gap={3}>
-                                <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
+                            <HStack align={{ base: "start", md: "center" }} gap={3}>
+                                <Center  mt={{ base: 1, md: 0 }} bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                     <FaWind />
                                 </Center>
                                 <Text>
@@ -256,8 +257,8 @@ const CarCleaningServicePage = () => {
                                 </Text>
                             </HStack>
 
-                            <HStack gap={3}>
-                                <Center bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
+                            <HStack align={{ base: "start", md: "center" }} gap={3}>
+                                <Center  mt={{ base: 1, md: 0 }} bg={"blue.700"} color={"bg"} rounded={"sm"} minW={10} aspectRatio={"square"} >
                                     <FaClipboardCheck />
                                 </Center>
                                 <Text>
@@ -309,7 +310,7 @@ const CarCleaningServicePage = () => {
             <VStack w="full">
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><IoShieldCheckmark /></Text>   QUALITÄTSVERSPRECHEN</Badge>
                 
-                <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
+                <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                     Warum {company_name} Gebäudedienste für 
                     <Text as={"span"} color={"blue.600"}> Fahrzeugaufbereitung München?</Text> 
                 </Heading>
@@ -390,7 +391,7 @@ const CarCleaningServicePage = () => {
             </VStack>
         </Box>
 
-        <Box as={"section"}>
+        <Box as={"section"} overflowX={"hidden"}>
 
             <VStack w="full">
                 <Badge mb={3} shadow={"lg"} color={"bg"} className="gradient_mix_two" rounded={"full"} px={4} py={2} size={"lg"}><Text as={"span"} color={"yellow.400"} scale={1} mr={0.5}><FaCrown /></Text>   PREMIUM PARTNER</Badge>
@@ -554,7 +555,7 @@ Labor-geprüft</Text>
                      JETZT KONTAKT AUFNEHMEN
                 </Badge>
 
-                <Heading textAlign={"center"} as={"h4"} my={2} fontSize={"3xl"} fontWeight={"bolder"}>
+                <Heading textAlign={"center"} as={"h4"} my={2} lineHeight={1.2} fontSize={"3xl"} fontWeight={"bolder"}>
                     Lassen Sie Ihr Fahrzeug wieder in  
                     <Text as={"span"} color={"cyan.400"}> neuem Glanz erstrahlen</Text>
                 </Heading>
@@ -684,99 +685,7 @@ Labor-geprüft</Text>
         </Box>
 
         {/* contact sectin */}
-        <Box as={"section"}>
-            <VStack>
-
-                <Badge bg={"blue.100"} color={"blue.600"} fontWeight={"semibold"} gap={2} p={2} px={3} rounded={"full"}>
-                    <FaEnvelope/>
-                    KONTAKTFORMULAR
-                </Badge>
-                
-                <Heading as={"h2"} fontSize={"4xl"} fontWeight={"bolder"} my={4}>Jetzt <Text as={"span"} color={"blue.600"}>unverbindlich anfragen</Text></Heading>
-
-                <Text textAlign={"center"} maxW={"700px"}>
-                    Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen zurück.
-                </Text>
-
-                {/* contact form */}
-
-                <Box asChild w={"full"} p={5} mt={6} rounded={"md"} bg={"bg"}>
-                    <form onSubmit={(e) => e.preventDefault()}>
-
-                        <Grid
-                            gap={3}
-                            templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}
-                        >
-                            
-                            <GridItem asChild>
-                                <Input type="text" name="name" required placeholder="Ihr Name" />
-                            </GridItem>
-
-                            <GridItem asChild>
-                                <Input type="email" name="email" required placeholder="Ihre@email.de" />
-                            </GridItem>
-
-                        </Grid>
-
-                        <Grid
-                            mt={3}
-                            gap={3}
-                            templateColumns={{ base: "1fr", lg: "repeat(2, 1fr)" }}
-                        >
-                            
-                            <GridItem asChild>
-                                <Input type="tel" name="phone" required placeholder="Ihre Telefonnummer" />
-                            </GridItem>
-
-                            <GridItem asChild>
-                                <select name="service" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10!">
-                                    {
-                                        officeCleaningContactServiceOptions.map((service, i) => {
-                                            return <option key={i} value={service.value}>{service.label}</option>
-                                        })
-                                    }
-                                </select>
-                            </GridItem>
-
-                        </Grid>
-
-                        <Textarea
-                            my={3}
-                            resize={"none"}
-                            h={"200px"}
-                            placeholder="Beschreiben Sie Ihr Anliegen..."
-                            name="message"
-                        >
-                            
-                        </Textarea>
-
-                        <HStack my={2} mb={6}>
-                            <input type="checkbox" name="tnc" id="tnc" />
-                            <Text asChild fontSize={"sm"} color={"bg.inverted/65"}>
-                                <label htmlFor="tnc">Ich habe die 
-                                    <Link className="text-blue-600! underline! mx-1!" href={"/rechtliches#data-privacy"}>Datenschutzerklärung</Link>
-                                        zur Kenntnis genommen und stimme der Verarbeitung meiner Daten zu. *
-                                </label>
-                            </Text>
-                        </HStack>
-                        
-                        <Button type="submit" colorPalette={"blue"} h={"45px !important"} w="full" rounded={"lg"}>
-                            <Text scale={0.75}><BsSendFill /></Text>
-                            Nachricht senden
-                        </Button>
-
-                        <HStack gap={1} fontSize={"sm"} my={3} opacity={0.65} justify={"center"} mt={5}>
-                            <FaLock />
-                            <Text>
-                                Ihre Daten werden verschlüsselt übertragen und vertraulich behandelt.
-                            </Text>
-                        </HStack>
-
-                    </form>
-                </Box>
-
-            </VStack>
-        </Box>
+        <CommonServiceContactSection />
         </>
     )
 }

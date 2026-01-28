@@ -9,11 +9,13 @@ const AutoScrollToTop = () => {
 
     useEffect(() => {
 
+        if (window.location.hash) return;
+
         window.scrollTo({ top: 0, behavior: "instant" })
 
     }, [path])
 
-    return null;
+    return <span></span>;
 }
 
 export default AutoScrollToTop;
