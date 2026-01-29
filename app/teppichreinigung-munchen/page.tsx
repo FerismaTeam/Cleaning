@@ -303,7 +303,7 @@ const CarpetCleaningPage = () => {
                     {
                         carpetCleaningServices.map((service, i) => {
                             return <GridItem asChild key={i}>
-                                <Link href={`/${service.name.replaceAll("ü", "u").replaceAll(" ", "-").toLowerCase()}`}>
+                                <Box>
 
                                     <VStack _hover={{ bg: "blue.800", color: "bg" }} className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
 
@@ -334,7 +334,7 @@ const CarpetCleaningPage = () => {
 
                                     </VStack>
                                 
-                                </Link>
+                                </Box>
                             </GridItem>
                         })
                     }
@@ -463,7 +463,7 @@ const CarpetCleaningPage = () => {
                         <VStack gap={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaLungs /></Center>
                             <Heading as={"h5"} textAlign={"center"}>Ideal für Allergiker</Heading>
-                            <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Ideal für Allergiker</Text>
+                            <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Entfernt Milben, Staub und Allergene gründlich – für gesundes Raumklima und weniger Allergieauslöser.</Text>
                         </VStack>
                     </GridItem>
 

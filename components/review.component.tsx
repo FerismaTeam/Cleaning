@@ -1,14 +1,15 @@
-import { reviewType } from "@/data/home";
-import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
+import { reviewType, storeLink } from "@/data/home";
+import { Box, Button, Center, HStack, Text, VStack } from "@chakra-ui/react";
 import Stars from "./stars.component";
 import { useState } from "react";
 
 const ReviewCard: React.FC<{review: reviewType}> = ({ review }) => {
 
-    const [expanded, setExpanded] = useState(false);
+    // const [expanded, setExpanded] = useState(false);
 
     return (
-        <Box p={{ base: 4, md: 6 }} rounded={"lg"} border={"1px solid"} borderColor={"bg.inverted/5"} shadow={"xs"}>
+        <Box p={{ base: 4, md: 6 }} rounded={"lg"} border={"1px solid"} borderColor={"bg.inverted/5"} shadow={"xs"}
+        >
             <HStack align={"start"} gap={4}>
                 <Center color={"white"} minW={12} aspectRatio={"square"} rounded={"full"} bg={"blue.600"}>
                     <Text fontSize={"sm"} letterSpacing={"1px"} textTransform={"uppercase"}>{review.by.split(" ")[0][0]+review.by.split(" ")[1][0]}</Text>
@@ -20,11 +21,11 @@ const ReviewCard: React.FC<{review: reviewType}> = ({ review }) => {
             </HStack>
             <Text mt={4} w={"full"} fontSize={"sm"}>
                 {
-                    expanded ? review.review : review.review.substring(0, 150)
+                    review.review.substring(0, 150)
                 }
                 {
-                    (review.review.length > 150 && !expanded) ?
-                    <Text as={"span"} color={"blue.400"} fontWeight={"medium"} textDecor={"underline"} cursor={"pointer"} onClick={() => setExpanded(true)}> ... More</Text>
+                    (review.review.length > 150) ?
+                    <Button unstyled color={"blue.400"} fontWeight={"medium"} textDecor={"underline"} cursor={"pointer"} onClick={() => { window.open(storeLink) }}> ... More</Button>
                     : ""
                 }
             </Text>

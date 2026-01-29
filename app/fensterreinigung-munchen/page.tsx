@@ -303,7 +303,7 @@ const WindowCleainingPage = () => {
                     {
                         windowCleaningServices.map((service, i) => {
                             return <GridItem asChild key={i}>
-                                <Link href={`/${service.name.replaceAll("ü", "u").replaceAll(" ", "-").toLowerCase()}`}>
+                                <Box>
 
                                     <VStack _hover={{ bg: "blue.800", color: "bg" }} className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
 
@@ -334,7 +334,7 @@ const WindowCleainingPage = () => {
 
                                     </VStack>
                                 
-                                </Link>
+                                </Box>
                             </GridItem>
                         })
                     }

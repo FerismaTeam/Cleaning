@@ -6,7 +6,7 @@ html {
 }
 
 section {
-    @apply px-[3vw] sm:px-[5vw] md:px-[10vw] w-full relative py-12 md:py-16;
+    @apply px-[3vw] sm:px-[5vw] md:px-[5vw] w-full relative py-12 md:py-16;
 }
 
 .navlink{
@@ -69,7 +69,7 @@ section {
 }
 
 section > div {
-    @apply max-w-[1200px] mx-auto;
+    @apply max-w-[1300px] mx-auto;
 }
 
 nav > div, footer > div{

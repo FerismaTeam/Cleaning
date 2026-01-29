@@ -36,7 +36,9 @@ const contactServiceOptions: contactSelectionOptionType[] = [
     { value: "gebäudereinigung", label: "Gebäudereinigung" }
 ];
 
-export { reviews, contactServiceOptions }
+const storeLink: string = 'https://maps.app.goo.gl/GeNHXTE74aD1oxKS9?g_st=iw';
+
+export { reviews, contactServiceOptions, storeLink }
 
 export interface reviewType { review: string, by: string, rating: number }
 export interface contactSelectionOptionType { value: string, label: string }
