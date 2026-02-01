@@ -2,7 +2,7 @@ name: Cleaning Services Website
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
 
 permissions:
   contents: read
