@@ -9,6 +9,7 @@ import officeCleaningServices from "@/data/office_cleaning_services.list";
 import { Badge, Box, Button, Center, Flex, Grid, GridItem, Heading, HStack, Image, Input, List, Separator, Text, Textarea, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { BsSendFill } from "react-icons/bs";
+import { PiOfficeChariFill } from "react-icons/pi";
 import { FaCalendarCheck, FaCheck, FaCheckCircle, FaGift, FaInfoCircle, FaMobileAlt, FaPhoneAlt, FaShieldAlt } from "react-icons/fa";
 import { FaAward, FaBuilding, FaCalendar, FaChartLine, FaClipboardCheck, FaClock, FaDesktop, FaEnvelope, FaEuroSign, FaLeaf, FaListCheck, FaLocationDot, FaLock, FaShieldVirus, FaSliders, FaStar, FaTrash, FaUserCheck, FaUserGear, FaUserGroup, FaUserTie } from "react-icons/fa6";
 

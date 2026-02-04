@@ -17,6 +17,7 @@ import { FaArrowRight, FaCheckCircle, FaClock, FaCrown, FaEnvelope, FaGift, FaHa
 import { FaAward, FaBuilding, FaCar, FaCertificate, FaCheck, FaClipboardCheck, FaDiamond, FaEuroSign, FaLocationPin, FaUserGroup, FaWhatsapp } from "react-icons/fa6";
 import { BsBuildingFill } from "react-icons/bs";
 import { ImBubbles } from "react-icons/im";
+import { PiOfficeChariFill } from "react-icons/pi";
 import { MdRestaurant, MdSchool } from "react-icons/md";
 
 const Page = () => {
@@ -212,7 +213,7 @@ const Page = () => {
                             <HStack gap={3} mb={2}>
                             
                                 <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"green.600"}>
-                                    <FaBuilding />
+                                    <PiOfficeChariFill />
                                 </Center>
 
                                 <Box>
