@@ -64,8 +64,8 @@ const Navbar = () => {
 
                             {
                                 services.map((item, i) => {
-                                    return <Link key={i} href={`/${item.name.replaceAll("ü", "u").replace(" ", "-").toLowerCase()}`} className={"flex max-lg:px-[5vw]! py-1.5!  border-black/5! text-[14px]! px-4! gap-4 items-center w-full hover:bg-blue-100! hover:text-blue-600! mb-0! " + (i == services.length - 1 ? " max-lg:border-b! " : " border-b! ")}>
-                                            <item.icon />
+                                    return <Link key={i} href={`/${item.link.toLowerCase()}`} className={"flex max-lg:px-[5vw]! py-1.5!  border-black/5! text-[14px]! px-4! gap-4 items-center w-full hover:bg-blue-100! hover:text-blue-600! mb-0! items-start! " + (i == services.length - 1 ? " max-lg:border-b! " : " border-b! ")}>
+                                            <Text mt={1.5}><item.icon /></Text>
                                             <Text w={"full"}>{item.name}</Text>
                                     </Link>
                                 })
