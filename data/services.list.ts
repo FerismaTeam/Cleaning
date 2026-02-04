@@ -8,7 +8,7 @@ import { MdRestaurant } from "react-icons/md";
 
 export interface ServiceType {
     icon: IconType,
-    link: string,
+    link?: string,
     name: string,
     des: string,
     features: string[]
