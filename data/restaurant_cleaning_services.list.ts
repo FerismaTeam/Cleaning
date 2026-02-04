@@ -6,7 +6,7 @@ const restaurantCleaningServices: ServiceType[] = [
     {
         icon: FaFireBurner,
         name: "Küchen- & Gerätereinigung",
-        des: "Professionelle Küchenreinigung in München inklusive aller Geräte, Arbeitsflächen und Küchenmaschinen nach HACCP.",
+        des: "Professionelle Küchenreinigung in Nürnberg, Fürth & Umgebung inklusive aller Geräte, Arbeitsflächen und Küchenmaschinen nach HACCP.",
         features: [
             "Herde & Öfen",
             "Arbeitsflächen",
@@ -28,7 +28,7 @@ const restaurantCleaningServices: ServiceType[] = [
     {
         icon: FaChampagneGlasses,
         name: "Gastraum & Thekenbereich",
-        des: "Professionelle Restaurantreinigung in München für Gasträume, Theken, Bars und Empfangsbereiche – für einen perfekten ersten Eindruck.",
+        des: "Professionelle Restaurantreinigung in Nürnberg, Fürth & Umgebung für Gasträume, Theken, Bars und Empfangsbereiche – für einen perfekten ersten Eindruck.",
         features: [
             "Tische & Stühle",
             "Theken & Bars",

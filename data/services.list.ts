@@ -16,8 +16,8 @@ export interface ServiceType {
 const services: ServiceType[] = [
     {
         icon: FaBuilding,
-        name: "Büroreinigung München",
-        des: "Professionelle Büroreinigung in München – täglich, wöchentlich oder nach Bedarf. Saubere Arbeitsplätze für mehr Produktivität.",
+        name: "Büroreinigung Nürnberg, Fürth & Umgebung",
+        des: "Professionelle Büroreinigung in Nürnberg, Fürth & Umgebung – täglich, wöchentlich oder nach Bedarf. Saubere Arbeitsplätze für mehr Produktivität.",
         features: [
             "Arbeitsplatz-Reinigung",
             "Böden & Teppiche",
@@ -27,7 +27,7 @@ const services: ServiceType[] = [
     },
     {
         icon: FaCarAlt,
-        name: "Fahrzeugaufbereitung München",
+        name: "Fahrzeugaufbereitung Nürnberg, Fürth & Umgebung",
         des: "Professionelle Fahrzeugaufbereitung für PKW und Firmenfahrzeuge. Von der Außenreinigung bis zur kompletten Innenraumpflege.",
         features: [
             "Außenreinigung & Politur",
@@ -38,8 +38,8 @@ const services: ServiceType[] = [
     },
     {
         icon: IoIosBrush,
-        name: "Unterhaltsreinigung München",
-        des: "Regelmäßige Unterhaltsreinigung München für Bürogebäude und Gewerbeobjekte. Kontinuierliche Sauberkeit für Ihr Unternehmen.",
+        name: "Unterhaltsreinigung Nürnberg, Fürth & Umgebung",
+        des: "Regelmäßige Unterhaltsreinigung Nürnberg, Fürth & Umgebung für Bürogebäude und Gewerbeobjekte. Kontinuierliche Sauberkeit für Ihr Unternehmen.",
         features: [
             "Tägliche Reinigung",
             "Wöchentliche Pflege",
@@ -49,8 +49,8 @@ const services: ServiceType[] = [
     },
     {
         icon: FaWindowMaximize,
-        name: "Fensterreinigung München",
-        des: "Streifenfreie Fensterreinigung München für Glasfronten, Bürofenster und Fassaden. Perfekte Durchsicht garantiert.",
+        name: "Fensterreinigung Nürnberg, Fürth & Umgebung",
+        des: "Streifenfreie Fensterreinigung Nürnberg, Fürth & Umgebung für Glasfronten, Bürofenster und Fassaden. Perfekte Durchsicht garantiert.",
         features: [
             "Innen & Außenreinigung",
             "Glasfronten",
@@ -60,7 +60,7 @@ const services: ServiceType[] = [
     },
     {
         icon: LuGrid2X2,
-        name: "Teppichreinigung München",
+        name: "Teppichreinigung Nürnberg, Fürth & Umgebung",
         des: "Professionelle Teppichreinigung mit modernen Verfahren. Tiefenreine Sauberkeit und langanhaltende Frische für Ihre Räumlichkeiten.",
         features: [
             "Nassreinigung",
@@ -71,8 +71,8 @@ const services: ServiceType[] = [
     },
     {
         icon: FaUserDoctor,
-        name: "Praxisreinigung München",
-        des: "Professionelle Reinigung für Arzt- und Zahnarztpraxen in München. Hygienisch, diskret und zuverlässig – für einwandfreie Behandlungsräume.",
+        name: "Praxisreinigung Nürnberg, Fürth & Umgebung",
+        des: "Professionelle Reinigung für Arzt- und Zahnarztpraxen in Nürnberg, Fürth & Umgebung. Hygienisch, diskret und zuverlässig – für einwandfreie Behandlungsräume.",
         features: [
             "Desinfektion aller Kontaktflächen",
             "Wartezimmer & Sanitärbereiche",
@@ -82,7 +82,7 @@ const services: ServiceType[] = [
     },
     {
         icon: FaHospital,
-        name: "Krankenhausreinigung München",
+        name: "Krankenhausreinigung Nürnberg, Fürth & Umgebung",
         des: "Spezielle Krankenhaus- und Praxisreinigung mit Desinfektion. Höchste Hygienestandards für medizinische Einrichtungen.",
         features: [
             "Desinfektion",
@@ -93,7 +93,7 @@ const services: ServiceType[] = [
     },
     {
         icon: MdRestaurant,
-        name: "Gastronomie-Reinigung München",
+        name: "Gastronomie-Reinigung Nürnberg, Fürth & Umgebung",
         des: "Hygienische Gastronomie-Reinigung nach HACCP-Standards. Küchen, Restaurants und Kantinen professionell gereinigt.",
         features: [
             "Küchenhygiene",
@@ -104,7 +104,7 @@ const services: ServiceType[] = [
     },
     {
         icon: FaScrewdriverWrench,
-        name: "Sonderreinigung München",
+        name: "Sonderreinigung Nürnberg, Fürth & Umgebung",
         des: "Gründliche Spezial- und Grundreinigungen für jede Situation. Ideal nach Bauarbeiten, Sanierungen oder Umzügen.",
         features: [
             "Bauendreinigung",

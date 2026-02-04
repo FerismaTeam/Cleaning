@@ -67,11 +67,11 @@ const MedicalPracticeServicePage = () => {
                 <VStack w="full" gap={6} color={"bg.success"}>
                     
                     <Badge gap={2} mb={3} shadow={"lg"} color={"bg"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"full"} px={4} fontWeight={"bold"} py={2} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaUserDoctor /></Text>  
-MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
+MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "3xl", md: "5xl" }} lineHeight={1.4} fontWeight={"bolder"}>
                         <Text as={"span"} color={"green.400"}> Praxisreinigung </Text> <br />
-                            München
+                             Nürnberg, Fürth & Umgebung
                     </Heading>
                     <Text maxW={"500px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"lg"} fontWeight={"semibold"}>
                         Zertifizierte Hygiene-Standards für Ihre Arztpraxis, Zahnarztpraxis und medizinische Einrichtung
@@ -267,14 +267,14 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
 
                 <VStack w="full">
                     
-                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaLocationDot /></Text>    MÜNCHEN & UMGEBUNG</Badge>
+                    <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"}><Text as={"span"} scale={0.9} mr={0.5}><FaLocationDot /></Text>     Nürnberg, Fürth & Umgebung & UMGEBUNG</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
-                        <Text as={"span"} color={"blue.600"}> Praxisreinigung München </Text>
+                        <Text as={"span"} color={"blue.600"}> Praxisreinigung  Nürnberg, Fürth & Umgebung </Text>
                         in allen Stadtbezirken 
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                        Wir betreuen medizinische Einrichtungen, Arztpraxen und Zahnarztpraxen in ganz München und den angrenzenden Gemeinden - mit verlässlichen Hygiene-Standards.
+                        Wir betreuen medizinische Einrichtungen, Arztpraxen und Zahnarztpraxen in ganz  Nürnberg, Fürth & Umgebung und den angrenzenden Gemeinden - mit verlässlichen Hygiene-Standards.
                     </Text>
 
                     <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} w={"full"} gap={5} mb={12}>
@@ -283,7 +283,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaHospital />
                             </Center>
-                            <Text fontWeight={"bolder"}>München Zentrum</Text>
+                            <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Zentrum</Text>
                             <Text fontSize={"sm"}>Maxvorstadt, Altstadt-Lehel</Text>
                         </VStack>
                     
@@ -291,7 +291,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaHospital />
                             </Center>
-                            <Text fontWeight={"bolder"}>München Nord</Text>
+                            <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Nord</Text>
                             <Text fontSize={"sm"}>Schwabing, Milbertshofen</Text>
                         </VStack>
     
@@ -299,7 +299,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaUserDoctor />
                             </Center>
-                            <Text fontWeight={"bolder"}>München Süd</Text>
+                            <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Süd</Text>
                             <Text fontSize={"sm"}>Haidhausen, Giesing</Text>
                         </VStack>
     
@@ -307,7 +307,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaTooth />
                             </Center>
-                            <Text fontWeight={"bolder"}>München Umland</Text>
+                            <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Umland</Text>
                             <Text fontSize={"sm"}>Garching, Unterschleißheim</Text>
                         </VStack>
     
@@ -339,7 +339,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                                         <Text fontSize={"lg"} fontWeight={"bold"}>
                                             {awards_won}+ Auszeichnungen für Qualität
                                         </Text>
-                                        <Text opacity={0.75}>Zertifizierte Reinigungsqualität für medizinische Einrichtungen in München</Text>
+                                        <Text opacity={0.75}>Zertifizierte Reinigungsqualität für medizinische Einrichtungen in  Nürnberg, Fürth & Umgebung</Text>
                                     </VStack>
 
                                 </HStack>
@@ -472,7 +472,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                         </Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
-                            Ihre Zufriedenheit ist unser Anspruch. Falls Sie mit unserer Praxisreinigung München nicht vollständig zufrieden sind, erhalten Sie Ihr Geld zurück - ohne Wenn und Aber.
+                            Ihre Zufriedenheit ist unser Anspruch. Falls Sie mit unserer Praxisreinigung  Nürnberg, Fürth & Umgebung nicht vollständig zufrieden sind, erhalten Sie Ihr Geld zurück - ohne Wenn und Aber.
                         </Text>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
@@ -508,7 +508,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         FAQ zur  
-                        <Text as={"span"} color={"blue.600"}> Praxisreinigung München </Text> 
+                        <Text as={"span"} color={"blue.600"}> Praxisreinigung  Nürnberg, Fürth & Umgebung </Text> 
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
                         Antworten auf die wichtigsten Fragen zu Desinfektionsabläufen, Einsatzzeiten und Hygiene-Standards für medizinische Einrichtungen.
@@ -527,7 +527,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                         <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Haben Sie weitere Fragen zur Praxisreinigung?</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
-                            Unsere Hygiene-Experten beraten Sie gerne zu individuellen Lösungen für Ihre medizinische Einrichtung in München.
+                            Unsere Hygiene-Experten beraten Sie gerne zu individuellen Lösungen für Ihre medizinische Einrichtung in  Nürnberg, Fürth & Umgebung.
                         </Text>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
@@ -562,7 +562,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         Unser komplettes 
                         <Text as={"span"} color={"blue.600"}> Leistungsspektrum </Text> 
-                        für München & Umgebung
+                        für  Nürnberg, Fürth & Umgebung & Umgebung
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
                         Als zertifizierte <b>Reinigungsfirma für Arztpraxen</b> bieten wir umfassende Hygienelösungen mit dokumentierten Desinfektionsprozessen nach RKI-Standards.
@@ -613,7 +613,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
     
                     <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_mix_four" py={12} px={6}>
     
-                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Bereit für professionelle Praxisreinigung in München?</Heading>
+                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Bereit für professionelle Praxisreinigung in  Nürnberg, Fürth & Umgebung?</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
                             Kontaktieren Sie uns für eine <b>kostenlose Hygienebesichtigung</b> und ein maßgeschneidertes Angebot für Ihre medizinische Einrichtung.
@@ -654,7 +654,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                         <Text as={"span"} color={"green.400"}> kostenlose </Text> Hygienebesichtigung anfragen
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                        Lassen Sie sich von unseren Hygiene-Experten beraten und erhalten Sie ein individuelles Angebot für Ihre <b>Praxisreinigung München</b>.
+                        Lassen Sie sich von unseren Hygiene-Experten beraten und erhalten Sie ein individuelles Angebot für Ihre <b>Praxisreinigung  Nürnberg, Fürth & Umgebung</b>.
                     </Text>
 
                     <Flex gap={12} gapY={24} align={"start"} flexDir={{ base: "column", xl: "row" }} w={"full"}>
@@ -742,7 +742,7 @@ MEDIZINISCHE REINIGUNG MÜNCHEN</Badge>
                                 <Textarea
                                     resize={"none"}
                                     h={"120px"}
-                                    placeholder="Musterstraße 123, 80331 München"
+                                    placeholder="Musterstraße 123, 80331  Nürnberg, Fürth & Umgebung"
                                     name="address"
                                     className="form_input"
                                     required 

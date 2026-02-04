@@ -7,7 +7,7 @@ const windowCleaningServices: ServiceType[] = [
     {
         icon: FaHome,
         name: "Innen- & Außenreinigung",
-        des: "Komplette Fensterreinigung in München von beiden Seiten – für perfekt saubere Fenster innen und außen.",
+        des: "Komplette Fensterreinigung in Nürnberg, Fürth & Umgebung von beiden Seiten – für perfekt saubere Fenster innen und außen.",
         features: [
             "Innenseite gründlich gereinigt",
             "Außenseite streifenfrei",

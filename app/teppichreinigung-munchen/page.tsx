@@ -25,14 +25,14 @@ const CarpetCleaningPage = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <LuGrid2X2 /> Reinigungsfirma München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <LuGrid2X2 /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                        >Teppichreinigung München</Heading>
+                        >Teppichreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                         <Text fontWeight={"bolder"}>Frische Teppiche, wie neu</Text>
 
                         <Text opacity={0.55} my={3}>
-                            Saubere Teppiche verbessern die Raumluft. Arisma Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Teppichreinigung in München – schonend, gründlich und schnell trocknend.
+                            Saubere Teppiche verbessern die Raumluft. Popp Dienstleistungen Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Teppichreinigung in  Nürnberg, Fürth & Umgebung – schonend, gründlich und schnell trocknend.
                         </Text>
 
                         <Grid
@@ -142,11 +142,11 @@ const CarpetCleaningPage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaInfoCircle /></Text>    ÜBER UNSERE TEPPICHREINIGUNG</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
-                    Professionelle Teppichpflege München 
+                    Professionelle Teppichpflege  Nürnberg, Fürth & Umgebung 
                     <Text as={"span"} color={"blue.600"}> mit modernsten Verfahren </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    {company_name} ist Ihr Partner für professionelle Teppichreinigung in München. Mit modernsten Verfahren entfernen wir Flecken, Schmutz und Gerüche – schonend & effektiv. Von Büroteppichen über Hotelböden bis zu privaten Teppichen: Wir sorgen für tiefenreine Sauberkeit und langanhaltende Frische.
+                    {company_name} ist Ihr Partner für professionelle Teppichreinigung in  Nürnberg, Fürth & Umgebung. Mit modernsten Verfahren entfernen wir Flecken, Schmutz und Gerüche – schonend & effektiv. Von Büroteppichen über Hotelböden bis zu privaten Teppichen: Wir sorgen für tiefenreine Sauberkeit und langanhaltende Frische.
                 </Text>
 
                 <Grid
@@ -159,7 +159,7 @@ const CarpetCleaningPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaBuilding /></Center>
                             <Heading as={"h5"}>Für Büros & Hotels</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Professionelle Büroteppich reinigen München – für saubere, gepflegte Böden in Bürogebäuden, Hotels, Praxen und Gewerbeflächen.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Professionelle Büroteppich reinigen  Nürnberg, Fürth & Umgebung – für saubere, gepflegte Böden in Bürogebäuden, Hotels, Praxen und Gewerbeflächen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -167,7 +167,7 @@ const CarpetCleaningPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><HiMiniSparkles /></Center>
                             <Heading as={"h5"}>Tiefenreine Ergebnisse</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Teppichreinigung München mit Nass- und Trockenshampoonierung – für hygienisch saubere Teppiche und Teppichböden ohne Rückstände.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Teppichreinigung  Nürnberg, Fürth & Umgebung mit Nass- und Trockenshampoonierung – für hygienisch saubere Teppiche und Teppichböden ohne Rückstände.</Text>
                         </VStack>
                     </GridItem>
 
@@ -175,7 +175,7 @@ const CarpetCleaningPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaHome /></Center>
                             <Heading as={"h5"}>Privat & Gewerbe</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Teppichpflege München für Privathaushalte und Gewerbeobjekte – individuell auf Ihre Bedürfnisse abgestimmt.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Teppichpflege  Nürnberg, Fürth & Umgebung für Privathaushalte und Gewerbeobjekte – individuell auf Ihre Bedürfnisse abgestimmt.</Text>
                         </VStack>
                     </GridItem>
 
@@ -283,7 +283,7 @@ const CarpetCleaningPage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>  UNSERE LEISTUNGEN</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
-                    Teppichreinigung München –  
+                    Teppichreinigung  Nürnberg, Fürth & Umgebung –  
                     <Text as={"span"} color={"blue.600"}> Unser Leistungsspektrum </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -431,10 +431,10 @@ const CarpetCleaningPage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaStar /></Text> IHRE VORTEILE</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
-                    Warum {company_name} für <Text color={"blue.600"} > Teppichreinigung München?</Text>
+                    Warum {company_name} für <Text color={"blue.600"} > Teppichreinigung  Nürnberg, Fürth & Umgebung?</Text>
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    Vertrauen Sie auf sanfte Methoden, kurze Trocknungszeiten und professionelle Teppichpflege München.
+                    Vertrauen Sie auf sanfte Methoden, kurze Trocknungszeiten und professionelle Teppichpflege  Nürnberg, Fürth & Umgebung.
                 </Text>
 
                 <Grid
@@ -480,7 +480,7 @@ const CarpetCleaningPage = () => {
             </VStack>
 
             <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={12} rounded={"xl"} my={8}>
-                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Qualitätsmerkmale unserer Teppichreinigung München</Heading>
+                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Qualitätsmerkmale unserer Teppichreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                 <Grid 
                     gap={6}
@@ -587,7 +587,7 @@ const CarpetCleaningPage = () => {
                 </Heading>
 
                 <Text textAlign={"center"} maxW={"600px"}>
-                    Jetzt Termin vereinbaren für professionelle Teppichreinigung München oder direkt kostenloses Angebot anfordern.
+                    Jetzt Termin vereinbaren für professionelle Teppichreinigung  Nürnberg, Fürth & Umgebung oder direkt kostenloses Angebot anfordern.
                 </Text>
 
                 <HStack mt={7} gap={4} justify={"center"} flexWrap={"wrap"}>
@@ -706,12 +706,12 @@ const CarpetCleaningPage = () => {
 
                 <VStack mt={2} gap={3} w={"full"} bg={"bg/15"} rounded={"md"} p={6} border={"1px solid"} borderColor={"bg"} textAlign={"center"}>
                     
-                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Teppichreinigung & Teppichpflege München</Heading>
+                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Teppichreinigung & Teppichpflege  Nürnberg, Fürth & Umgebung</Heading>
 
                     <Text maxW={"800px"}>
-                        {company_name}  ist Ihr Experte für <b>Teppichreinigung München</b> und <b>Teppichpflege München</b>. Wir bieten professionelles <b>Büroteppich reinigen</b> für Unternehmen sowie Teppichreinigung für Privathaushalte in München und Umgebung.
+                        {company_name}  ist Ihr Experte für <b>Teppichreinigung  Nürnberg, Fürth & Umgebung</b> und <b>Teppichpflege  Nürnberg, Fürth & Umgebung</b>. Wir bieten professionelles <b>Büroteppich reinigen</b> für Unternehmen sowie Teppichreinigung für Privathaushalte in  Nürnberg, Fürth & Umgebung und Umgebung.
                         <br /><br />
-                        Mit modernsten Verfahren wie Nass- und Trockenshampoonierung sorgen wir für tiefenreine, hygienische Teppiche – ideal für Allergiker. Von der Fleckentfernung über Geruchsneutralisation bis zur schützenden Imprägnierung: Vertrauen Sie auf unsere Expertise bei der Teppichreinigung München.
+                        Mit modernsten Verfahren wie Nass- und Trockenshampoonierung sorgen wir für tiefenreine, hygienische Teppiche – ideal für Allergiker. Von der Fleckentfernung über Geruchsneutralisation bis zur schützenden Imprägnierung: Vertrauen Sie auf unsere Expertise bei der Teppichreinigung  Nürnberg, Fürth & Umgebung.
                     </Text>
 
                 </VStack>

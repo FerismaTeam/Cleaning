@@ -68,9 +68,9 @@ const Page = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1}>Professionelle Gebäudereinigung München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1}>Professionelle Gebäudereinigung  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} fontSize={"2xl"} fontWeight={"bolder"}
-                        >Ihr Profi für Gebäudereinigung in München</Heading>
+                        >Ihr Profi für Gebäudereinigung in  Nürnberg, Fürth & Umgebung</Heading>
 
                         <Text opacity={0.55} my={3}>
                             Sauberkeit mit Garantie – 
@@ -188,12 +188,12 @@ const Page = () => {
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                     Spezialist für 
-                    <Text as={"span"} color={"green.600"}> Büroreinigung München </Text> 
+                    <Text as={"span"} color={"green.600"}> Büroreinigung  Nürnberg, Fürth & Umgebung </Text> 
                     &
-                    <Text as={"span"} color={"blue.500"}> Fahrzeugaufbereitung München </Text> 
+                    <Text as={"span"} color={"blue.500"}> Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung </Text> 
                 </Heading>
                 <Text textAlign={"center"} mt={3} mb={6} lineHeight={1.65} w={"full"} fontSize={"sm"} opacity={0.65}>
-                    Mit über 15 Jahren Erfahrung sind wir Ihr vertrauensvoller Partner für maßgeschneiderte Reinigungslösungen in München und Umgebung
+                    Mit über 15 Jahren Erfahrung sind wir Ihr vertrauensvoller Partner für maßgeschneiderte Reinigungslösungen in  Nürnberg, Fürth & Umgebung und Umgebung
                 </Text>
 
                 {/* service info */}
@@ -215,14 +215,14 @@ const Page = () => {
                                 </Center>
 
                                 <Box>
-                                    <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Büroreinigung München</Heading>
+                                    <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Büroreinigung  Nürnberg, Fürth & Umgebung</Heading>
                                     <Text as={"span"} fontSize={"xs"} fontWeight={"bolder"} color={"green.600"} >Premium-Service</Text>
                                 </Box>
 
                             </HStack>
 
                             <Text fontSize={"sm"} opacity={0.80} lineHeight={1.45}>
-                                Professionelle Büroreinigung für Unternehmen, Praxen und Gewerbeflächen in München. Zuverlässig, diskret und nach höchsten Qualitätsstandards.
+                                Professionelle Büroreinigung für Unternehmen, Praxen und Gewerbeflächen in  Nürnberg, Fürth & Umgebung. Zuverlässig, diskret und nach höchsten Qualitätsstandards.
                             </Text>
 
                             {/* points */}
@@ -310,7 +310,7 @@ const Page = () => {
                                 </Center>
 
                                 <Box>
-                                    <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Fahrzeugaufbereitung München</Heading>
+                                    <Heading as="h3" mb={-2} fontSize={"lg"} fontWeight={"semibold"}>Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung</Heading>
                                     <Text as={"span"} fontSize={"xs"} fontWeight={"bolder"} color={"blue.600"} >Premium K2 Produkte</Text>
                                 </Box>
 
@@ -420,7 +420,7 @@ const Page = () => {
                     <VStack gap={1} fontSize={"sm"}>
                         <Text><b>Geld‑zurück‑Garantie</b> – Weil wir wissen, was wir leisten.</Text>
                         <Text><b>100 % Zuverlässigkeit</b> – Pünktlich. Sorgfältig. Ohne Wenn und Aber.</Text>
-                        <Text><b>Langjährige Erfahrung</b> – Über 15 Jahre Dienstleister in München & Umgebung.</Text>
+                        <Text><b>Langjährige Erfahrung</b> – Über 15 Jahre Dienstleister in  Nürnberg, Fürth & Umgebung & Umgebung.</Text>
                         <Text><b>Freundlicher Service</b> – Menschen, die mitdenken und Ihre Räume wertschätzen.</Text>
                     </VStack>
                     <Button asChild bg={"bg/15"} border={"2px solid"} borderColor={"bg/40"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
@@ -478,7 +478,7 @@ erfolgreich abgeschlossen</Text>
                                         <FaBuilding />
                                     </Center>
                                     <Box>
-                                        <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Büroreinigung München</Heading>
+                                        <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Büroreinigung  Nürnberg, Fürth & Umgebung</Heading>
                                         <Text display={"flex"} alignItems={"center"} gap={2} fontSize={"xs"} fontWeight={"semibold"} mt={0.5}>
                                             <FaCrown />
                                             Schwerpunktleistung
@@ -526,7 +526,7 @@ erfolgreich abgeschlossen</Text>
                                         <FaCar />
                                     </Center>
                                     <Box>
-                                        <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Fahrzeugaufbereitung München</Heading>
+                                        <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung</Heading>
                                         <Text display={"flex"} alignItems={"center"} gap={2} fontSize={"xs"} fontWeight={"semibold"} mt={0.5}>
                                             <FaDiamond />
                                             Schwerpunktleistung
@@ -598,7 +598,7 @@ erfolgreich abgeschlossen</Text>
                              <VStack align={"start"} gap={3}>
                                 <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaStar /></Center>
                                 <Heading as={"h5"}>Langjährige Erfahrung</Heading>
-                                <Text opacity={0.7} fontSize={"sm"}>Jahrelange Expertise in der professionellen Gebäudereinigung München – Qualität, die Sie spüren.</Text>
+                                <Text opacity={0.7} fontSize={"sm"}>Jahrelange Expertise in der professionellen Gebäudereinigung  Nürnberg, Fürth & Umgebung – Qualität, die Sie spüren.</Text>
                             </VStack>
                         </GridItem>
 
@@ -651,7 +651,7 @@ erfolgreich abgeschlossen</Text>
 
                         <Heading as={"h6"} fontSize={"xl"} fontWeight={"bolder"}>Überzeugt? Dann kontaktieren Sie uns jetzt!</Heading>
 
-                        <Text opacity={0.75} fontSize={"sm"} lineHeight={1.5}>Fordern Sie noch heute Ihr kostenloses und unverbindliches Angebot für Gebäudereinigung München an.</Text>
+                        <Text opacity={0.75} fontSize={"sm"} lineHeight={1.5}>Fordern Sie noch heute Ihr kostenloses und unverbindliches Angebot für Gebäudereinigung  Nürnberg, Fürth & Umgebung an.</Text>
 
                         <HStack w={"full"} gap={4} mt={5} flexWrap={"wrap"} justify={"center"}>
 
@@ -687,15 +687,15 @@ erfolgreich abgeschlossen</Text>
         {/* all services section */}
         <Box as="section" bg={"blue.100/20"}>
             <VStack w="full">
-                <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaSuitcase /></Text> UNSERE LEISTUNGEN IN MÜNCHEN</Badge>
+                <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaSuitcase /></Text> UNSERE LEISTUNGEN IN  Nürnberg, Fürth & Umgebung</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                     Professionelle 
-                    <Text as={"span"} color={"blue.600"}> Gebäudereinigung München </Text> 
+                    <Text as={"span"} color={"blue.600"}> Gebäudereinigung  Nürnberg, Fürth & Umgebung </Text> 
                     für jeden Bedarf
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.65} w={"full"} fontSize={"sm"} opacity={0.65}>
-                    Von der Büroreinigung München bis zur Unterhaltsreinigung – {company_name} bietet maßgeschneiderte Reinigungslösungen mit Garantie.
+                    Von der Büroreinigung  Nürnberg, Fürth & Umgebung bis zur Unterhaltsreinigung – {company_name} bietet maßgeschneiderte Reinigungslösungen mit Garantie.
                 </Text>
 
                 <Grid
@@ -752,7 +752,7 @@ erfolgreich abgeschlossen</Text>
                 <VStack w={"full"} rounded={"lg"} gap={4} color={"bg"} p={8} className="gradient_dark_background">
                     <Heading as={"h5"} fontSize={"xl"} fontWeight={"bolder"}>Individuelle Reinigungslösung benötigt?</Heading>
                     <Text opacity={0.75} fontSize={"sm"} lineHeight={1.55} textAlign={"center"}>
-                            {company_name} erstellt Ihnen gerne ein maßgeschneidertes Angebot für Ihre spezifischen Reinigungsanforderungen in München.
+                            {company_name} erstellt Ihnen gerne ein maßgeschneidertes Angebot für Ihre spezifischen Reinigungsanforderungen in  Nürnberg, Fürth & Umgebung.
                     </Text>
 
                     <Grid
@@ -767,7 +767,7 @@ erfolgreich abgeschlossen</Text>
                                     <Center w={5} aspectRatio={"square"} color={"blue.800"}>
                                         <FaBuilding />
                                     </Center>
-                                    <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Büroreinigung München</Heading>
+                                    <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Büroreinigung  Nürnberg, Fürth & Umgebung</Heading>
                                 </HStack>
                                 <Text fontSize={"xs"} opacity={0.65}>Spezialisiert auf Unternehmen, Praxen & Gewerbeflächen</Text>
                                 <HStack mt={1} gap={1} color={"blue.700"} fontSize={"xs"}>
@@ -783,7 +783,7 @@ erfolgreich abgeschlossen</Text>
                                     <Center w={5} aspectRatio={"square"} color={"green.600"}>
                                         <FaCar />
                                     </Center>
-                                    <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Fahrzeugaufbereitung München</Heading>
+                                    <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung</Heading>
                                 </HStack>
                                 <Text fontSize={"xs"} opacity={0.65}>Mit 1.200+ K2 Premium-Produkten für beste Ergebnisse</Text>
                                 <HStack mt={1} gap={1} color={"green.600"} fontSize={"xs"}>
@@ -853,7 +853,7 @@ erfolgreich abgeschlossen</Text>
                             <Box textAlign={"left"} p={4} rounded={"md"} fontSize={"15px"} pos="relative" className="gradient_light_background_two">
                                 <Text color={"blue.600"} fontSize={"2xl"} pos={"absolute"} left={-3} top={-3}><FaQuoteLeft /></Text>
                                 <Text>
-                                    Die Arisma Gebäudedienste GmbH hat sich durch Fachkompetenz, Engagement und Flexibilität ausgezeichnet.
+                                    Die Popp Dienstleistungen Gebäudedienste GmbH hat sich durch Fachkompetenz, Engagement und Flexibilität ausgezeichnet.
                                 </Text>
                                 <HStack gap={1} fontSize={"sm"} color={"blue.600"} mt={2}>
                                     {
@@ -873,7 +873,7 @@ erfolgreich abgeschlossen</Text>
                                 <MdRestaurant />
                             </Center>
                             <Heading as={"h6"} lineHeight={1.35} fontSize={"lg"} fontWeight={"bolder"}>GenussZeit Catering & Services GmbH</Heading>
-                            <Text mt={-3.5} fontSize={"sm"} opacity={0.75}>München</Text>
+                            <Text mt={-3.5} fontSize={"sm"} opacity={0.75}> Nürnberg, Fürth & Umgebung</Text>
 
                             <Box textAlign={"left"} p={4} rounded={"md"} fontSize={"15px"} pos="relative" className="gradient_light_background_two">
                                 <Text color={"blue.600"} fontSize={"2xl"} pos={"absolute"} left={-3} top={-3}><FaQuoteLeft /></Text>
@@ -975,12 +975,12 @@ erfolgreich abgeschlossen</Text>
                 <HStack mt={5} flexWrap={"wrap"} gapY={5} align={"start"} w={"full"} justify={"center"} gap={2}>
                     <HStack align={"start"} justify={"center"} gap={2} color={"bg.inverted/65"}>
                         <Text color={"blue.500"} mt={1}><FaAward /></Text>
-                        <Text fontSize={"sm"}>Zertifizierte Gebäudereinigung München</Text>
+                        <Text fontSize={"sm"}>Zertifizierte Gebäudereinigung  Nürnberg, Fürth & Umgebung</Text>
                     </HStack>
 
                     <HStack align={"start"} justify={"center"} gap={2} color={"bg.inverted/65"}>
                         <Text color={"yellow.500"} mt={1}><FaStar /></Text>
-                        <Text fontSize={"sm"}>Top-bewertete Reinigungsfirma München</Text>
+                        <Text fontSize={"sm"}>Top-bewertete Reinigungsfirma  Nürnberg, Fürth & Umgebung</Text>
                     </HStack>
 
                     <HStack align={"start"} justify={"center"} gap={2} color={"bg.inverted/65"}>
@@ -1041,10 +1041,10 @@ erfolgreich abgeschlossen</Text>
                             IHRE VORTEILE
                         </Badge>
                         <Heading as={"h1"} fontSize={"2xl"} fontWeight={"bolder"}
-                        >Wir reinigen München – professionell, persönlich, präzise.</Heading>
+                        >Wir reinigen  Nürnberg, Fürth & Umgebung – professionell, persönlich, präzise.</Heading>
 
                         <Text opacity={0.55} my={3}>
-                            Mit Arisma Gebäudedienste setzen Sie auf Qualität, Verlässlichkeit und moderne Reinigungslösungen für jede Herausforderung.
+                            Mit Popp Dienstleistungen Gebäudedienste setzen Sie auf Qualität, Verlässlichkeit und moderne Reinigungslösungen für jede Herausforderung.
                         </Text>
 
                         <Grid
@@ -1121,7 +1121,7 @@ erfolgreich abgeschlossen</Text>
                             <HStack gap={3} align={"start"} border={"1px solid"} borderColor={"bg.inverted/5"} p={2} rounded={"md"}>
                                 <Text color={"blue.600"} mt={1} ml={1}><FaStar /></Text>
                                 <VStack align={"start"} gap={0.5}>
-                                    <Text fontWeight={"medium"}>München</Text>
+                                    <Text fontWeight={"medium"}> Nürnberg, Fürth & Umgebung</Text>
                                     <Text fontWeight={"medium"} opacity={0.4}>Regional tätig</Text>
                                 </VStack>
                             </HStack>
@@ -1377,7 +1377,7 @@ erfolgreich abgeschlossen</Text>
                         <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"blue.800"} color={"bg"}>
                             <FaLocationPin />
                         </Center>
-                        <Text fontSize={"sm"} fontWeight={"bolder"}>München</Text>
+                        <Text fontSize={"sm"} fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung</Text>
                     </VStack>
 
                 </HStack>

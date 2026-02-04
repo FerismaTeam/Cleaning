@@ -24,14 +24,14 @@ const CarCleaningServicePage = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaCar /> Reinigungsfirma München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaCar /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={{ base: "2xl", md: "4xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                        >Fahrzeugaufbereitung München</Heading>
+                        >Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung</Heading>
 
                         <Text fontWeight={"bolder"}>Ihr Auto wie neu</Text>
 
                         <Text opacity={0.55} my={3}>
-                            Saubere Fahrzeuge erhalten ihren Wert. Arisma Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Fahrzeugaufbereitung in München – gründlich, schonend und mit Premium-Produkten.
+                            Saubere Fahrzeuge erhalten ihren Wert. Popp Dienstleistungen Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Fahrzeugaufbereitung in  Nürnberg, Fürth & Umgebung – gründlich, schonend und mit Premium-Produkten.
                         </Text>
 
                         <Grid
@@ -140,7 +140,7 @@ const CarCleaningServicePage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>   UNSERE LEISTUNGEN</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
-                    Fahrzeugaufbereitung München – 
+                    Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung – 
                     <Text as={"span"} color={"blue.600"}> Unsere Services</Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -312,10 +312,10 @@ const CarCleaningServicePage = () => {
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                     Warum {company_name} Gebäudedienste für 
-                    <Text as={"span"} color={"blue.600"}> Fahrzeugaufbereitung München?</Text> 
+                    <Text as={"span"} color={"blue.600"}> Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung?</Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    Vertrauen Sie auf jahrelange Erfahrung, professionelle Ausbildung und höchste Qualitätsstandards bei der Autoaufbereitung in München.
+                    Vertrauen Sie auf jahrelange Erfahrung, professionelle Ausbildung und höchste Qualitätsstandards bei der Autoaufbereitung in  Nürnberg, Fürth & Umgebung.
                 </Text>
 
                 <Grid
@@ -352,7 +352,7 @@ const CarCleaningServicePage = () => {
                     
                 </Grid>
 
-                <Heading as="h6" textAlign={"center"} fontSize={"2xl"} fontWeight={"bolder"} my={5}>So läuft Ihre Fahrzeugaufbereitung in München ab</Heading>
+                <Heading as="h6" textAlign={"center"} fontSize={"2xl"} fontWeight={"bolder"} my={5}>So läuft Ihre Fahrzeugaufbereitung in  Nürnberg, Fürth & Umgebung ab</Heading>
 
                 <Grid
                     gap={8}
@@ -561,7 +561,7 @@ Labor-geprüft</Text>
                 </Heading>
 
                 <Text textAlign={"center"} maxW={"600px"}>
-                    Jetzt kostenloses Angebot für Ihre Fahrzeugaufbereitung in München anfordern oder direkt telefonisch Kontakt aufnehmen.
+                    Jetzt kostenloses Angebot für Ihre Fahrzeugaufbereitung in  Nürnberg, Fürth & Umgebung anfordern oder direkt telefonisch Kontakt aufnehmen.
                 </Text>
 
                 <HStack mt={7} gap={4} justify={"center"} flexWrap={"wrap"}>
@@ -669,12 +669,12 @@ Labor-geprüft</Text>
 
                 <VStack mt={2} gap={3} w={"full"} bg={"bg/15"} rounded={"md"} p={6} border={"1px solid"} borderColor={"bg"} textAlign={"center"}>
                     
-                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Ihre Experten für Fahrzeugaufbereitung in München</Heading>
+                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Ihre Experten für Fahrzeugaufbereitung in  Nürnberg, Fürth & Umgebung</Heading>
 
                     <Text maxW={"800px"}>
-                        {company_name} ist Ihr professioneller Partner für <b>Fahrzeugaufbereitung München, Autoaufbereitung München, Innenraumreinigung Auto München und Lackaufbereitung München.</b>
+                        {company_name} ist Ihr professioneller Partner für <b>Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung, Autoaufbereitung  Nürnberg, Fürth & Umgebung, Innenraumreinigung Auto  Nürnberg, Fürth & Umgebung und Lackaufbereitung  Nürnberg, Fürth & Umgebung.</b>
                         <br /><br />
-                        Wir bieten professionelle Fahrzeugpflege für Privatkunden und Unternehmen in ganz München und Umgebung. Von der einfachen Handwäsche bis zur Komplettaufbereitung – vertrauen Sie auf unsere jahrelange Erfahrung und höchste Qualitätsstandards.
+                        Wir bieten professionelle Fahrzeugpflege für Privatkunden und Unternehmen in ganz  Nürnberg, Fürth & Umgebung und Umgebung. Von der einfachen Handwäsche bis zur Komplettaufbereitung – vertrauen Sie auf unsere jahrelange Erfahrung und höchste Qualitätsstandards.
 
                     </Text>
 

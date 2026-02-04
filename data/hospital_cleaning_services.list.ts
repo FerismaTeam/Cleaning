@@ -5,7 +5,7 @@ import { FaBed, FaBiohazard, FaClipboardCheck, FaShieldVirus } from "react-icons
 const hospitalCleaningServices: ServiceType[] = [
      {
         icon: FaProcedures,
-        name: "OP-Reinigung München",
+        name: "OP-Reinigung  Nürnberg, Fürth & Umgebung",
         des: "Sterile Reinigung von Operationssälen nach strengsten RKI-Richtlinien mit speziellen Desinfektionsmitteln und geschultem Fachpersonal.",
         features: [
             "RKI-konforme Desinfektion",
@@ -27,7 +27,7 @@ const hospitalCleaningServices: ServiceType[] = [
     },
     {
         icon: FaStethoscope,
-        name: "Praxisreinigung München",
+        name: "Praxisreinigung  Nürnberg, Fürth & Umgebung",
         des: "Professionelle Reinigung für Arzt- und Zahnarztpraxen mit höchsten Hygieneansprüchen.",
         features: [
             "Behandlungsräume",

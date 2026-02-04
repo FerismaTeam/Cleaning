@@ -29,14 +29,14 @@ const RegularCleaningServicePage = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaBroom /> Reinigungsfirma München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaBroom /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={{ base: "2xl", md: "4xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                        >Unterhaltsreinigung München</Heading>
+                        >Unterhaltsreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                         <Text fontWeight={"bolder"}>Dauerhaft saubere Räume</Text>
 
                         <Text opacity={0.55} my={3}>
-                            Saubere Räumlichkeiten schaffen Wohlfühlatmosphäre. Arisma Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Unterhaltsreinigung in München – regelmäßig, gründlich und verlässlich.
+                            Saubere Räumlichkeiten schaffen Wohlfühlatmosphäre. Popp Dienstleistungen Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Unterhaltsreinigung in  Nürnberg, Fürth & Umgebung – regelmäßig, gründlich und verlässlich.
                         </Text>
 
                         <Grid
@@ -147,7 +147,7 @@ const RegularCleaningServicePage = () => {
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
                     <Text as={"span"} color={"blue.600"}> Ihre Vorteile </Text> 
-                    mit {company_name} – Reinigungsfirma München  
+                    mit {company_name} – Reinigungsfirma  Nürnberg, Fürth & Umgebung  
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
                     Ob kleines Büro oder Großfläche: Wir bieten
@@ -173,7 +173,7 @@ const RegularCleaningServicePage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaCalendarCheck /></Center>
                             <Heading as={"h5"}>Regelmäßige Reinigung</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Tägliche, wöchentliche oder monatliche Büroreinigung München – wir passen uns Ihren individuellen Anforderungen und Betriebsabläufen an.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Tägliche, wöchentliche oder monatliche Büroreinigung  Nürnberg, Fürth & Umgebung – wir passen uns Ihren individuellen Anforderungen und Betriebsabläufen an.</Text>
                         </VStack>
                     </GridItem>
 
@@ -181,7 +181,7 @@ const RegularCleaningServicePage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaSliders /></Center>
                             <Heading as={"h5"}>Flexible Intervalle</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Von der täglichen Unterhaltsreinigung bis zur monatlichen Grundreinigung – Ihre Reinigungsfirma München bietet maßgeschneiderte Lösungen.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Von der täglichen Unterhaltsreinigung bis zur monatlichen Grundreinigung – Ihre Reinigungsfirma  Nürnberg, Fürth & Umgebung bietet maßgeschneiderte Lösungen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -296,7 +296,7 @@ const RegularCleaningServicePage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>  UNSERE LEISTUNGEN</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
-                    Unterhaltsreinigung München –  
+                    Unterhaltsreinigung  Nürnberg, Fürth & Umgebung –  
                     <Text as={"span"} color={"blue.600"}> Unser Service-Angebot </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -460,7 +460,7 @@ const RegularCleaningServicePage = () => {
                     Warum regelmäßige <Text as={"span"} color={"blue.600"}> Unterhaltsreinigung?</Text>
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.55} w={"full"}>
-                    Mit professioneller Gebäudereinigung München von {company_name} profitieren Sie von zahlreichen Vorteilen.
+                    Mit professioneller Gebäudereinigung  Nürnberg, Fürth & Umgebung von {company_name} profitieren Sie von zahlreichen Vorteilen.
                 </Text>
 
                 <Grid
@@ -522,7 +522,7 @@ const RegularCleaningServicePage = () => {
             </VStack>
 
             <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={{ base: 5, md: 12 }} rounded={"xl"} my={8}>
-                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Vorteile der Unterhaltsreinigung München</Heading>
+                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Vorteile der Unterhaltsreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                 <Grid 
                     gap={6}
@@ -584,12 +584,12 @@ const RegularCleaningServicePage = () => {
                 </Badge>
 
                 <Heading textAlign={"center"} as={"h4"} my={2} fontSize={"3xl"} fontWeight={"bolder"}>
-                    Ihre Unterhaltsreinigung München 
+                    Ihre Unterhaltsreinigung  Nürnberg, Fürth & Umgebung 
                     <Text as={"span"} color={"cyan.400"}> professionell planen</Text>
                 </Heading>
 
                 <Text textAlign={"center"} maxW={"600px"}>
-                    Jetzt kostenloses Angebot für regelmäßige Gebäudereinigung München anfordern oder direkt telefonisch beraten lassen.
+                    Jetzt kostenloses Angebot für regelmäßige Gebäudereinigung  Nürnberg, Fürth & Umgebung anfordern oder direkt telefonisch beraten lassen.
                 </Text>
 
                 <HStack mt={7} gap={4} justify={"center"} flexWrap={"wrap"}>
@@ -710,7 +710,7 @@ const RegularCleaningServicePage = () => {
                         <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                             <FaStethoscope />
                         </Center>
-                        <Text fontWeight={"bolder"}>München Nord</Text>
+                        <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Nord</Text>
                         <Text fontSize={"sm"}>Schwabing, Milbertshofen</Text>
                     </VStack>
 
@@ -718,7 +718,7 @@ const RegularCleaningServicePage = () => {
                         <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                             <FaAmbulance />
                         </Center>
-                        <Text fontWeight={"bolder"}>München Süd</Text>
+                        <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Süd</Text>
                         <Text fontSize={"sm"}>Sendling, Giesing</Text>
                     </VStack>
 
@@ -726,7 +726,7 @@ const RegularCleaningServicePage = () => {
                         <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                             <FaFirstAid />
                         </Center>
-                        <Text fontWeight={"bolder"}>München Umland</Text>
+                        <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Umland</Text>
                         <Text fontSize={"sm"}>Garching, Unterschleißheim</Text>
                     </VStack>
 
@@ -736,12 +736,12 @@ const RegularCleaningServicePage = () => {
 
                 <VStack mt={2} gap={3} w={"full"} bg={"bg/15"} rounded={"md"} p={6} border={"1px solid"} borderColor={"bg"} textAlign={"center"}>
                     
-                    <Heading as={"h5"} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Unterhaltsreinigung München & Gebäudereinigung</Heading>
+                    <Heading as={"h5"} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Unterhaltsreinigung  Nürnberg, Fürth & Umgebung & Gebäudereinigung</Heading>
 
                     <Text maxW={"800px"}>
-                        {company_name} ist Ihr Experte für <b>Unterhaltsreinigung München</b> und <b>Gebäudereinigung München</b>. Mit unserer regelmäßigen Reinigung sorgen wir dafür, dass Ihre Büros, Praxen und Gewerbeflächen dauerhaft sauber und gepflegt bleiben.
+                        {company_name} ist Ihr Experte für <b>Unterhaltsreinigung  Nürnberg, Fürth & Umgebung</b> und <b>Gebäudereinigung  Nürnberg, Fürth & Umgebung</b>. Mit unserer regelmäßigen Reinigung sorgen wir dafür, dass Ihre Büros, Praxen und Gewerbeflächen dauerhaft sauber und gepflegt bleiben.
                         <br /><br />
-                        Von der täglichen Basisreinigung über wöchentliche Pflege bis zur monatlichen Grundreinigung – als professionelle Gebäudereinigung München bieten wir individuelle Lösungen für kontinuierliche Sauberkeit. Vertrauen Sie auf unsere Zuverlässigkeit und jahrelange Erfahrung in der Unterhaltsreinigung.
+                        Von der täglichen Basisreinigung über wöchentliche Pflege bis zur monatlichen Grundreinigung – als professionelle Gebäudereinigung  Nürnberg, Fürth & Umgebung bieten wir individuelle Lösungen für kontinuierliche Sauberkeit. Vertrauen Sie auf unsere Zuverlässigkeit und jahrelange Erfahrung in der Unterhaltsreinigung.
 
                     </Text>
 

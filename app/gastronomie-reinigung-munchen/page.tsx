@@ -27,14 +27,14 @@ const RestaurantCleaningServicePage = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <RiRestaurantFill /> Reinigungsfirma München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <RiRestaurantFill /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                        >Gastronomie-Reinigung München</Heading>
+                        >Gastronomie-Reinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                         <Text fontWeight={"bolder"}>Hygiene, die überzeugt</Text>
 
                         <Text opacity={0.55} my={3}>
-                            Saubere Küchen und Gastbereiche sind Pflicht. Arisma Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Gastronomie-Reinigung in München – HACCP-konform, hygienisch und gründlich.
+                            Saubere Küchen und Gastbereiche sind Pflicht. Popp Dienstleistungen Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Gastronomie-Reinigung in  Nürnberg, Fürth & Umgebung – HACCP-konform, hygienisch und gründlich.
                         </Text>
 
                         <Grid
@@ -144,11 +144,11 @@ const RestaurantCleaningServicePage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"} textWrap={"wrap"} gap={{ base: 2, md: 1 }}><Text as={"span"} scale={0.9} mr={0.5}><FaInfoCircle /></Text>    ÜBER UNSERE GASTRONOMIE-REINIGUNG</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
-                    Professionelle Küchenreinigung München  
+                    Professionelle Küchenreinigung  Nürnberg, Fürth & Umgebung  
                     <Text as={"span"} color={"blue.600"}> nach HACCP-Standard</Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    {company_name} ist Ihr Partner für professionelle Gastronomie-Reinigung in München. Wir reinigen Küchen, Gasträume und Kantinen nach den strengen HACCP-Richtlinien – gründlich, planbar und zuverlässig. Von Restaurants über Hotels bis zu Großküchen und Kantinen: Wir sorgen für einwandfreie Hygiene in Ihrem Gastronomiebetrieb.
+                    {company_name} ist Ihr Partner für professionelle Gastronomie-Reinigung in  Nürnberg, Fürth & Umgebung. Wir reinigen Küchen, Gasträume und Kantinen nach den strengen HACCP-Richtlinien – gründlich, planbar und zuverlässig. Von Restaurants über Hotels bis zu Großküchen und Kantinen: Wir sorgen für einwandfreie Hygiene in Ihrem Gastronomiebetrieb.
                 </Text>
 
                 <Grid
@@ -161,7 +161,7 @@ const RestaurantCleaningServicePage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><RiRestaurantFill /></Center>
                             <Heading as={"h5"}>Für Gastronomie & Hotels</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Professionelle Restaurantreinigung München für Restaurants, Hotels, Cafés und Bars – mit Erfahrung in der Gastronomiebranche.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Professionelle Restaurantreinigung  Nürnberg, Fürth & Umgebung für Restaurants, Hotels, Cafés und Bars – mit Erfahrung in der Gastronomiebranche.</Text>
                         </VStack>
                     </GridItem>
 
@@ -169,7 +169,7 @@ const RestaurantCleaningServicePage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaClipboardCheck /></Center>
                             <Heading as={"h5"}>HACCP-konform</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>HACCP Reinigung München nach den strengsten Hygienestandards – dokumentiert und nachweisbar für Gesundheitsämter und Kontrollen.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>HACCP Reinigung  Nürnberg, Fürth & Umgebung nach den strengsten Hygienestandards – dokumentiert und nachweisbar für Gesundheitsämter und Kontrollen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -177,7 +177,7 @@ const RestaurantCleaningServicePage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaBuilding /></Center>
                             <Heading as={"h5"}>Großküchen & Kantinen</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Spezialisiert auf die Küchenreinigung München von Großküchen, Betriebskantinen und Catering-Unternehmen mit hohen Anforderungen.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Spezialisiert auf die Küchenreinigung  Nürnberg, Fürth & Umgebung von Großküchen, Betriebskantinen und Catering-Unternehmen mit hohen Anforderungen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -285,7 +285,7 @@ const RestaurantCleaningServicePage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>  UNSERE LEISTUNGEN</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
-                    Gastronomie-Reinigung München –  
+                    Gastronomie-Reinigung  Nürnberg, Fürth & Umgebung –  
                     <Text as={"span"} color={"blue.600"}> Unser Service-Spektrum </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -388,7 +388,7 @@ const RestaurantCleaningServicePage = () => {
                     Warum {company_name} für <Text color={"blue.600"} > Gastronomie-Reinigung?</Text>
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    Vertrauen Sie auf Erfahrung, Zuverlässigkeit und HACCP-Kompetenz bei Ihrer Küchenreinigung München.
+                    Vertrauen Sie auf Erfahrung, Zuverlässigkeit und HACCP-Kompetenz bei Ihrer Küchenreinigung  Nürnberg, Fürth & Umgebung.
                 </Text>
 
                 <Grid
@@ -401,7 +401,7 @@ const RestaurantCleaningServicePage = () => {
                         <VStack gap={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaClipboardCheck /></Center>
                             <Heading as={"h5"} textAlign={"center"}>HACCP-konform</Heading>
-                            <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>HACCP Reinigung München nach strengsten Standards – dokumentiert und gesetzeskonform für alle Kontrollen.</Text>
+                            <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>HACCP Reinigung  Nürnberg, Fürth & Umgebung nach strengsten Standards – dokumentiert und gesetzeskonform für alle Kontrollen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -434,7 +434,7 @@ const RestaurantCleaningServicePage = () => {
             </VStack>
 
             <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={12} rounded={"xl"} my={8}>
-                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Qualitätsmerkmale unserer Gastronomie-Reinigung München</Heading>
+                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Qualitätsmerkmale unserer Gastronomie-Reinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                 <Grid 
                     gap={6}
@@ -540,7 +540,7 @@ const RestaurantCleaningServicePage = () => {
 
                 <Heading textAlign={"center"} as={"h4"} my={2} lineHeight={1.4} fontSize={"3xl"} fontWeight={"bolder"}>
                     Höchste Hygiene für Ihre 
-                    <Text as={"span"} color={"cyan.400"}> Gastronomie in München</Text>
+                    <Text as={"span"} color={"cyan.400"}> Gastronomie in  Nürnberg, Fürth & Umgebung</Text>
                 </Heading>
 
                 <Text textAlign={"center"} maxW={"600px"}>
@@ -663,12 +663,12 @@ const RestaurantCleaningServicePage = () => {
 
                 <VStack mt={2} gap={3} w={"full"} bg={"bg/15"} rounded={"md"} p={6} border={"1px solid"} borderColor={"bg"} textAlign={"center"}>
                     
-                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Gastronomie-Reinigung & Küchenreinigung München</Heading>
+                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Gastronomie-Reinigung & Küchenreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                     <Text maxW={"800px"}>
-                        {company_name} ist Ihr Experte für <b>Gastronomie Reinigung München</b> und <b>Küchenreinigung München</b>. Als professioneller Partner für <b>HACCP Reinigung München</b> sorgen wir für perfekte Hygiene in Restaurants, Hotels, Kantinen und Großküchen.
+                        {company_name} ist Ihr Experte für <b>Gastronomie Reinigung  Nürnberg, Fürth & Umgebung</b> und <b>Küchenreinigung  Nürnberg, Fürth & Umgebung</b>. Als professioneller Partner für <b>HACCP Reinigung  Nürnberg, Fürth & Umgebung</b> sorgen wir für perfekte Hygiene in Restaurants, Hotels, Kantinen und Großküchen.
                         <br /><br />
-                        Von der täglichen Küchenpflege über <b>Restaurantreinigung München</b> bis zur kompletten Grundreinigung nach HACCP-Standard – unser zertifiziertes Team garantiert höchste Hygienestandards für Ihren Gastronomiebetrieb. Vertrauen Sie auf jahrelange Erfahrung in der professionellen Gastronomie-Reinigung München.
+                        Von der täglichen Küchenpflege über <b>Restaurantreinigung  Nürnberg, Fürth & Umgebung</b> bis zur kompletten Grundreinigung nach HACCP-Standard – unser zertifiziertes Team garantiert höchste Hygienestandards für Ihren Gastronomiebetrieb. Vertrauen Sie auf jahrelange Erfahrung in der professionellen Gastronomie-Reinigung  Nürnberg, Fürth & Umgebung.
 
                     </Text>
 

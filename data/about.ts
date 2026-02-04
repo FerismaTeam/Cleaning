@@ -6,7 +6,7 @@
 
 const company_name: string = "Modern web";
 const established_year: number = 2008;
-const company_location: string = "München";
+const company_location: string = " Nürnberg, Fürth & Umgebung";
 const hours_worked: number = 9000; // shown on home page
 const awards_won: number = 100; // shown on home page
 const medical_facilites: number = 50; // shown on hospital cleaning service page
@@ -14,7 +14,7 @@ const medical_facilites: number = 50; // shown on hospital cleaning service page
 // about page realted info 
 
 // keep it short under 2 lines. This text is visible on about us page quick info section ( the very first section )
-const company_ideology_or_goal: string = "Qualität, Zuverlässigkeit und Vertrauen – seit über 20 Jahren Ihr Partner für professionelle Gebäudereinigung in München"; 
+const company_ideology_or_goal: string = "Qualität, Zuverlässigkeit und Vertrauen – seit über 20 Jahren Ihr Partner für professionelle Gebäudereinigung in  Nürnberg, Fürth & Umgebung"; 
 
 // few numbers, multiple pages maybe be using these information apart form about us page.
 const satisfied_customers: number = 500;
@@ -26,7 +26,7 @@ const years_of_experiense: number = 15;
 const about_us_in_detail: string = `
 Bei modern web verstehen wir professionelle Gebäudereinigung als weit mehr als nur das Entfernen von Schmutz. Es geht um Werterhalt, Hygiene, Wohlbefinden und ein gepflegtes Erscheinungsbild – für Ihre Mitarbeiter, Kunden und Gäste.
  
-Seit unserer Gründung, haben wir uns kontinuierlich weiterentwickelt und zählen heute über 500 Kunden sowie mehr als 1500 betreute Objekte in München und Umgebung zu unserem Portfolio.
+Seit unserer Gründung, haben wir uns kontinuierlich weiterentwickelt und zählen heute über 500 Kunden sowie mehr als 1500 betreute Objekte in  Nürnberg, Fürth & Umgebung und Umgebung zu unserem Portfolio.
 
 Was uns auszeichnet? Eine Kombination aus langjähriger Erfahrung, modernen Reinigungstechnologien, geschultem Personal und einer Unternehmenskultur, die auf Zuverlässigkeit und persönlichem Service basiert.
 `;
@@ -38,8 +38,8 @@ const short_timeline_description: string = "Über zwei Jahrzehnte Erfahrung in d
 const timeline: timelineDataStructure[] = [
     {
         yearish: "2008",
-        title: "Gründung in München",
-        detail: "Modern web wird in München gegründet. Mit einer klaren Vision: höchste Qualität in der Gebäudereinigung und persönlicher Service für jeden Kunden.",
+        title: "Gründung in  Nürnberg, Fürth & Umgebung",
+        detail: "Modern web wird in  Nürnberg, Fürth & Umgebung gegründet. Mit einer klaren Vision: höchste Qualität in der Gebäudereinigung und persönlicher Service für jeden Kunden.",
     },
     {
         yearish: "2010er",
@@ -53,8 +53,8 @@ const timeline: timelineDataStructure[] = [
     },
     {
         yearish: "Heute",
-        title: "Etabliert in München",
-        detail: "Mit über 529 Kunden, 1600 betreuten Objekten und langjährigen Partnerschaften mit Unternehmen wie CBRE und GenussZeit Catering haben wir uns als zuverlässiger Partner für Gebäudereinigung in München etabliert.",
+        title: "Etabliert in  Nürnberg, Fürth & Umgebung",
+        detail: "Mit über 529 Kunden, 1600 betreuten Objekten und langjährigen Partnerschaften mit Unternehmen wie CBRE und GenussZeit Catering haben wir uns als zuverlässiger Partner für Gebäudereinigung in  Nürnberg, Fürth & Umgebung etabliert.",
     },
 ] 
 
@@ -82,7 +82,7 @@ const companies_worked_with: companiesWorkedWithDataStructure[] = [
 const singleReview = {
     review: "Seit Jahren arbeiten wir mit Arisma zusammen und sind durchweg begeistert. Die Qualität ist konstant hervorragend, die Kommunikation einwandfrei und die Flexibilität bei Sonderwünschen bemerkenswert. Ein Partner, auf den man sich verlassen kann.",
     review_by: "Langjähriger Kunde",
-    from: "München"
+    from: " Nürnberg, Fürth & Umgebung"
 }
 
 // director note
@@ -93,7 +93,7 @@ Seit der Gründung von Arisma Gebäudedienste GmbH im Jahr 2004 habe ich mit mei
 
 Mit über 20 Jahren Erfahrung in der Branche weiß ich, worauf es ankommt: Zuverlässigkeit, sorgfältige Arbeit und ein persönlicher Service. Diese Werte setzen wir täglich um – in jedem Objekt, bei jedem Kunden.
 
-Unser Erfolg basiert auf dem Engagement unseres Teams und dem Vertrauen unserer Kunden. Über 529 zufriedene Kunden und mehr als 1600 betreute Objekte in München sind der beste Beweis dafür.
+Unser Erfolg basiert auf dem Engagement unseres Teams und dem Vertrauen unserer Kunden. Über 529 zufriedene Kunden und mehr als 1600 betreute Objekte in  Nürnberg, Fürth & Umgebung sind der beste Beweis dafür.
 `;
 
 export { company_name, established_year, company_location, company_ideology_or_goal, satisfied_customers, properties_cleaned, years_of_experiense, companies_worked_with, about_us_in_detail, short_timeline_description, timeline, singleReview, owner_name, director_note, hours_worked, awards_won, medical_facilites } 

@@ -22,7 +22,7 @@ export interface Faq { question: string, answer: FaqAnswer[] }
 
 const hospitalCleaningFAQs: Faq[] = [
     {
-        question: "Welche Hygienestandards befolgen Sie bei der Krankenhausreinigung München?",
+        question: "Welche Hygienestandards befolgen Sie bei der Krankenhausreinigung  Nürnberg, Fürth & Umgebung?",
         answer: [
             {
                 type: "text",
@@ -55,11 +55,11 @@ const hospitalCleaningFAQs: Faq[] = [
         ]
     },
     {
-        question: "Wie unterscheidet sich die OP-Reinigung München von der normalen Gebäudereinigung?",
+        question: "Wie unterscheidet sich die OP-Reinigung  Nürnberg, Fürth & Umgebung von der normalen Gebäudereinigung?",
         answer: [
             {
                 type: "text",
-                content: "Die **OP-Reinigung München** erfordert spezielle Verfahren und ist wesentlich anspruchsvoller:"
+                content: "Die **OP-Reinigung  Nürnberg, Fürth & Umgebung** erfordert spezielle Verfahren und ist wesentlich anspruchsvoller:"
             },
             {
                 type: "point",
@@ -96,7 +96,7 @@ const hospitalCleaningFAQs: Faq[] = [
         answer: [
             {
                 type: "text",
-                content: "Ja, wir bieten **24/7 Notfallreinigung** für medizinische Einrichtungen in München:"
+                content: "Ja, wir bieten **24/7 Notfallreinigung** für medizinische Einrichtungen in  Nürnberg, Fürth & Umgebung:"
             },
             {
                 type: "point",
@@ -162,17 +162,17 @@ const hospitalCleaningFAQs: Faq[] = [
         ]
     },
     {
-        question: "Welche Stadtteile in München decken Sie für die Praxisreinigung München ab?",
+        question: "Welche Stadtteile in  Nürnberg, Fürth & Umgebung decken Sie für die Praxisreinigung  Nürnberg, Fürth & Umgebung ab?",
         answer: [
             {
                 type: "text",
-                content: "Unsere **Praxisreinigung München** Services decken das gesamte Münchner Stadtgebiet ab:"
+                content: "Unsere **Praxisreinigung  Nürnberg, Fürth & Umgebung** Services decken das gesamte Münchner Stadtgebiet ab:"
             },
             {
                 type: "grid",
                 content: [
                     {
-                        title: "München Innenstadt:",
+                        title: " Nürnberg, Fürth & Umgebung Innenstadt:",
                         points: [
                             "Altstadt-Lehel",
                             "Ludwigsvorstadt-Isarvorstadt",
@@ -180,7 +180,7 @@ const hospitalCleaningFAQs: Faq[] = [
                         ]
                     },
                     {
-                        title: "München Nord:",
+                        title: " Nürnberg, Fürth & Umgebung Nord:",
                         points: [
                             "Schwabing-West & Schwabing-Freimann",
                             "Milbertshofen-Am Hart",
@@ -188,7 +188,7 @@ const hospitalCleaningFAQs: Faq[] = [
                         ]
                     },
                     {
-                        title: "München Süd:",
+                        title: " Nürnberg, Fürth & Umgebung Süd:",
                         points: [
                             "Sendling-Westpark & Sendling",
                             "Untergiesing-Harlaching",
@@ -196,7 +196,7 @@ const hospitalCleaningFAQs: Faq[] = [
                         ]
                     },
                     {
-                        title: "München Umland:",
+                        title: " Nürnberg, Fürth & Umgebung Umland:",
                         points: [
                             "Garching, Unterschleißheim",
                             "Planegg, Gräfelfing",

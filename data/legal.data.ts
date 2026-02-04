@@ -20,7 +20,7 @@ const legal: LegalType[] = [
         content: [
             `**Rechtsform**: Gesellschaft mit beschränkter Haftung (GmbH)`,
             `**Sitz der Gesellschaft**: ${operational_region}`,
-            `**Registergericht**: Amtsgericht München`,
+            `**Registergericht**: Amtsgericht Nürnberg`,
             `**Handelsregister-Nr.**: HRB 185255`,
             `**Geschäftsführer**: ${owner_name}`
         ]
@@ -28,13 +28,13 @@ const legal: LegalType[] = [
     {
         title: "Steuerliche Angaben",
         content: [
-            `**Betriebsnummer**: 12996953`,
+          /*  `**Betriebsnummer**: 12996953`,*/
             `**Steuernummer**: 143/115/11093`,
-            `**USt-IdNr.**: DE270955840`,
-            `gemäß § 27a Umsatzsteuergesetz`,
+           /* `**USt-IdNr.**: DE270955840`,*/
+           /* `gemäß § 27a Umsatzsteuergesetz`,*/
         ]
     },
-    {
+   /* {
         title: "Berufshaftpflichtversicherung",
         content: [
             `**Versicherer**: Signal Iduna Versicherung AG`,
@@ -49,7 +49,7 @@ const legal: LegalType[] = [
             `Mitglied der **Handwerkskammer München und Oberbayern**`,
             `Eingetragen in die Handwerksrolle gemäß § 7 HwO`,
         ]
-    },
+    },*/
     {
         title: "Berufsrechtliche Regelungen",
         content: [
@@ -67,7 +67,7 @@ const legal: LegalType[] = [
     {
         title: "Datenschutz",
         content: [
-            `Im Rahmen der Interaktion mit Arisma Gebäudedienste GmbH können personenbezogene Daten verarbeitet werden. Weitere Informationen hierzu finden Sie in unserer`,
+            `Im Rahmen der Interaktion mit Popp Dienstleistungen können personenbezogene Daten verarbeitet werden. Weitere Informationen hierzu finden Sie in unserer`,
             `[link](#privacy) Datenschutzerklärung`
         ]
     },

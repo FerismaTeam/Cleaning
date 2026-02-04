@@ -7,7 +7,7 @@ const carpetCleaningServices: ServiceType[] = [
     {
         icon: LuWaves,
         name: "Nass- & Trockenshampoonierung",
-        des: "Professionelle Teppichreinigung in München mit Nass- oder Trockenshampoo – für tiefenreine Sauberkeit ohne Beschädigung.",
+        des: "Professionelle Teppichreinigung in  Nürnberg, Fürth & Umgebung mit Nass- oder Trockenshampoo – für tiefenreine Sauberkeit ohne Beschädigung.",
         features: [
             "Nassreinigung",
             "Trockenshampoo",
@@ -37,7 +37,7 @@ const carpetCleaningServices: ServiceType[] = [
     {
         icon: LuGrid2X2,
         name: "Teppichboden & Teppichläufer",
-        des: "Professionelle Büroteppichreinigung in München – von großflächigen Teppichböden bis zu einzelnen Teppichläufern.",
+        des: "Professionelle Büroteppichreinigung in  Nürnberg, Fürth & Umgebung – von großflächigen Teppichböden bis zu einzelnen Teppichläufern.",
         features: [
             "Teppichböden",
             "Teppichläufer",

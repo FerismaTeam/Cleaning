@@ -111,7 +111,7 @@ const tnc: TNCType[] = [
         title: "Schlussbestimmungen",
         content: [
             `Es gilt das Recht der Bundesrepublik Deutschland.`,
-            `Gerichtsstand ist – soweit gesetzlich zulässig – München.`,
+            `Gerichtsstand ist – soweit gesetzlich zulässig – Nürnberg, Fürth & Umgebung.`,
             `Sollte eine Bestimmung dieser AGB ganz oder teilweise unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.`
         ]
     },

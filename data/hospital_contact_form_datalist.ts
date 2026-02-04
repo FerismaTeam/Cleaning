@@ -19,11 +19,11 @@ const locationsList: contactSelectionOptionType[] = [
     { value: "giesing", label: "Giesing / Harlaching" },
     { value: "bogenhausen", label: "Bogenhausen / Berg am Laim" },
     { value: "moosach", label: "Moosach / Milbertshofen" },
-    { value: "umland", label: "München Umland" },
+    { value: "umland", label: " Nürnberg, Fürth & Umgebung Umland" },
 ];
 
 const hospitalCleaninServicesList: string[] = [ 
-    "OP-Reinigung München",
+    "OP-Reinigung  Nürnberg, Fürth & Umgebung",
     "Patientenzimmer-Reinigung",
     "Flächendesinfektion",
     "Sondermüll-Entsorgung",

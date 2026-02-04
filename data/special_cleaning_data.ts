@@ -43,12 +43,12 @@ interface SpecialServiceType {
 const specialCleaningServicesInDetail: SpecialServiceType[] = [
     {
         icon: FaHelmetSafety,
-        name: "Baureinigung München",
+        name: "Baureinigung Nürnberg, Fürth & Umgebung",
         selling_point: {
             icon: FaStar,
             point: "Spezialisiert auf Baustellenreinigung"
         },
-        des: "Professionelle **Bauendreinigung** und **Baureinigung München** für Neubauten, Sanierungen und Renovierungsprojekte. Nach Abschluss von Bauarbeiten sorgen wir für eine gründliche Endreinigung aller Baustellen, Gewerbeimmobilien und Wohngebäude.",
+        des: "Professionelle **Bauendreinigung** und **Baureinigung Nürnberg, Fürth & Umgebung** für Neubauten, Sanierungen und Renovierungsprojekte. Nach Abschluss von Bauarbeiten sorgen wir für eine gründliche Endreinigung aller Baustellen, Gewerbeimmobilien und Wohngebäude.",
         content: [
             {
                 type: "grid",
@@ -82,12 +82,12 @@ const specialCleaningServicesInDetail: SpecialServiceType[] = [
     },
     {
         icon: FaBroom,
-        name: "Grundreinigung München",
+        name: "Grundreinigung Nürnberg, Fürth & Umgebung",
         selling_point: {
             icon: FaCertificate,
             point: "Industrieanlagen & Gewerbeflächen"
         },
-        des: "Intensive **Grundreinigung München** für stark verschmutzte Böden, Flächen und Industrieanlagen. Diese tiefgreifende Reinigung entfernt hartnäckige Verschmutzungen, die bei der regulären Unterhaltsreinigung nicht erfasst werden.",
+        des: "Intensive **Grundreinigung Nürnberg, Fürth & Umgebung** für stark verschmutzte Böden, Flächen und Industrieanlagen. Diese tiefgreifende Reinigung entfernt hartnäckige Verschmutzungen, die bei der regulären Unterhaltsreinigung nicht erfasst werden.",
         content: [
             {
                 type: "grid",
@@ -129,7 +129,7 @@ const specialCleaningServicesInDetail: SpecialServiceType[] = [
             icon: FaPencil,
             point: "Schonende & effektive Verfahren"
         },
-        des: "Professionelle **Graffitientfernung** für Fassaden, Wände, Türen und andere Oberflächen in München. Wir verwenden materialschonende Verfahren, die das Graffiti vollständig entfernen, ohne die Originaloberfläche zu beschädigen.",
+        des: "Professionelle **Graffitientfernung** für Fassaden, Wände, Türen und andere Oberflächen in Nürnberg, Fürth & Umgebung. Wir verwenden materialschonende Verfahren, die das Graffiti vollständig entfernen, ohne die Originaloberfläche zu beschädigen.",
         content: [
             {
                 type: "grid",

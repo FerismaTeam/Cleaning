@@ -2,7 +2,7 @@
 
 // only change data inside double quotes ""
 
-const company_quote: string = "Ihr zuverlässiger Partner für professionelle Gebäudereinigung in München und Umgebung. Sauberkeit mit Garantie seit Jahren."
+const company_quote: string = "Ihr zuverlässiger Partner für professionelle Gebäudereinigung in  Nürnberg, Fürth & Umgebung und Umgebung. Sauberkeit mit Garantie seit Jahren."
 
 const whatsAppContact: string = "4917657955705"; // add whatsapp number with country code but no +, - or spaces
 

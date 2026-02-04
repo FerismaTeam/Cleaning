@@ -11,7 +11,7 @@ const carCleaningServices: ServiceType[] = [
     {
         icon: FaSprayCan,
         name: "Außenreinigung & Politur",
-        des: "Lackschonende Handwäsche, professionelle Politur und langanhaltende Versiegelung für perfekten Glanz und optimalen Schutz Ihres Fahrzeugs in München.",
+        des: "Lackschonende Handwäsche, professionelle Politur und langanhaltende Versiegelung für perfekten Glanz und optimalen Schutz Ihres Fahrzeugs in  Nürnberg, Fürth & Umgebung.",
         features: [
             "Handwäsche & Trocknung",
             "Hochglanzpolitur",
@@ -21,8 +21,8 @@ const carCleaningServices: ServiceType[] = [
     },
     {
         icon: FaCouch,
-        name: "Innenraumreinigung München",
-        des: "Tiefenreinigung von Polstern, Teppichen und Armaturen. Professionelle Autoaufbereitung München für ein sauberes und hygienisches Fahrzeuginterieur.",
+        name: "Innenraumreinigung  Nürnberg, Fürth & Umgebung",
+        des: "Tiefenreinigung von Polstern, Teppichen und Armaturen. Professionelle Autoaufbereitung  Nürnberg, Fürth & Umgebung für ein sauberes und hygienisches Fahrzeuginterieur.",
         features: [
             "Polsterreinigung & Saugen",
             "Teppich-Tiefenreinigung",
@@ -32,8 +32,8 @@ const carCleaningServices: ServiceType[] = [
     },
     {
         icon: FaCarSide,
-        name: "Lackaufbereitung München",
-        des: "Entfernung von Kratzern, Hologrammen und Oxidationen. Professionelle Lackaufbereitung in München für ein makelloses Erscheinungsbild.",
+        name: "Lackaufbereitung  Nürnberg, Fürth & Umgebung",
+        des: "Entfernung von Kratzern, Hologrammen und Oxidationen. Professionelle Lackaufbereitung in  Nürnberg, Fürth & Umgebung für ein makelloses Erscheinungsbild.",
         features: [
             "Kratzerentfernung",
             "Hologramm-Beseitigung",
@@ -54,8 +54,8 @@ const carCleaningServices: ServiceType[] = [
     },
     {
         icon: FaBusAlt,
-        name: "Fuhrparkservice München",
-        des: "Aufbereitung und Pflege kompletter Fahrzeugflotten für Unternehmen in München. Regelmäßige Wartung und professionelle Pflege Ihrer Dienstwagen.",
+        name: "Fuhrparkservice  Nürnberg, Fürth & Umgebung",
+        des: "Aufbereitung und Pflege kompletter Fahrzeugflotten für Unternehmen in  Nürnberg, Fürth & Umgebung. Regelmäßige Wartung und professionelle Pflege Ihrer Dienstwagen.",
         features: [
             "Flottenaufbereitung",
             "Regelmäßige Pflege",
@@ -90,7 +90,7 @@ const whyCarCleaning: whyData[] = [
     {
         icon: FaCalendarAlt,
         title: "Flexible Termine",
-        text: "Flexible Terminvergabe für Privat & Gewerbe – passend zu Ihrem Zeitplan in München."
+        text: "Flexible Terminvergabe für Privat & Gewerbe – passend zu Ihrem Zeitplan in  Nürnberg, Fürth & Umgebung."
     },
     {
         icon: FaPuzzlePiece,
@@ -102,7 +102,7 @@ const whyCarCleaning: whyData[] = [
 const stepsList: stepsData[] = [
     {
         title: "Termin anfragen",
-        text: "Kontaktieren Sie uns telefonisch oder über unser Kontaktformular für Ihre Autoaufbereitung München"
+        text: "Kontaktieren Sie uns telefonisch oder über unser Kontaktformular für Ihre Autoaufbereitung  Nürnberg, Fürth & Umgebung"
     },
     {
         title: "Beratung & Angebot",
@@ -114,7 +114,7 @@ const stepsList: stepsData[] = [
     },
     {
         title: "Professionelle Aufbereitung",
-        text: "Unsere Spezialisten führen die Fahrzeugaufbereitung München fachgerecht durch"
+        text: "Unsere Spezialisten führen die Fahrzeugaufbereitung  Nürnberg, Fürth & Umgebung fachgerecht durch"
     },
 ]
 

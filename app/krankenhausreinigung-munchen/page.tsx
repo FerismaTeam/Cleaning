@@ -69,10 +69,10 @@ const HospitalCleaningServicePage = () => {
     
                             <Badge color={"bg"} bg={"bg/15"} className="backdrop_blur" rounded={"full"} px={4} py={2} fontSize={"14px"} gap={2}> <Text color={"green.500"}><FaCertificate /></Text> RKI & HACCP ZERTIFIZIERT</Badge>
                             <Heading as={"h1"} color={"bg"} my={3} fontSize={{ base: "2xl", sm: "3xl", md: "5xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                            ><Text as={"span"} color={"green.400"}>Krankenhausreinigung</Text> München</Heading>
+                            ><Text as={"span"} color={"green.400"}>Krankenhausreinigung</Text>  Nürnberg, Fürth & Umgebung</Heading>
     
                             <Text my={3}>
-                                Professionelle medizinische Reinigung nach höchsten Hygienestandards für Kliniken, Praxen und Pflegeeinrichtungen in München & Umgebung
+                                Professionelle medizinische Reinigung nach höchsten Hygienestandards für Kliniken, Praxen und Pflegeeinrichtungen in  Nürnberg, Fürth & Umgebung & Umgebung
                             </Text>
     
                             <Grid
@@ -241,11 +241,11 @@ const HospitalCleaningServicePage = () => {
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                         Unsere  
-                        <Text as={"span"} color={"blue.600"}> Krankenhausreinigung München </Text> 
+                        <Text as={"span"} color={"blue.600"}> Krankenhausreinigung  Nürnberg, Fürth & Umgebung </Text> 
                          Leistungen
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                        Von der <b>OP-Reinigung München</b> bis zur <b>Praxisreinigung München</b> – {company_name} bietet maßgeschneiderte Reinigungslösungen für alle Bereiche des Gesundheitswesens in München, Schwabing, Sendling, Giesing und dem gesamten Münchner Umland.
+                        Von der <b>OP-Reinigung  Nürnberg, Fürth & Umgebung</b> bis zur <b>Praxisreinigung  Nürnberg, Fürth & Umgebung</b> – {company_name} bietet maßgeschneiderte Reinigungslösungen für alle Bereiche des Gesundheitswesens in  Nürnberg, Fürth & Umgebung, Schwabing, Sendling, Giesing und dem gesamten Münchner Umland.
                     </Text>
     
                     <Grid
@@ -479,12 +479,12 @@ const HospitalCleaningServicePage = () => {
 
                         <Badge bg={"bg"} color={"blue.600"} fontWeight={"bolder"} textTransform={"uppercase"} py={2} px={3} rounded={"full"}>
                             <FaShieldAlt />
-                            VERTRAUEN & EXPERTISE IN MÜNCHEN
+                            VERTRAUEN & EXPERTISE IN  Nürnberg, Fürth & Umgebung
                         </Badge>
                         
-                        <Heading as={"h4"} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.5} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>medizinische Einrichtungen </Text> in München uns wählen</Heading>
+                        <Heading as={"h4"} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.5} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>medizinische Einrichtungen </Text> in  Nürnberg, Fürth & Umgebung uns wählen</Heading>
 
-                        <Text>Seit über 15 Jahren vertrauen Krankenhäuser, Kliniken und Praxen in München, Schwabing, Sendling, Giesing, Maxvorstadt und dem gesamten Münchner Umland auf unsere professionelle <b>Krankenhausreinigung München</b>.</Text>
+                        <Text>Seit über 15 Jahren vertrauen Krankenhäuser, Kliniken und Praxen in  Nürnberg, Fürth & Umgebung, Schwabing, Sendling, Giesing, Maxvorstadt und dem gesamten Münchner Umland auf unsere professionelle <b>Krankenhausreinigung  Nürnberg, Fürth & Umgebung</b>.</Text>
     
                         <Grid
                             w={"full"}
@@ -498,7 +498,7 @@ const HospitalCleaningServicePage = () => {
                             <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={medical_facilites}  suffix="+"/></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Medizinische Einrichtungen</Text>
-                                <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>in München betreut</Text>
+                                <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>in  Nürnberg, Fürth & Umgebung betreut</Text>
                             </GridItem>
     
                             <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
@@ -575,10 +575,10 @@ const HospitalCleaningServicePage = () => {
                             
                             <Heading as={"h3"} fontSize={{ base: "xl", md: "2xl"}} display={"flex"} gap={2} mt={4}>
                                 <Text color={"blue.400"}><FaLocationDot /></Text>
-                                 Unser Einzugsgebiet in München
+                                 Unser Einzugsgebiet in  Nürnberg, Fürth & Umgebung
                             </Heading>
 
-                            <Text fontSize={"sm"} mt={4} mb={-2}>Wir betreuen medizinische Einrichtungen in ganz München und Umgebung</Text>
+                            <Text fontSize={"sm"} mt={4} mb={-2}>Wir betreuen medizinische Einrichtungen in ganz  Nürnberg, Fürth & Umgebung und Umgebung</Text>
 
 
                             <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} w={"full"} mt={9} gap={5}>
@@ -587,7 +587,7 @@ const HospitalCleaningServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaHospital />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Innenstadt</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Innenstadt</Text>
                                     <Text fontSize={"sm"}>Maxvorstadt, Altstadt</Text>
                                 </VStack>
                             
@@ -595,7 +595,7 @@ const HospitalCleaningServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaStethoscope />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Nord</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Nord</Text>
                                     <Text fontSize={"sm"}>Schwabing, Milbertshofen</Text>
                                 </VStack>
             
@@ -603,7 +603,7 @@ const HospitalCleaningServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaAmbulance />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Süd</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Süd</Text>
                                     <Text fontSize={"sm"}>Sendling, Giesing</Text>
                                 </VStack>
             
@@ -611,7 +611,7 @@ const HospitalCleaningServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaFirstAid />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Umland</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Umland</Text>
                                     <Text fontSize={"sm"}>Garching, Unterschleißheim</Text>
                                 </VStack>
             
@@ -630,9 +630,9 @@ const HospitalCleaningServicePage = () => {
                                 </HStack>
                                 
                                 <Text fontStyle={"italic"} textAlign={"center"} maxW={"600px"} fontWeight={"medium"} opacity={0.8} fontSize={"sm"}>
-                                    Als Klinikleitung sind wir auf höchste Hygienestandards angewiesen. Arisma Gebäudedienste übertrifft unsere Erwartungen kontinuierlich mit ihrer professionellen Krankenhausreinigung München. Die RKI-konforme Arbeitsweise und die schnelle Reaktionszeit bei Notfällen machen sie zu unserem vertrauensvollen Partner.
+                                    Als Klinikleitung sind wir auf höchste Hygienestandards angewiesen. Popp Dienstleistungen Gebäudedienste übertrifft unsere Erwartungen kontinuierlich mit ihrer professionellen Krankenhausreinigung  Nürnberg, Fürth & Umgebung. Die RKI-konforme Arbeitsweise und die schnelle Reaktionszeit bei Notfällen machen sie zu unserem vertrauensvollen Partner.
                                 </Text>
-                                <Text fontStyle={"italic"} opacity={0.8} textAlign={"center"} fontSize={"sm"}> - Dr. Schmidt, Klinikleitung München</Text>
+                                <Text fontStyle={"italic"} opacity={0.8} textAlign={"center"} fontSize={"sm"}> - Dr. Schmidt, Klinikleitung  Nürnberg, Fürth & Umgebung</Text>
                             </VStack>
                         </Box> */}
 
@@ -641,7 +641,7 @@ const HospitalCleaningServicePage = () => {
                             <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Bereit für höchste Hygienestandards?</Heading>
         
                             <Text maxW={"500px"} textAlign={"center"} lineHeight={1.7} my={3}>
-                                Vereinbaren Sie noch heute eine kostenlose Hygienebesichtigung für Ihre medizinische Einrichtung in München.
+                                Vereinbaren Sie noch heute eine kostenlose Hygienebesichtigung für Ihre medizinische Einrichtung in  Nürnberg, Fürth & Umgebung.
                             </Text>
         
                             <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
@@ -677,10 +677,10 @@ const HospitalCleaningServicePage = () => {
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md: "3xl" }} lineHeight={1.4}>
                         FAQ zur  
-                        <Text as={"span"} color={"blue.600"}> Krankenhausreinigung München </Text> 
+                        <Text as={"span"} color={"blue.600"}> Krankenhausreinigung  Nürnberg, Fürth & Umgebung </Text> 
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                       Antworten auf die wichtigsten Fragen zu unseren medizinischen Reinigungsdienstleistungen, Hygienestandards und <b>OP-Reinigung München</b> Services.
+                       Antworten auf die wichtigsten Fragen zu unseren medizinischen Reinigungsdienstleistungen, Hygienestandards und <b>OP-Reinigung  Nürnberg, Fürth & Umgebung</b> Services.
                     </Text>
 
                     {/* faqs */}
@@ -693,7 +693,7 @@ const HospitalCleaningServicePage = () => {
 
                     <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_dark_background" py={12} px={6}>
     
-                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Weitere Fragen zur Krankenhausreinigung München?</Heading>
+                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Weitere Fragen zur Krankenhausreinigung  Nürnberg, Fürth & Umgebung?</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
                             Unser Expertenteam beantwortet gerne alle Ihre Fragen zu medizinischer Reinigung, Hygienestandards und individuellen Lösungen für Ihre Einrichtung.
@@ -735,7 +735,7 @@ const HospitalCleaningServicePage = () => {
                         <Text as={"span"} color={"green.400"}> Hygienebesichtigung </Text> für Ihre medizinische Einrichtung
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                       Professionelle <b>Krankenhausreinigung München, OP-Reinigung München</b> und <b>Praxisreinigung München</b> nach höchsten Standards. Vereinbaren Sie noch heute einen kostenlosen Beratungstermin.
+                       Professionelle <b>Krankenhausreinigung  Nürnberg, Fürth & Umgebung, OP-Reinigung  Nürnberg, Fürth & Umgebung</b> und <b>Praxisreinigung  Nürnberg, Fürth & Umgebung</b> nach höchsten Standards. Vereinbaren Sie noch heute einen kostenlosen Beratungstermin.
                     </Text>
 
                     <Flex gap={12} gapY={24} align={"start"} flexDir={{ base: "column", xl: "row" }} w={"full"}>
@@ -815,7 +815,7 @@ const HospitalCleaningServicePage = () => {
                             </VStack>
 
                             <VStack gap={2} align={"start"} my={6}>
-                                <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort in München</Text>
+                                <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort in  Nürnberg, Fürth & Umgebung</Text>
                                 <select required name="location" className=" w-full border! rounded-md py-1.5! border-black/10! text-sm! px-2.5! outline-black/30! h-10! form_input">
                                     {
                                         locationsList.map((opt, i) => {
@@ -900,7 +900,7 @@ const HospitalCleaningServicePage = () => {
                                     <Text><FaLocationDot /></Text>
                                 </Center>
                                 <VStack align={"start"}>
-                                    <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort München</Text>
+                                    <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort  Nürnberg, Fürth & Umgebung</Text>
                                     <Text className="-mt-1.5! font-bold! whitespace-pre-wrap">{address}</Text>
                                 </VStack>
                             </HStack>

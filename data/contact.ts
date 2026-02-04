@@ -7,13 +7,13 @@ const address: string = `Moosacher Str. 13
 80809 Munich
 Deutschland
 `;
-const operational_region: string = "München";
+const operational_region: string = " Nürnberg, Fürth & Umgebung";
 
 // used in footer
 
 const mobile: string = "+49 176 6767 9634"; // add country code as well
 const official_mail: string = "contact@modernweb.in";
-const service_area: string = "München und Umgebung";
+const service_area: string = " Nürnberg, Fürth & Umgebung und Umgebung";
 const opening_hours: string = `Mo-Fr: 7:00-18:00 Uhr
 Sa: 8:00-16:00 Uhr
 24/7 Notfall-Service

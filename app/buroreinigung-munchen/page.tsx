@@ -24,7 +24,7 @@ const OfficeCleaningPage = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaBuilding /> Reinigungsfirma München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaBuilding /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={"4xl"} lineHeight={1.25} fontWeight={"bolder"}
                         >Reinigungsfirma  Nürnberg, Fürth & Umgebung
 
@@ -556,7 +556,7 @@ const OfficeCleaningPage = () => {
             </VStack>
 
             <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={{ base: 6, md: 12 }} rounded={"xl"} my={8}>
-                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Vorteile Ihrer Büroreinigung München</Heading>
+                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Vorteile Ihrer Büroreinigung Nürnberg, Fürth & Umgebung</Heading>
 
                 <Grid 
                     gap={6}
@@ -736,17 +736,17 @@ const OfficeCleaningPage = () => {
 
                 <VStack mt={2} gap={3} w={"full"} bg={"bg/15"} rounded={"md"} p={6} border={"1px solid"} borderColor={"bg"} textAlign={"center"}>
                     
-                    <Heading as={"h5"} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Büroreinigung München für Unternehmen</Heading>
+                    <Heading as={"h5"} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Büroreinigung Nürnberg, Fürth & Umgebung für Unternehmen</Heading>
 
-                    <Heading as={"h6"} mt={2} fontSize={"lg"} fontWeight={"bolder"}>Büroreinigung München – zuverlässig. gründlich. professionell.</Heading>
+                    <Heading as={"h6"} mt={2} fontSize={"lg"} fontWeight={"bolder"}>Büroreinigung Nürnberg, Fürth & Umgebung – zuverlässig. gründlich. professionell.</Heading>
 
                     <Text maxW={"800px"}>
-                        {company_name} ist Ihre erfahrene Reinigungsfirma in München für hygienische und gepflegte Arbeitsumgebungen. Wir halten Ihre Büroräume sauber – täglich, zuverlässig und mit höchsten Standards.
+                        {company_name} ist Ihre erfahrene Reinigungsfirma in Nürnberg, Fürth & Umgebung für hygienische und gepflegte Arbeitsumgebungen. Wir halten Ihre Büroräume sauber – täglich, zuverlässig und mit höchsten Standards.
 
                         <br /><br />
 
                         Ob <b>Unterhaltsreinigung</b> oder <b>regelmäßige Grundreinigung</b>:
-                        Wir bieten maßgeschneiderte Lösungen für Büros, Praxen und Gewerbeobjekte in München und Umgebung.
+                        Wir bieten maßgeschneiderte Lösungen für Büros, Praxen und Gewerbeobjekte in Nürnberg, Fürth & Umgebung und Umgebung.
 
                         <br /><br />
 

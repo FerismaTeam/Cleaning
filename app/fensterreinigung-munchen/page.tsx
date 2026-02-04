@@ -25,14 +25,14 @@ const WindowCleainingPage = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaWindowMaximize /> Reinigungsfirma München</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaWindowMaximize /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                        >Fensterreinigung München</Heading>
+                        >Fensterreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                         <Text fontWeight={"bolder"}>Klarer Durchblick</Text>
 
                         <Text opacity={0.55} my={3}>
-                           Saubere Fenster sorgen für mehr Licht. Arisma Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Fensterreinigung in München – streifenfrei, sicher und gründlich.
+                           Saubere Fenster sorgen für mehr Licht. Popp Dienstleistungen Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Fensterreinigung in  Nürnberg, Fürth & Umgebung – streifenfrei, sicher und gründlich.
                         </Text>
 
                         <Grid
@@ -143,10 +143,10 @@ const WindowCleainingPage = () => {
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
                     Professionelle Fenster- und  
-                    <Text as={"span"} color={"blue.600"}> Glasreinigung München </Text> 
+                    <Text as={"span"} color={"blue.600"}> Glasreinigung  Nürnberg, Fürth & Umgebung </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    {company_name} bietet professionelle Fenster- und Glasreinigung in München – innen und außen, für Büros, Praxen, Hotels und Gewerbeobjekte. Unsere Spezialisten sorgen für glasklare Ergebnisse, auch an schwer zugänglichen Flächen. Mit moderner Osmose-Technik garantieren wir streifenfreie Sauberkeit und langanhaltenden Glanz.
+                    {company_name} bietet professionelle Fenster- und Glasreinigung in  Nürnberg, Fürth & Umgebung – innen und außen, für Büros, Praxen, Hotels und Gewerbeobjekte. Unsere Spezialisten sorgen für glasklare Ergebnisse, auch an schwer zugänglichen Flächen. Mit moderner Osmose-Technik garantieren wir streifenfreie Sauberkeit und langanhaltenden Glanz.
                 </Text>
 
                 <Grid
@@ -159,7 +159,7 @@ const WindowCleainingPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaBuilding /></Center>
                             <Heading as={"h5"}>Für Büros & Gewerbe</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Professionelle Fensterreinigung München für Bürogebäude, Praxen, Hotels und gewerbliche Immobilien – innen wie außen perfekt gereinigt.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Professionelle Fensterreinigung  Nürnberg, Fürth & Umgebung für Bürogebäude, Praxen, Hotels und gewerbliche Immobilien – innen wie außen perfekt gereinigt.</Text>
                         </VStack>
                     </GridItem>
 
@@ -167,7 +167,7 @@ const WindowCleainingPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><HiMiniSparkles /></Center>
                             <Heading as={"h5"}>Glasklare Ergebnisse</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Streifenfreie Glasreinigung München durch erfahrene Fensterputzer und moderne Osmose-Technik – für perfekte Durchsicht und gepflegte Fassaden.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Streifenfreie Glasreinigung  Nürnberg, Fürth & Umgebung durch erfahrene Fensterputzer und moderne Osmose-Technik – für perfekte Durchsicht und gepflegte Fassaden.</Text>
                         </VStack>
                     </GridItem>
 
@@ -283,7 +283,7 @@ const WindowCleainingPage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>  UNSERE LEISTUNGEN</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
-                    Fensterreinigung München –  
+                    Fensterreinigung  Nürnberg, Fürth & Umgebung –  
                     <Text as={"span"} color={"blue.600"}> Unser Leistungsspektrum </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
@@ -449,10 +449,10 @@ const WindowCleainingPage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaStar /></Text> IHRE VORTEILE</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
-                    Warum {company_name} als <Text color={"blue.600"} > Fensterputzer München?</Text>
+                    Warum {company_name} als <Text color={"blue.600"} > Fensterputzer  Nürnberg, Fürth & Umgebung?</Text>
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
-                    Vertrauen Sie auf Qualität, Zuverlässigkeit und Sicherheit bei Ihrer Glasreinigung München.
+                    Vertrauen Sie auf Qualität, Zuverlässigkeit und Sicherheit bei Ihrer Glasreinigung  Nürnberg, Fürth & Umgebung.
                 </Text>
 
                 <Grid
@@ -465,7 +465,7 @@ const WindowCleainingPage = () => {
                         <VStack gap={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><HiMiniSparkles /></Center>
                             <Heading as={"h5"} textAlign={"center"}>Streifenfreie Ergebnisse</Heading>
-                            <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Durch Osmose-Technik und professionelle Fensterputzer München garantieren wir perfekt saubere Fenster ohne Streifen.</Text>
+                            <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Durch Osmose-Technik und professionelle Fensterputzer  Nürnberg, Fürth & Umgebung garantieren wir perfekt saubere Fenster ohne Streifen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -498,7 +498,7 @@ const WindowCleainingPage = () => {
             </VStack>
 
             <Box shadow={"lg"} className="gradient_dark_background" color={"bg"} p={12} rounded={"xl"} my={8}>
-                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Qualitätsmerkmale unserer Fensterreinigung München</Heading>
+                <Heading as={"h6"} fontWeight={"bolder"} fontSize={"2xl"} mb={4} textAlign={"center"}>Weitere Qualitätsmerkmale unserer Fensterreinigung  Nürnberg, Fürth & Umgebung</Heading>
 
                 <Grid 
                     gap={6}
@@ -569,7 +569,7 @@ const WindowCleainingPage = () => {
                     <VStack gap={4}>
                         <Center w={12} aspectRatio={"square"} rounded={"lg"} color={"blue.600"} className="group-hover:text-white!" fontSize={"3xl"}><FaStore /></Center>
                         <Heading as={"h5"} textAlign={"center"}>Einzelhandel & Praxen</Heading>
-                        <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Schaufensterreinigung München für Geschäfte und medizinische Praxen.</Text>
+                        <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Schaufensterreinigung  Nürnberg, Fürth & Umgebung für Geschäfte und medizinische Praxen.</Text>
                     </VStack>
                 </GridItem>
 
@@ -593,11 +593,11 @@ const WindowCleainingPage = () => {
 
                 <Heading textAlign={"center"} as={"h4"} my={2} lineHeight={1.4} fontSize={"3xl"} fontWeight={"bolder"}>
                     Glasklare Fenster für Ihr 
-                    <Text as={"span"} color={"cyan.400"}> Unternehmen in München</Text>
+                    <Text as={"span"} color={"cyan.400"}> Unternehmen in  Nürnberg, Fürth & Umgebung</Text>
                 </Heading>
 
                 <Text textAlign={"center"} maxW={"600px"}>
-                    Jetzt kostenlose Besichtigung für professionelle Fenster- und Glasreinigung München buchen oder direkt Angebot anfordern.
+                    Jetzt kostenlose Besichtigung für professionelle Fenster- und Glasreinigung  Nürnberg, Fürth & Umgebung buchen oder direkt Angebot anfordern.
                 </Text>
 
                 <HStack mt={7} gap={4} justify={"center"} flexWrap={"wrap"}>
@@ -710,12 +710,12 @@ const WindowCleainingPage = () => {
 
                 <VStack mt={2} gap={3} w={"full"} bg={"bg/15"} rounded={"md"} p={6} border={"1px solid"} borderColor={"bg"} textAlign={"center"}>
                     
-                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Fensterreinigung München & Glasreinigung</Heading>
+                    <Heading as={"h5"} mb={4} fontSize={"xl"} fontWeight={"bolder"}>Professionelle Fensterreinigung  Nürnberg, Fürth & Umgebung & Glasreinigung</Heading>
 
                     <Text maxW={"800px"}>
-                        {company_name}  ist Ihr Experte für <b>Fensterreinigung München</b> und <b>Glasreinigung München</b>. Als professioneller Fensterputzer München sorgen wir für streifenfreie Sauberkeit an Ihren Fenstern, Glasfassaden und Schaufenstern.
+                        {company_name}  ist Ihr Experte für <b>Fensterreinigung  Nürnberg, Fürth & Umgebung</b> und <b>Glasreinigung  Nürnberg, Fürth & Umgebung</b>. Als professioneller Fensterputzer  Nürnberg, Fürth & Umgebung sorgen wir für streifenfreie Sauberkeit an Ihren Fenstern, Glasfassaden und Schaufenstern.
                         <br /><br />
-                        Von der einfachen Bürofensterreinigung über <b>Schaufensterreinigung München</b> bis zur Hochhaus-Glasfassade – unser sicherheitsgeschultes Team setzt modernste Osmose-Technik ein für perfekte Ergebnisse. Vertrauen Sie auf jahrelange Erfahrung in der professionellen Fenster- und Glasreinigung in München und Umgebung.
+                        Von der einfachen Bürofensterreinigung über <b>Schaufensterreinigung  Nürnberg, Fürth & Umgebung</b> bis zur Hochhaus-Glasfassade – unser sicherheitsgeschultes Team setzt modernste Osmose-Technik ein für perfekte Ergebnisse. Vertrauen Sie auf jahrelange Erfahrung in der professionellen Fenster- und Glasreinigung in  Nürnberg, Fürth & Umgebung und Umgebung.
 
                     </Text>
 

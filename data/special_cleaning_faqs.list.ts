@@ -3,11 +3,11 @@ import { Faq } from "./hospital_cleaning_faqs.list";
 
 const specialCleaningFAQs: Faq[] = [
     {
-        question: "Was unterscheidet die Baureinigung München von der normalen Gebäudereinigung?",
+        question: "Was unterscheidet die Baureinigung Nürnberg, Fürth & Umgebung von der normalen Gebäudereinigung?",
         answer: [
             {
                 type: "text",
-                content: "Die **Baureinigung München** ist wesentlich intensiver und erfordert spezielle Verfahren:"
+                content: "Die **Baureinigung Nürnberg, Fürth & Umgebung** ist wesentlich intensiver und erfordert spezielle Verfahren:"
             },
             {
                 type: "point",
@@ -48,7 +48,7 @@ const specialCleaningFAQs: Faq[] = [
             },
             {
                 type: "point",
-                content: "**Anfahrtszeit**: Binnen 30-90 Minuten vor Ort (je nach Standort in München)"
+                content: "**Anfahrtszeit**: Binnen 30-90 Minuten vor Ort (je nach Standort in Nürnberg, Fürth & Umgebung)"
             },
             {
                 type: "point",
@@ -119,11 +119,11 @@ const specialCleaningFAQs: Faq[] = [
         ]
     },
     {
-        question: "Was ist bei der Grundreinigung München in Industrieanlagen besonders zu beachten?",
+        question: "Was ist bei der Grundreinigung Nürnberg, Fürth & Umgebung in Industrieanlagen besonders zu beachten?",
         answer: [
             {
                 type: "text",
-                content: "Die **Grundreinigung München** in Industrieanlagen erfordert besondere Expertise:"
+                content: "Die **Grundreinigung Nürnberg, Fürth & Umgebung** in Industrieanlagen erfordert besondere Expertise:"
             },
             {
                 type: "point",
@@ -222,17 +222,17 @@ const specialCleaningFAQs: Faq[] = [
         ]
     },
     {
-        question: "Welche Stadtteile in München decken Sie für Sonderreinigungen ab?",
+        question: "Welche Stadtteile in Nürnberg, Fürth & Umgebung decken Sie für Sonderreinigungen ab?",
         answer: [
             {
                 type: "text",
-                content: "Unsere **Sonderreinigung München** Services decken das komplette Stadtgebiet ab:"
+                content: "Unsere **Sonderreinigung Nürnberg, Fürth & Umgebung** Services decken das komplette Stadtgebiet ab:"
             },
             {
                 type: "grid",
                 content: [
                     {
-                        title: "München Zentrum:",
+                        title: "Nürnberg, Fürth & Umgebung Zentrum:",
                         points: [
                             "Altstadt-Lehel",
                             "Ludwigsvorstadt-Isarvorstadt",
@@ -241,7 +241,7 @@ const specialCleaningFAQs: Faq[] = [
                         ]
                     },
                     {
-                        title: "München Nord/West::",
+                        title: "Nürnberg, Fürth & Umgebung Nord/West::",
                         points: [
                             "Schwabing-West & Schwabing-Freimann",
                             "Milbertshofen-Am Hart",
@@ -250,7 +250,7 @@ const specialCleaningFAQs: Faq[] = [
                         ]
                     },
                     {
-                        title: "München Süd/Ost:",
+                        title: "Nürnberg, Fürth & Umgebung Süd/Ost:",
                         points: [
                             "Sendling-Westpark & Sendling",
                             "Untergiesing-Harlaching",
@@ -262,7 +262,7 @@ const specialCleaningFAQs: Faq[] = [
             },
             {
                 type: "block",
-                title: "München Umland:",
+                title: "Nürnberg, Fürth & Umgebung Umland:",
                 content: "Garching, Unterschleißheim, Planegg, Gräfelfing, Haar, Vaterstetten, Freising, Erding, Dachau und weitere Gemeinden im Münchner Umland."
             }
         ]

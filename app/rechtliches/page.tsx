@@ -28,7 +28,7 @@ const LegalPage = () => {
 
                 <Heading as={"h1"} fontSize={{ base: "3xl", md: "4xl" }} fontWeight={"bolder"}>Rechtliches</Heading>
                 
-                <Text textAlign={"center"} maxW={"800px"} lineHeight={1.85} opacity={0.8} px={"1"}>Hier finden Sie alle rechtlichen Informationen zu Arisma Gebäudedienste München – Impressum, Datenschutzerklärung und Allgemeine Geschäftsbedingungen.</Text>
+                <Text textAlign={"center"} maxW={"800px"} lineHeight={1.85} opacity={0.8} px={"1"}>Hier finden Sie alle rechtlichen Informationen zu Popp Dienstleistungen Gebäudedienste  Nürnberg, Fürth & Umgebung – Impressum, Datenschutzerklärung und Allgemeine Geschäftsbedingungen.</Text>
 
                 <Box>
                     <HStack gap={4} wrap={"wrap"} justify={"center"}>

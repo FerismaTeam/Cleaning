@@ -68,10 +68,10 @@ const SpecialServicePage = () => {
 
                             <Badge color={"bg"} bg={"bg/15"} className="backdrop_blur" rounded={"full"} px={4} py={2} fontSize={"14px"} gap={2} textWrap={"wrap"}> <Text color={"red.500"}><FaClock /></Text> 24H NOTFALL-SERVICE VERFÜGBAR</Badge>
                             <Heading as={"h1"} color={"bg"} my={3} fontSize={{ base: "3xl", md: "5xl" }} lineHeight={1.25} fontWeight={"bolder"}
-                            ><Text as={"span"} color={"green.400"}>Sonderreinigung</Text> München</Heading>
+                            ><Text as={"span"} color={"green.400"}>Sonderreinigung</Text>  Nürnberg, Fürth & Umgebung</Heading>
 
                             <Text my={3}>
-                                Professionelle <b>Spezialreinigung München</b> für komplexe Fälle: Baureinigung, Grundreinigung, Graffitientfernung, Entrümpelung nach Brand, Umzug oder Sanierung
+                                Professionelle <b>Spezialreinigung  Nürnberg, Fürth & Umgebung</b> für komplexe Fälle: Baureinigung, Grundreinigung, Graffitientfernung, Entrümpelung nach Brand, Umzug oder Sanierung
                             </Text>
 
                             <Grid
@@ -85,7 +85,7 @@ const SpecialServicePage = () => {
                                         <Center color={"bg"} minW={8} aspectRatio={"square"} rounded={"full"} bg={"green.500"}>
                                             <Text><FaHelmetSafety /></Text>
                                         </Center>
-                                        <Text>Baureinigung München</Text>
+                                        <Text>Baureinigung  Nürnberg, Fürth & Umgebung</Text>
                                     </HStack>
                                 </GridItem>
 
@@ -94,7 +94,7 @@ const SpecialServicePage = () => {
                                         <Center color={"bg"} minW={8} aspectRatio={"square"} rounded={"full"} bg={"green.500"}>
                                             <Text><FaTools /></Text>
                                         </Center>
-                                        <Text>Grundreinigung München</Text>
+                                        <Text>Grundreinigung  Nürnberg, Fürth & Umgebung</Text>
                                     </HStack>
                                 </GridItem>
 
@@ -246,10 +246,10 @@ const SpecialServicePage = () => {
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={{ base: "2xl", md:"3xl" }} lineHeight={1.4}>
                         Unsere 
-                        <Text as={"span"} color={"blue.600"}> Sonderreinigung München </Text> Leistungen
+                        <Text as={"span"} color={"blue.600"}> Sonderreinigung  Nürnberg, Fürth & Umgebung </Text> Leistungen
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                        Von der <b>Baureinigung München</b> bis zur <b>Grundreinigung München</b> – {company_name} löst komplexe Reinigungsherausforderungen in München, Schwabing, Haidhausen, Obersendling und dem gesamten Münchner Umland.
+                        Von der <b>Baureinigung  Nürnberg, Fürth & Umgebung</b> bis zur <b>Grundreinigung  Nürnberg, Fürth & Umgebung</b> – {company_name} löst komplexe Reinigungsherausforderungen in  Nürnberg, Fürth & Umgebung, Schwabing, Haidhausen, Obersendling und dem gesamten Münchner Umland.
                     </Text>
 
                     <Grid
@@ -525,7 +525,7 @@ const SpecialServicePage = () => {
                         <Heading as={"h6"} mt={5} textWrap={"wrap"} textAlign={"center"} fontWeight={"bolder"} fontSize={{ base: "xl", md:"2xl" }}>Komplexe Reinigungsherausforderung?</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
-                            Unsere <b>Spezialreinigung München</b> Expertise löst auch schwierigste Fälle. Kontaktieren Sie uns für eine kostenlose Objektbesichtigung und ein individuelles Angebot.
+                            Unsere <b>Spezialreinigung  Nürnberg, Fürth & Umgebung</b> Expertise löst auch schwierigste Fälle. Kontaktieren Sie uns für eine kostenlose Objektbesichtigung und ein individuelles Angebot.
                         </Text>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
@@ -566,12 +566,12 @@ const SpecialServicePage = () => {
 
                         <Badge bg={"bg"} color={"blue.600"} fontWeight={"bolder"} textTransform={"uppercase"} py={2} px={3} rounded={"full"}>
                             <FaAward />
-                            VERTRAUEN & EXPERTISE IN MÜNCHEN
+                            VERTRAUEN & EXPERTISE IN  Nürnberg, Fürth & Umgebung
                         </Badge>
                         
-                        <Heading as={"h4"} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.4} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>Unternehmen in München </Text> uns wählen</Heading>
+                        <Heading as={"h4"} fontSize={{ base: "3xl", md: "4xl" }} lineHeight={1.4} fontWeight={"bolder"}>Warum <Text as={"span"} color={"cyan.400"}>Unternehmen in  Nürnberg, Fürth & Umgebung </Text> uns wählen</Heading>
 
-                        <Text>Seit Jahren vertrauen Bauunternehmen, Hausverwaltungen und Gewerbeimmobilienbesitzer in München, Schwabing, Haidhausen, Obersendling und dem gesamten Münchner Umland auf unsere professionelle <b>Sonderreinigung München</b>.</Text>
+                        <Text>Seit Jahren vertrauen Bauunternehmen, Hausverwaltungen und Gewerbeimmobilienbesitzer in  Nürnberg, Fürth & Umgebung, Schwabing, Haidhausen, Obersendling und dem gesamten Münchner Umland auf unsere professionelle <b>Sonderreinigung  Nürnberg, Fürth & Umgebung</b>.</Text>
     
                         <Grid
                             w={"full"}
@@ -637,7 +637,7 @@ const SpecialServicePage = () => {
                                     </Center>
                                     <Heading lineHeight={1.3} fontSize={"xl"} fontWeight={"bolder"} as={"h6"}>24h-Notfall-Service</Heading>
                                     <Text fontSize={"sm"} lineHeight={1.65}>
-                                    Bei dringenden Einsätzen wie Brand- oder Wasserschäden sind wir rund um die Uhr erreichbar und binnen kürzester Zeit vor Ort in München.
+                                    Bei dringenden Einsätzen wie Brand- oder Wasserschäden sind wir rund um die Uhr erreichbar und binnen kürzester Zeit vor Ort in  Nürnberg, Fürth & Umgebung.
                                     </Text>
                                     
                                 </VStack>
@@ -662,10 +662,10 @@ const SpecialServicePage = () => {
                             
                             <Heading as={"h3"} fontSize={"2xl"} display={"flex"} gap={2} mt={4}>
                                 <Text color={"blue.400"}><FaLocationDot /></Text>
-                                 Sonderreinigung München & Umgebung
+                                 Sonderreinigung  Nürnberg, Fürth & Umgebung & Umgebung
                             </Heading>
 
-                            <Text fontSize={"sm"} mt={4} mb={-2}>Wir betreuen Unternehmen, Bauvorhaben und Gewerbeimmobilien in ganz München</Text>
+                            <Text fontSize={"sm"} mt={4} mb={-2}>Wir betreuen Unternehmen, Bauvorhaben und Gewerbeimmobilien in ganz  Nürnberg, Fürth & Umgebung</Text>
 
 
                             <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} w={"full"} mt={9} gap={5}>
@@ -674,7 +674,7 @@ const SpecialServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaHospital />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Innenstadt</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Innenstadt</Text>
                                     <Text fontSize={"sm"}>Maxvorstadt, Altstadt</Text>
                                 </VStack>
                             
@@ -682,7 +682,7 @@ const SpecialServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaHelmetSafety />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Nord</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Nord</Text>
                                     <Text fontSize={"sm"}>Schwabing, Milbertshofen</Text>
                                 </VStack>
             
@@ -690,7 +690,7 @@ const SpecialServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaIndustry />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Süd</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Süd</Text>
                                     <Text fontSize={"sm"}>Haidhausen, Obersendling</Text>
                                 </VStack>
             
@@ -698,7 +698,7 @@ const SpecialServicePage = () => {
                                     <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                         <FaTools />
                                     </Center>
-                                    <Text fontWeight={"bolder"}>München Umland</Text>
+                                    <Text fontWeight={"bolder"}> Nürnberg, Fürth & Umgebung Umland</Text>
                                     <Text fontSize={"sm"}>Freising, Erding</Text>
                                 </VStack>
             
@@ -720,7 +720,7 @@ const SpecialServicePage = () => {
                                     </HStack>
                                     <Separator w={"full"} mb={2} opacity={0.1} />
                                     <VStack textAlign={"left"} w={"full"} align={"start"} borderLeft={"5px solid"} borderColor={"blue.500"} p={3} py={1} gap={0}>
-                                        <Text fontWeight={"medium"}>Bürogebäude München-Schwabing</Text>
+                                        <Text fontWeight={"medium"}>Bürogebäude  Nürnberg, Fürth & Umgebung-Schwabing</Text>
                                         <Text fontSize={"sm"} opacity={0.85}>Komplette Bauendreinigung nach Sanierung - 2.500 m²</Text>
                                     </VStack>
 
@@ -783,7 +783,7 @@ const SpecialServicePage = () => {
                                  Weitere Reinigungsdienstleistungen
                             </Heading>
 
-                            <Text fontSize={"sm"} mt={2} mb={-2}>Entdecken Sie unser komplettes Leistungsspektrum für München & Umgebung</Text>
+                            <Text fontSize={"sm"} mt={2} mb={-2}>Entdecken Sie unser komplettes Leistungsspektrum für  Nürnberg, Fürth & Umgebung & Umgebung</Text>
 
 
                             <Grid templateColumns={{ base: "1fr", xl: "repeat(3, 1fr)" }} w={"full"} mt={9} gap={5}>
@@ -833,7 +833,7 @@ const SpecialServicePage = () => {
                             <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Bereit für Ihre Sonderreinigung?</Heading>
         
                             <Text maxW={"500px"} textAlign={"center"} lineHeight={1.7} my={3}>
-                                Kontaktieren Sie uns für eine kostenlose Objektbesichtigung und professionelle Beratung zu Ihrer <b>Spezialreinigung München</b>.
+                                Kontaktieren Sie uns für eine kostenlose Objektbesichtigung und professionelle Beratung zu Ihrer <b>Spezialreinigung  Nürnberg, Fürth & Umgebung</b>.
                             </Text>
         
                             <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
@@ -869,10 +869,10 @@ const SpecialServicePage = () => {
                     
                     <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                         FAQ zur  
-                        <Text as={"span"} color={"blue.600"}> Sonderreinigung München </Text> 
+                        <Text as={"span"} color={"blue.600"}> Sonderreinigung  Nürnberg, Fürth & Umgebung </Text> 
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                        Antworten auf die wichtigsten Fragen zu unseren Spezialreinigungsdienstleistungen, <b>Baureinigung München, Grundreinigung München</b> und Notfall-Services.
+                        Antworten auf die wichtigsten Fragen zu unseren Spezialreinigungsdienstleistungen, <b>Baureinigung  Nürnberg, Fürth & Umgebung, Grundreinigung  Nürnberg, Fürth & Umgebung</b> und Notfall-Services.
                     </Text>
 
                     {/* faqs */}
@@ -885,7 +885,7 @@ const SpecialServicePage = () => {
 
                     <VStack gap={6} w={"full"} color={"bg"} rounded={"xl"} className="gradient_mix_two" py={12} px={6}>
     
-                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Weitere Fragen zur Sonderreinigung München?</Heading>
+                        <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Weitere Fragen zur Sonderreinigung  Nürnberg, Fürth & Umgebung?</Heading>
     
                         <Text maxW={"700px"} textAlign={"center"} lineHeight={1.7} my={3}>
                             Unser Expertenteam berät Sie gerne zu individuellen Lösungen für Ihre spezifischen Reinigungsherausforderungen und erstellt ein maßgeschneidertes Angebot.
@@ -927,7 +927,7 @@ const SpecialServicePage = () => {
                         <Text as={"span"} color={"green.400"}> Objektbesichtigung </Text> <br className="md:hidden" /> für Ihre Reinigungsherausforderung
                     </Heading>
                     <Text maxW={"800px"} textAlign={"center"} mt={3} mb={14} lineHeight={1.75} w={"full"} >
-                        Professionelle <b>Sonderreinigung München, Baureinigung München</b> und <b>Grundreinigung München</b> mit 24h-Notfall-Service. Vereinbaren Sie noch heute einen kostenlosen Beratungstermin.
+                        Professionelle <b>Sonderreinigung  Nürnberg, Fürth & Umgebung, Baureinigung  Nürnberg, Fürth & Umgebung</b> und <b>Grundreinigung  Nürnberg, Fürth & Umgebung</b> mit 24h-Notfall-Service. Vereinbaren Sie noch heute einen kostenlosen Beratungstermin.
                     </Text>
 
                     <Flex gap={12} gapY={16} align={"start"} flexDir={{ base: "column", xl: "row" }} w={"full"}>
@@ -1016,7 +1016,7 @@ const SpecialServicePage = () => {
                             </VStack>
 
                             <VStack gap={2} align={"start"} my={6}>
-                                <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Objektadresse in München</Text>
+                                <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Objektadresse in  Nürnberg, Fürth & Umgebung</Text>
                                 <Textarea
                                     resize={"none"}
                                     h={"100px"}
@@ -1126,7 +1126,7 @@ const SpecialServicePage = () => {
                                     <Text><FaLocationDot /></Text>
                                 </Center>
                                 <VStack align={"start"}>
-                                    <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort München</Text>
+                                    <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Standort  Nürnberg, Fürth & Umgebung</Text>
                                     <Text className="-mt-1.5! font-bold! whitespace-pre-wrap">{address}</Text>
                                 </VStack>
                             </HStack>
@@ -1238,7 +1238,7 @@ const SpecialServicePage = () => {
                                     }
                                 </HStack>
 
-                                <Text fontSize={"sm"}>München&apos;s führende Sonderreinigung</Text>
+                                <Text fontSize={"sm"}> Nürnberg, Fürth & Umgebung&apos;s führende Sonderreinigung</Text>
 
                             </VStack>
 

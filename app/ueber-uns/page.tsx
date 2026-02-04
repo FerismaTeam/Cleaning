@@ -193,7 +193,7 @@ const AboutPage = () => {
                                 <Text fontSize={{ base: "2xl", md: "3xl" }} color={"blue.400"}><FaQuoteLeft /></Text>
 
                                 <Text fontSize={"lg"} mt={5}>
-                                    Bei Arisma arbeiten Menschen, keine Maschinen. Jedes Teammitglied wird sorgfältig ausgewählt, regelmäßig geschult und nach höchsten Standards ausgebildet. Wir legen Wert auf Motivation, Verantwortungsbewusstsein und persönliche Entwicklung.
+                                    Bei Popp Dienstleistungen arbeiten Menschen, keine Maschinen. Jedes Teammitglied wird sorgfältig ausgewählt, regelmäßig geschult und nach höchsten Standards ausgebildet. Wir legen Wert auf Motivation, Verantwortungsbewusstsein und persönliche Entwicklung.
                                 </Text>
 
                                 <Text mt={5} mb={2} opacity={0.65}>
@@ -429,7 +429,7 @@ const AboutPage = () => {
                             <VStack align={"center"} gap={1}>
                                 <Center w={14} h={14} rounded={"full"} className="gradient_light_background_two" color={"blue.500"} fontSize={"2xl"}><FaStar /></Center>
                                 <Heading mt={4} textAlign={"center"} as={"h5"} fontSize={"18px"}>Erstklassige Bewertungen</Heading>
-                                <Text textAlign={"center"} opacity={0.7} fontSize={"sm"}>Höchste Kundenzufriedenheit in München</Text>
+                                <Text textAlign={"center"} opacity={0.7} fontSize={"sm"}>Höchste Kundenzufriedenheit in  Nürnberg, Fürth & Umgebung</Text>
                             </VStack>
 
                         </Box>
