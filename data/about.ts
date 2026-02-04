@@ -4,7 +4,7 @@
 
 // company details
 
-const company_name: string = "Modern web";
+const company_name: string = "Popp Dienstleistungen";
 const established_year: number = 2008;
 const company_location: string = " Nürnberg, Fürth & Umgebung";
 const hours_worked: number = 9000; // shown on home page
