@@ -7,8 +7,8 @@ const nextConfig: NextConfig = {
     experimental: {
       optimizePackageImports: ["@chakra-ui/react"],
     },
-    // basePath: `/${repo}`,
-    // assetPrefix: `/${repo}/`,
+    basePath: `/${repo}`,
+    assetPrefix: `/${repo}/`,
     output: "export",
     images: {
       unoptimized: true // required for github pages
