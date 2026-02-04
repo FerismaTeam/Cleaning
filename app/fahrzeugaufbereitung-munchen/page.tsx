@@ -127,7 +127,7 @@ const CarCleaningServicePage = () => {
                         <Text fontSize={"sm"} opacity={0.5}>Zuverlässigkeit</Text>
                     </Box>
 
-                    <Image alt="" src="/assets/car-cleaning-page-hero-section.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/car-cleaning-page-hero-section.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>
@@ -299,7 +299,7 @@ const CarCleaningServicePage = () => {
                         <Text fontSize={"sm"}>Dokumentiert</Text>
                     </VStack>
 
-                    <Image alt="" src="/assets/car-detail-banner.png" w={"90%"} mx="auto" h={{base: "auto", xl: "500px"}} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/car-detail-banner.png" w={"90%"} mx="auto" h={{base: "auto", xl: "500px"}} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>
@@ -410,7 +410,7 @@ const CarCleaningServicePage = () => {
                     
                     <Center pos={"relative"} w={"full"} p={8} overflow={"hidden"} rounded={"md"}>
 
-                        <Image src={"/assets/k2-premium.png"} w={"full"} h={"full"} alt="" pos="absolute" />
+                        <Image src={"./assets/k2-premium.png"} w={"full"} h={"full"} alt="" pos="absolute" />
 
                         <VStack pos={"relative"} w={"full"} className="backdrop_blur" p={4} bg={"bg/70"} rounded={"sm"}>
 
@@ -508,7 +508,7 @@ Labor-geprüft</Text>
                         <Text fontSize={"sm"} opacity={0.5}>Premium</Text>
                     </VStack>
 
-                    <Image alt="" src="/assets/k2-premium-banner.png" w={"90%"} mx="auto" h={"100%"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/k2-premium-banner.png" w={"90%"} mx="auto" h={"100%"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>

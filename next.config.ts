@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const repo = '';
+const repo = 'Cleaning';
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -8,7 +8,7 @@ const nextConfig: NextConfig = {
       optimizePackageImports: ["@chakra-ui/react"],
     },
     basePath: `/${repo}`,
-    assetPrefix: `/${repo}`,
+    assetPrefix: `/${repo}/`,
     output: "export",
     images: {
       unoptimized: true // required for github pages

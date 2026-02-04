@@ -20,7 +20,7 @@ const AboutPage = () => {
             <Box asChild>
 
                 <Center as={"section"} minH={"600px"} bg={"blue.900"} color={"bg"} position={"relative"} py={20}>
-                    {/* <Image src={"/assets/about-banner.jpg"} opacity={0.35} w={"full"} pointerEvents={"none"} h={"full"} pos={"absolute"} top={0} left={0} alt="" objectPosition={"bottom"} /> */}
+                    {/* <Image src={"./assets/about-banner.jpg"} opacity={0.35} w={"full"} pointerEvents={"none"} h={"full"} pos={"absolute"} top={0} left={0} alt="" objectPosition={"bottom"} /> */}
                     <VStack gap={10} align={"start"} w={{ base: "full", md: "auto" }} maxW={"900px"} pos={"relative"}>
                         
                         <Heading fontSize={"4xl"}>Über <Text as={"span"} color={"bg"}>{company_name}</Text></Heading>
@@ -79,7 +79,7 @@ const AboutPage = () => {
                             <Text fontSize={"sm"} textWrap={"nowrap"} mt={1}>Zuverlässigkeit</Text>
                             <Text fontSize={"sm"} textWrap={"nowrap"} mt={1} opacity={0.75}>Geld-zurück-Garantie</Text>
                         </Box>
-                        <Image src={"/assets/about-details-img.jpg"} w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} boxShadow="10px 10px 0 0 var(--chakra-colors-blue-500)" alt="" />
+                        <Image src={"./assets/about-details-img.jpg"} w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} boxShadow="10px 10px 0 0 var(--chakra-colors-blue-500)" alt="" />
                     </Center>
                 </Flex>
             </Box>
@@ -455,7 +455,7 @@ const AboutPage = () => {
                 <Flex gap={16} color={"bg"} alignItems={"start"} flexDir={{ base: "column", xl: "row" }}>
 
                     <Center pos={"relative"} maxW={"450px"} mx={"auto"} w={{ base: "full", xl: "50%" }}>
-                        <Image src={"/assets/about-director-note.jpg"} w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} alt="" />
+                        <Image src={"./assets/about-director-note.jpg"} w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} alt="" />
                     </Center>
 
                     <Box w={{ base: "full", xl: "50%" }}>
