@@ -26,12 +26,12 @@ const OfficeCleaningPage = () => {
 
                         <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaBuilding /> Reinigungsfirma München</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={"4xl"} lineHeight={1.25} fontWeight={"bolder"}
-                        >Büroreinigung München</Heading>
+                        >Reinigungsfirma  Nürnberg, Fürth & Umgebung
 
                         <Text fontWeight={"bolder"}>Sauberkeit, die wirkt</Text>
 
                         <Text opacity={0.55} my={3}>
-                           Saubere Arbeitsplätze steigern die Produktivität. Arisma Gebäudedienste ist Ihre zuverlässige Reinigungsfirma für professionelle Büroreinigung in München – diskret, gründlich und planbar.
+                           Saubere Arbeitsplätze steigern die Produktivität. Popp Dienstleistungen ist Ihre zuverlässige Reinigungsfirma für professionelle Sauberkeit in Nürnberg – diskret, gründlich und planbar.
                         </Text>
 
                         <Grid
@@ -142,7 +142,7 @@ const OfficeCleaningPage = () => {
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4} fontWeight={"bolder"}>
                     <Text as={"span"} color={"blue.600"}> Ihre Vorteile </Text> 
-                    mit {company_name} – Reinigungsfirma München  
+                    mit {company_name} – Reinigungsfirma  Nürnberg, Fürth & Umgebung
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>
                     Ob kleines Büro oder Großfläche: Wir bieten
@@ -168,7 +168,7 @@ const OfficeCleaningPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaCalendarCheck /></Center>
                             <Heading as={"h5"}>Regelmäßige Reinigung</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Tägliche, wöchentliche oder monatliche Büroreinigung München – wir passen uns Ihren individuellen Anforderungen und Betriebsabläufen an.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Tägliche, wöchentliche oder monatliche Reinigung Nürnberg – wir passen uns Ihren individuellen Anforderungen und Betriebsabläufen an.</Text>
                         </VStack>
                     </GridItem>
 
@@ -176,7 +176,7 @@ const OfficeCleaningPage = () => {
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaSliders /></Center>
                             <Heading as={"h5"}>Flexible Intervalle</Heading>
-                            <Text opacity={0.7} fontSize={"sm"}>Von der täglichen Unterhaltsreinigung bis zur monatlichen Grundreinigung – Ihre Reinigungsfirma München bietet maßgeschneiderte Lösungen.</Text>
+                            <Text opacity={0.7} fontSize={"sm"}>Von der täglichen Unterhaltsreinigung bis zur monatlichen Grundreinigung – Ihre Reinigungsfirma Nürnberg, Fürth & Umgebung maßgeschneiderte Lösungen.</Text>
                         </VStack>
                     </GridItem>
 
@@ -292,7 +292,7 @@ const OfficeCleaningPage = () => {
                 <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaListCheck /></Text>  UNSERE LEISTUNGEN</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
-                    Büroreinigung München –  
+                    Büroreinigung  Nürnberg, Fürth & Umgebung -
                     <Text as={"span"} color={"blue.600"}> Unser Service-Angebot </Text> 
                 </Heading>
                 <Text maxW={"800px"} textAlign={"center"} mt={3} mb={6} lineHeight={1.75} w={"full"} fontSize={"sm"}>

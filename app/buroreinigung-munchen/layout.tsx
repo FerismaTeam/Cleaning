@@ -3,7 +3,7 @@ import { Metadata } from "next"
 import React from "react"
 
 export const metadata: Metadata = {
-    title: "Büroreinigung München | " + company_name,
+    title: "Reinigungsfirma Nürnberg | " + company_name,
     description: "" // page description
 }
 
