@@ -213,7 +213,7 @@ const Page = () => {
                             <HStack gap={3} mb={2}>
                             
                                 <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"green.600"}>
-                                    <PiOfficeChariFill />
+                                    <PiOfficeChairFill />
                                 </Center>
 
                                 <Box>
@@ -367,6 +367,12 @@ const Page = () => {
                             {/* rating */}
 
                             <HStack bg={"blue.100"} p={3} color={"blue.500"}  w="99%" mx={"auto"}  rounded={"lg"} fontSize={"sm"}>
+
+                                <HStack gap={2}>
+                                    <FaHandshake />
+                                    {/* only change content between Text Tag */}
+                                    <Text fontWeight={"semibold"}>Change page.tsx line - 374</Text>
+                                </HStack>
 
                                 <HStack gap={0.5}>
                                     {

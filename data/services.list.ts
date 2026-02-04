@@ -88,18 +88,18 @@ const services: ServiceType[] = [
             "Hygienemanagement",
         ],
     },
-    {
-        icon: FaHospital,
-        name: "Krankenhausreinigung Nürnberg, Fürth & Umgebung",
-        link: "Krankenhausreinigung-nuernberg",
-        des: "Spezielle Krankenhaus- und Praxisreinigung mit Desinfektion. Höchste Hygienestandards für medizinische Einrichtungen.",
-        features: [
-            "Desinfektion",
-            "OP-Bereiche",
-            "Patientenzimmer",
-            "Sondermüll",
-        ],
-    },
+    // {
+    //     icon: FaHospital,
+    //     name: "Krankenhausreinigung Nürnberg, Fürth & Umgebung",
+    //     link: "Krankenhausreinigung-nuernberg",
+    //     des: "Spezielle Krankenhaus- und Praxisreinigung mit Desinfektion. Höchste Hygienestandards für medizinische Einrichtungen.",
+    //     features: [
+    //         "Desinfektion",
+    //         "OP-Bereiche",
+    //         "Patientenzimmer",
+    //         "Sondermüll",
+    //     ],
+    // },
     {
         icon: MdRestaurant,
         name: "Gastronomie-Reinigung Nürnberg, Fürth & Umgebung",
