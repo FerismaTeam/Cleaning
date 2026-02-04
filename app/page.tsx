@@ -169,7 +169,7 @@ const Page = () => {
                         <Text fontSize={"sm"} opacity={0.5}>Erfolgsquote</Text>
                     </Box>
 
-                    <Image alt="" src="/assets/home-hero-section-banner.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/home-hero-section-banner.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>
@@ -1030,7 +1030,7 @@ erfolgreich abgeschlossen</Text>
 
                     <Box w={28} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} pos={"absolute"} right={0} top={{ base: "80%", lg: "25%" }} translateY={"-50%"} zIndex={-1}></Box>
 
-                    <Image alt="" src="/assets/home-advantages-section-banner.jpg" w={"90%"} mx={{ base: "auto", lg: "none" }} h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/home-advantages-section-banner.jpg" w={"90%"} mx={{ base: "auto", lg: "none" }} h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
                 <Box  w={{ base: "full", lg: "50%" }}>

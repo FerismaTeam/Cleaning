@@ -130,7 +130,7 @@ const RestaurantCleaningServicePage = () => {
                         <Text fontSize={"sm"} opacity={0.5}>Zuverlässigkeit</Text>
                     </Box>
 
-                    <Image alt="" src="/assets/restaurant-cleaning-page-hero-section.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/restaurant-cleaning-page-hero-section.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>

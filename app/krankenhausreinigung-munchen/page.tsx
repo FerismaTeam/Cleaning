@@ -437,7 +437,7 @@ const HospitalCleaningServicePage = () => {
                         </HStack>
     
                         <Box w={"90%"} mx="auto" pos={"relative"}>
-                            <Image alt="" src="/assets/hospital-banner.png" w={"full"}  h={{base: "auto", xl: "500px"}} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                            <Image alt="" src="./assets/hospital-banner.png" w={"full"}  h={{base: "auto", xl: "500px"}} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
 
                             <Grid
                                 gap={5}
