@@ -364,9 +364,7 @@ const Page = () => {
                                 
                             </List.Root>
 
-                            {/* rating */}
-
-                            <HStack bg={"blue.100"} p={3} color={"blue.500"}  w="99%" mx={"auto"}  rounded={"lg"} fontSize={"sm"}>
+                            <HStack bg={"blue.100"} p={3} color={"blue.500"}  w="99%" mx={"auto"}  rounded={"lg"} fontSize={"sm"} justifyContent={"space-between"}>
 
                                 <HStack gap={2}>
                                     <FaHandshake />
