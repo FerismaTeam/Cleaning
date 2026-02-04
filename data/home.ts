@@ -23,17 +23,19 @@ const reviews: reviewType[] = [
 
 const contactServiceOptions: contactSelectionOptionType[] = [
     { value: "", label: "Leistung auswählen" },
+    { value: "treppenhausreinigung", label: "Treppenhausreinigung" },
+    { value: "gebäudereinigung", label: "Gebäudereinigung" },
     { value: "büroreinigung", label: "Büroreinigung" },
     { value: "praxisreinigung", label: "Praxisreinigung" },
-    { value: "krankenhausreinigung", label: "Krankenhausreinigung" },
+  /*  { value: "krankenhausreinigung", label: "Krankenhausreinigung" },*/
     { value: "fensterreinigung", label: "Fensterreinigung" },
     { value: "gastronomiereinigung", label: "Gastronomie-Reinigung" },
     { value: "unterhaltsreinigung", label: "Unterhaltsreinigung" },
     { value: "teppichreinigung", label: "Teppichreinigung" },
     { value: "sonderreinigung", label: "Sonderreinigung" },
     { value: "fahrzeugaufbereitung", label: "Fahrzeugaufbereitung" },
-    { value: "grundreinigung", label: "Grundreinigung" },
-    { value: "gebäudereinigung", label: "Gebäudereinigung" }
+    { value: "grundreinigung", label: "Grundreinigung" }
+    
 ];
 
 const storeLink: string = 'https://maps.app.goo.gl/GeNHXTE74aD1oxKS9?g_st=iw';
