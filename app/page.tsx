@@ -17,7 +17,7 @@ import { FaArrowRight, FaCheckCircle, FaClock, FaCrown, FaEnvelope, FaGift, FaHa
 import { FaAward, FaBuilding, FaCar, FaCertificate, FaCheck, FaClipboardCheck, FaDiamond, FaEuroSign, FaLocationPin, FaUserGroup, FaWhatsapp } from "react-icons/fa6";
 import { BsBuildingFill } from "react-icons/bs";
 import { ImBubbles } from "react-icons/im";
-import { PiOfficeChariFill } from "react-icons/pi";
+import { PiOfficeChairFill } from "react-icons/pi";
 import { MdRestaurant, MdSchool } from "react-icons/md";
 
 const Page = () => {
