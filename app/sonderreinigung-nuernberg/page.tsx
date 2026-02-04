@@ -998,7 +998,7 @@ const SpecialServicePage = () => {
                                 >
 
                                     <GridItem>
-                                        <input checked type="radio" name="time" value={"Normal (1-2 Wochen)"} id="normal" />
+                                        <input defaultChecked type="radio" name="time" value={"Normal (1-2 Wochen)"} id="normal" />
                                         <label className="ml-1!" htmlFor="normal">Normal (1-2 Wochen)</label>
                                     </GridItem>
 

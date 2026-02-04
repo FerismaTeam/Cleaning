@@ -7,7 +7,7 @@ const NotFound = () => {
         <Center w={"full"} minH={"calc(100vh - 100px)"} px={"5vw"}>
 
             <VStack>
-                <Image src={"/assets/not-found.png"} alt="" w={{ base: "200px", md: "300px" }} mb={5} />
+                <Image src={"./assets/not-found.png"} alt="" w={{ base: "200px", md: "300px" }} mb={5} />
                 <Text textAlign={"center"} fontSize={{ base: "3xl", md: "5xl" }}>Seite nicht gefunden</Text>
                 <Text color={"bg.inverted/65"}>
                     Die gesuchte Seite existiert nicht. Zurück zu
