@@ -26,7 +26,7 @@ const OfficeCleaningPage = () => {
 
                         <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} gap={2}> <FaBuilding /> Reinigungsfirma  Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} color={"blue.600"} my={3} fontSize={"4xl"} lineHeight={1.25} fontWeight={"bolder"}
-                        >Reinigungsfirma  Nürnberg, Fürth & Umgebung
+                        </Heading Reinigungsfirma  Nürnberg, Fürth & Umgebung >
 
                         <Text fontWeight={"bolder"}>Sauberkeit, die wirkt</Text>
 

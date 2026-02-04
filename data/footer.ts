@@ -6,6 +6,6 @@ const company_quote: string = "Ihr zuverlässiger Partner für professionelle Ge
 
 const whatsAppContact: string = "4917657955705"; // add whatsapp number with country code but no +, - or spaces
 
-const copyrightText: string = "© 2024 Modern Web. Alle Rechte vorbehalten."
+const copyrightText: string = "© 2026 Popp Dienstleistungen. Alle Rechte vorbehalten."
 
 export { company_quote, whatsAppContact, copyrightText }
