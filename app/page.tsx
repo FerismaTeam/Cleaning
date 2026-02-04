@@ -15,6 +15,7 @@ import { useRef, useState } from "react";
 import { BsSendFill } from "react-icons/bs";
 import { FaArrowRight, FaCheckCircle, FaClock, FaCrown, FaEnvelope, FaGift, FaHandshake, FaHeart, FaInfoCircle, FaMobile, FaPhoneAlt, FaQuoteLeft, FaShieldAlt, FaShieldVirus, FaStar, FaSuitcase } from "react-icons/fa";
 import { FaAward, FaBuilding, FaCar, FaCertificate, FaCheck, FaClipboardCheck, FaDiamond, FaEuroSign, FaLocationPin, FaUserGroup, FaWhatsapp } from "react-icons/fa6";
+import { BsBuildingFill } from "react-icons/bs";
 import { ImBubbles } from "react-icons/im";
 import { MdRestaurant, MdSchool } from "react-icons/md";
 
@@ -306,7 +307,7 @@ const Page = () => {
                             <HStack gap={3} mb={2}>
                             
                                 <Center w={10} color={"bg"} fontSize={"xl"} aspectRatio={"square"} rounded={"lg"} bg={"blue.600"}>
-                                    <FaCar />
+                                    <BsBuildingFill />
                                 </Center>
 
                                 <Box>
@@ -523,10 +524,10 @@ erfolgreich abgeschlossen</Text>
                              <VStack gap={1} align={"start"}>
                                 <HStack mb={3} gap={3}>
                                     <Center w={10} rounded={"md"} aspectRatio={"square"} color={"bg"} shadow={"lg"} bg={"blue.800"}>
-                                        <FaCar />
+                                        <BsBuildingFill />
                                     </Center>
                                     <Box>
-                                        <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Fahrzeugaufbereitung Nürnberg, Fürth & Umgebung</Heading>
+                                        <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Gebäudereinigung Nürnberg, Fürth & Umgebung</Heading>
                                         <Text display={"flex"} alignItems={"center"} gap={2} fontSize={"xs"} fontWeight={"semibold"} mt={0.5}>
                                             <FaDiamond />
                                             Schwerpunktleistung
@@ -543,19 +544,19 @@ erfolgreich abgeschlossen</Text>
                                     <GridItem>
                                         <VStack gap={0}>
                                             <Text fontSize={"2xl"} fontWeight={"semibold"} color={"cyan.400"}>500+</Text>
-                                            <Text fontSize={"sm"}>Fahrzeuge pro Jahr</Text>
+                                            <Text fontSize={"sm"}>Gebäude pro Jahr</Text>
                                         </VStack>
                                     </GridItem>
                                     <GridItem>
                                         <VStack gap={0}>
                                             <Text fontSize={"2xl"} fontWeight={"semibold"} color={"cyan.400"}>1.200+</Text>
-                                            <Text fontSize={"sm"}>K2 Premium-Produkte</Text>
+                                            <Text fontSize={"sm"}>Premium-Pflege</Text>
                                         </VStack>
                                     </GridItem>
                                 </Grid>
                                 
                                 <HStack mt={1} gap={1} color={"bg"} justify={"space-between"} fontSize={"xs"} w="full" pt={3} borderTop={"1px solid"} borderColor={"bg/20"}>
-                                    <Text fontWeight={"medium"}>K2 Marktführer-Qualität</Text>
+                                    <Text fontWeight={"medium"}>Marktführer-Qualität</Text>
                                     <HStack gap={0.5} color={"yellow.300"}>
                                         {
                                             Array.from({ length: 5 }).map((_, i) => {
@@ -781,9 +782,9 @@ erfolgreich abgeschlossen</Text>
                             <VStack gap={1} align={"start"}>
                                 <HStack mb={3} gap={3} gapY={1} flexWrap={"wrap"}>
                                     <Center w={5} aspectRatio={"square"} color={"green.600"}>
-                                        <FaCar />
+                                        <BsBuildingFill />
                                     </Center>
-                                    <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Fahrzeugaufbereitung Nürnberg, Fürth & Umgebung</Heading>
+                                    <Heading lineHeight={1.3} fontSize={"16px"} as={"h6"}>Gebäudereinigung Nürnberg, Fürth & Umgebung</Heading>
                                 </HStack>
                                 <Text fontSize={"xs"} opacity={0.65}>Mit 1.200+ K2 Premium-Produkten für beste Ergebnisse</Text>
                                 <HStack mt={1} gap={1} color={"green.600"} fontSize={"xs"}>
@@ -812,7 +813,7 @@ erfolgreich abgeschlossen</Text>
 
                     </HStack>
 
-                    <Badge mb={3} shadow={"lg"} color={"bg"} rounded={"full"} px={3} py={1} size={"sm"} className="gradient_light_background_one" textWrap={"wrap !important"} gap={2} mt={2}><Text as={"span"} scale={0.9} mr={0.5}><FaStar /></Text> Kombi-Angebote für Büroreinigung + Fahrzeugaufbereitung verfügbar</Badge>
+                    <Badge mb={3} shadow={"lg"} color={"bg"} rounded={"full"} px={3} py={1} size={"sm"} className="gradient_light_background_one" textWrap={"wrap !important"} gap={2} mt={2}><Text as={"span"} scale={0.9} mr={0.5}><FaStar /></Text> Kombi-Angebote für Büroreinigung + Gebäudereinigung verfügbar</Badge>
 
                 </VStack>
 

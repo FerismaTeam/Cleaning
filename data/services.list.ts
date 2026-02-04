@@ -1,6 +1,6 @@
 import { IconType } from "react-icons";
 import { BiJoystick } from "react-icons/bi";
-import { FaCarAlt } from "react-icons/fa";
+import { BsBuildingFill } from "react-icons/bs";
 import { FaBuilding, FaHospital, FaScrewdriverWrench, FaUserDoctor, FaWindowMaximize } from "react-icons/fa6";
 import { IoIosBrush } from "react-icons/io";
 import { LuGrid2X2 } from "react-icons/lu";
