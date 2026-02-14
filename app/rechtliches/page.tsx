@@ -51,7 +51,7 @@ const LegalPage = () => {
         </Box>
 
         {/* legal section */}
-        <Box as={"section"} id="legal">
+        <Box as={"section"} id="imprint">
 
             <VStack gap={5} w={"full"} p={{ base: 2, md: 5 }} align={"start"} >
 

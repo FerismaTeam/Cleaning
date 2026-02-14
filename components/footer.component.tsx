@@ -65,7 +65,7 @@ const Footer = () => {
                         {
                             services.map((item, i) => {
                                 return (
-                                    <Link key={i} href={`/${item.name.replaceAll("ü", "u").replace(" ", "-").toLowerCase()}`} className="flex gap-2 items-center">
+                                    <Link key={i} href={`/${item.link?.toLocaleLowerCase()}`} className="flex gap-2 items-center">
                                         <item.icon />
                                         {item.name}
                                     </Link>
