@@ -11,13 +11,13 @@ interface ServiceType {
 }
 
 const otherServicesList: ServiceType[] = [
-    {
-        icon: FaHospital,
-        name: "Krankenhausreinigung",
-        des: "Spezialisierte Hygienereinigung für Kliniken, Krankenhäuser und medizinische Zentren mit höchsten Sterilitätsanforderungen.",
-        link: "/krankenhausreinigung-nuernberg",
-        redirect_label: "Mehr erfahren"
-    },
+    // {
+    //     icon: FaHospital,
+    //     name: "Krankenhausreinigung",
+    //     des: "Spezialisierte Hygienereinigung für Kliniken, Krankenhäuser und medizinische Zentren mit höchsten Sterilitätsanforderungen.",
+    //     link: "/krankenhausreinigung-nuernberg",
+    //     redirect_label: "Mehr erfahren"
+    // },
     {
         icon: FaBroom,
         name: "Unterhaltsreinigung",
@@ -39,13 +39,13 @@ const otherServicesList: ServiceType[] = [
         link: "/buroreinigung-nuernberg",
         redirect_label: "Mehr erfahren"
     },
-    {
-        icon: FaWindowMaximize,
-        name: "Fensterreinigung",
-        des: "Streifenfreie Glasreinigung für Praxisfenster, Bürogebäude und Gewerbeobjekte in Nürnberg, Fürth & Umgebung .",
-        link: "/fensterreinigung-nuernberg",
-        redirect_label: "Mehr erfahren"
-    },
+    // {
+    //     icon: FaWindowMaximize,
+    //     name: "Fensterreinigung",
+    //     des: "Streifenfreie Glasreinigung für Praxisfenster, Bürogebäude und Gewerbeobjekte in Nürnberg, Fürth & Umgebung .",
+    //     link: "/fensterreinigung-nuernberg",
+    //     redirect_label: "Mehr erfahren"
+    // },
     {
         icon: FaHome,
         name: "Alle Services ansehen",
