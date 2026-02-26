@@ -124,14 +124,14 @@ const Page = () => {
                         
                         <HStack gap={2} mt={5} flexWrap={"wrap"}>
 
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={"/#contact"}>
                                     <Text scale={0.75}><FaGift /></Text>
                                     Kostenloses Angebot sichern
                                 </Link>
                             </Button>
                             
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                     {telephone}
@@ -171,7 +171,7 @@ const Page = () => {
                         <Text fontSize={"sm"} opacity={0.5}>Erfolgsquote</Text>
                     </Box>
 
-                    <Image alt="" src="./assets/home-hero-section-banner.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/home-hero-section-banner.webp" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>
@@ -384,7 +384,7 @@ const Page = () => {
 
                             </HStack>
 
-                            <Button asChild colorPalette={"blue"} w="full" shadow={"md"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} w="full" shadow={"md"}>
                                 <Link href={"/Gebaudereinigung-nuernberg"}>
                                     <Text scale={0.75}><FaArrowRight /></Text>
                                     Mehr zur Gebäudereinigung
@@ -1036,7 +1036,7 @@ erfolgreich abgeschlossen</Text>
 
                     <Box w={28} aspectRatio={"square"} rounded={"full"} bg={"blue.500"} pos={"absolute"} right={0} top={{ base: "80%", lg: "25%" }} translateY={"-50%"} zIndex={-1}></Box>
 
-                    <Image alt="" src="./assets/home-advantages-section-banner.jpg" w={"90%"} mx={{ base: "auto", lg: "none" }} h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/home-advantages-section-banner.webp" w={"90%"} mx={{ base: "auto", lg: "none" }} h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} loading="lazy" fetchPriority="low" />
                 </Box>
 
                 <Box  w={{ base: "full", lg: "50%" }}>
@@ -1104,14 +1104,14 @@ erfolgreich abgeschlossen</Text>
                         
                         <HStack gap={2} mt={5} flexWrap={"wrap"}>
 
-                            <Button asChild colorPalette={"blue"} className="p-2! h-9!" rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} className="p-2! h-9!" rounded={"lg"}>
                                 <Link href={"/uber-uns"}>
                                     <Text scale={0.75}><FaInfoCircle /></Text>
                                      Mehr über uns erfahren
                                 </Link>
                             </Button>
                             
-                            <Button asChild color={"blue.600"} bg={"bg"} border={"1px solid"} borderColor={"blue.600"} className="p-2! h-9!" rounded={"lg"}>
+                            <Button asChild color={"blue.600"} _hover={{ bg: "bg.muted/80" }} bg={"bg"} border={"1px solid"} borderColor={"blue.600"} className="p-2! h-9!" rounded={"lg"}>
                                 <Link href={`/#contact`}>
                                     <Text scale={0.75}><FaHandshake /></Text>
                                      Termin vereinbaren
@@ -1246,7 +1246,7 @@ erfolgreich abgeschlossen</Text>
                             <Text fontWeight={"bolder"} mt={4}>Anrufen</Text>
                             <Text my={2} fontSize={"sm"} opacity={0.65}>Direkter Kontakt für schnelle Beratung</Text>
 
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`tel:${mobile.replaceAll(" ", "")}`}>
                                     {mobile}
                                 </Link>
@@ -1264,7 +1264,7 @@ erfolgreich abgeschlossen</Text>
                             <Text fontWeight={"bolder"} mt={4}>E-mail</Text>
                             <Text my={2} fontSize={"sm"} opacity={0.65}>Schriftliche Anfrage mit Details</Text>
 
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`mailto:${official_mail}`}>
                                     Kontaktformular
                                 </Link>
@@ -1282,7 +1282,7 @@ erfolgreich abgeschlossen</Text>
                             <Text fontWeight={"bolder"} mt={4}>Whatsapp</Text>
                             <Text my={2} fontSize={"sm"} opacity={0.65}>Einfach und unkompliziert</Text>
 
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`https://wa.me/${whatsAppContact}`} target="_blank">
                                     Whatsapp chat
                                 </Link>
@@ -1348,7 +1348,7 @@ erfolgreich abgeschlossen</Text>
                             
                         </Textarea>
                         
-                        <Button type="submit" colorPalette={"blue"} w="full" rounded={"lg"}>
+                        <Button type="submit" colorPalette={"blue"} _hover={{ bg: "blue.700" }} w="full" rounded={"lg"}>
                             <Text scale={0.75}><BsSendFill /></Text>
                             Kostenlose Beratung anfordern
                         </Button>

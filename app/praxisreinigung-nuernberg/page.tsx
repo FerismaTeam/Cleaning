@@ -96,14 +96,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                     <HStack gap={6} justify={"center"} gapY={6} mt={12} flexWrap={"wrap"}>
     
-                        <Button asChild colorPalette={"blue"} textWrap={"wrap"} py={6} px={5} rounded={"lg"} fontSize={"16px"}>
+                        <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} textWrap={"wrap"} py={6} px={5} rounded={"lg"} fontSize={"16px"}>
                             <Link href={"#contact"}>
                                 <Text scale={0.75}><FaStethoscope /></Text>
                                 Kostenlose Hygienebesichtigung
                             </Link>
                         </Button>
                         
-                        <Button asChild bg={"bg/15"} py={6} px={5} border={"1px solid"} borderColor={"bg/40"} rounded={"lg"} fontSize={"16px"}>
+                        <Button asChild bg={"bg/15"} py={6} px={5} _hover={{ bg: "bg/25" }} border={"1px solid"} borderColor={"bg/40"} rounded={"lg"} fontSize={"16px"}>
                             <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaPhoneAlt /></Text>
                                 {telephone}
@@ -477,14 +477,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild bg={"bg"} color={"bg.inverted"} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"bg.inverted"}  _hover={{ bg: "blue.100" }} rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaCalendarCheck /></Text>
                                            Angebot für Ihre Praxis sichern
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg"} color={"bg.inverted"} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"bg.inverted"}  _hover={{ bg: "blue.100" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      {telephone}
@@ -532,14 +532,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
                                          Kostenlose Beratung anfragen
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg/15"} colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      Sofort anrufen
@@ -621,14 +621,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild colorPalette={"yellow"} rounded={"lg"}>
+                            <Button asChild colorPalette={"yellow"} rounded={"lg"} _hover={{ bg: "yellow.500" }}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaCalendarCheck /></Text>
                                           Kostenlose Hygienebesichtigung
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg/15"} colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      {telephone}
@@ -788,7 +788,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                 </Textarea>
                             </VStack>
                             
-                            <Button type="submit" color={"blue.800"} fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
+                            <Button type="submit" color={"blue.800"} _hover={{ bg: "blue.200" }} fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
                                 <HStack align={"start"} gap={1}>
                                     <Text scale={0.75}><BsSendFill /></Text>
                                     <Text>Kostenlose Hygienebesichtigung anfragen</Text>
@@ -901,7 +901,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                             <Text>Bei hygienekritischen Situationen oder Kontaminationen sind wir rund um die Uhr für Ihre Praxis erreichbar.</Text>
 
-                            <Button asChild bg={"bg"} color={"red.600"} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"red.600"} _hover={{ bg: "red.800", color: "bg" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      Notfall-Hotline

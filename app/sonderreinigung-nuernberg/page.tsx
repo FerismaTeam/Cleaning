@@ -120,7 +120,7 @@ const SpecialServicePage = () => {
                             
                             <HStack gap={2} gapY={3} mt={5} flexWrap={"wrap"}>
 
-                                <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                     <Link href={"#contact"}>
                                         <Text scale={0.75}><FaCalendarCheck /></Text>
                                         Jetzt Sonderreinigung anfragen
@@ -530,14 +530,14 @@ const SpecialServicePage = () => {
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild  bg={"yellow.500"} gap={3} p={{ base: 8, md: 3 }} color={"bg.inverted"} rounded={"lg"}>
+                            <Button asChild  bg={"yellow.500"} gap={3} p={{ base: 8, md: 3 }} _hover={{ bg: "yellow.400" }} color={"bg.inverted"} rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
                                      Kostenlose <br className="md:hidden" /> Objektbesichtigung sichern
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg"} color={"bg.inverted"} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"bg.inverted"} _hover={{ bg: "bg/85" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                       {telephone}
@@ -838,14 +838,14 @@ const SpecialServicePage = () => {
         
                             <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
         
-                                <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                     <Link href={"#contact"}>
                                         <Text scale={0.75}><FaCalendarCheck /></Text>
                                          Kostenlose Objektbesichtigung
                                     </Link>
                                 </Button>
                                 
-                                <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                     <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                         <Text scale={0.75}><FaPhoneAlt /></Text>
                                         {telephone}
@@ -893,14 +893,14 @@ const SpecialServicePage = () => {
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
                                              Kostenlose Beratung anfragen
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg/15"} colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                       {telephone}
@@ -1065,7 +1065,7 @@ const SpecialServicePage = () => {
                                 </Grid>
                             </VStack>
                             
-                            <Button type="submit" color={"blue.800"} fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
+                            <Button type="submit" color={"blue.800"} _hover={{ bg: "blue.200" }} fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
                                 <HStack align={"start"} gap={1}>
                                     <Text scale={0.75}><FaCalendarCheck /></Text>
                                     <Text>Kostenlose Objektbesichtigung anfragen</Text>
@@ -1162,7 +1162,7 @@ const SpecialServicePage = () => {
                                 </GridItem>
                             </Grid>
 
-                            <Button asChild bg={"bg"} color={"red.600"} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"red.600"} _hover={{ bg: "red.800", color: "bg" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                         {telephone}

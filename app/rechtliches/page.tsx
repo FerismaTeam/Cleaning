@@ -32,15 +32,15 @@ const LegalPage = () => {
 
                 <Box>
                     <HStack gap={4} wrap={"wrap"} justify={"center"}>
-                        <Button bg={"blue.600"} textTransform={"capitalize"} asChild>
+                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} textTransform={"capitalize"} asChild>
                             <Link href={"#legal"}><LuBuilding /> Impressum</Link>
                         </Button>
 
-                        <Button bg={"blue.600"} textTransform={"capitalize"} asChild>
+                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} textTransform={"capitalize"} asChild>
                             <Link href={"#privacy"}><LuShieldAlert /> Datenschutz</Link>
                         </Button>
 
-                        <Button bg={"blue.600"} textTransform={"capitalize"} asChild>
+                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} textTransform={"capitalize"} asChild>
                             <Link href={"#tnc"}><IoDocument /> AGB</Link>
                         </Button>
                     </HStack>

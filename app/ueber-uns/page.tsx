@@ -79,7 +79,7 @@ const AboutPage = () => {
                             <Text fontSize={"sm"} textWrap={"nowrap"} mt={1}>Zuverlässigkeit</Text>
                             <Text fontSize={"sm"} textWrap={"nowrap"} mt={1} opacity={0.75}>Geld-zurück-Garantie</Text>
                         </Box>
-                        <Image src={"./assets/about-details-img.jpg"} w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} boxShadow="10px 10px 0 0 var(--chakra-colors-blue-500)" alt="" />
+                        <Image src={"./assets/about-details-img.webp"} loading="lazy" fetchPriority="low" w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} boxShadow="10px 10px 0 0 var(--chakra-colors-blue-500)" alt="" />
                     </Center>
                 </Flex>
             </Box>
@@ -455,7 +455,7 @@ const AboutPage = () => {
                 <Flex gap={16} color={"bg"} alignItems={"start"} flexDir={{ base: "column", xl: "row" }}>
 
                     <Center pos={"relative"} maxW={"450px"} mx={"auto"} w={{ base: "full", xl: "50%" }}>
-                        <Image src={"./assets/about-director-note.jpg"} w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} alt="" />
+                        <Image src={"./assets/about-director-note.webp"} loading="lazy" fetchPriority="low"  w={"full"} pointerEvents={"none"} rounded={"md"} maxW={"450px"} alt="" />
                     </Center>
 
                     <Box w={{ base: "full", xl: "50%" }}>

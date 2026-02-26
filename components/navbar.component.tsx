@@ -3,7 +3,7 @@
 import { company_name } from "@/data/about";
 import { telephone } from "@/data/contact";
 import services from "@/data/services.list";
-import { Box, Button, Flex, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Image, Text, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -35,7 +35,11 @@ const Navbar = () => {
             <Flex h={"80px"} py={4} justify={"space-between"} align={"center"}>
 
                 {/* logo */}
-                <Text asChild fontWeight="semibold"><Link href={"/"}>{company_name}</Link></Text>
+                <Text asChild fontWeight="semibold">
+                    <Link href={"/"}>
+                        <Image src={"./assets/logo.webp"} width={"100px"}  />
+                    </Link>
+                </Text>
 
                 {/* toggle button */}
                 <Button variant={"outline"} onClick={() => { setShowNavbar(current => !current) }} p={2} rounded={"md"} border={"1px solid "} borderColor={"bg.inverted/20"} fontSize={"xl"} className="lg:hidden!">
@@ -81,14 +85,14 @@ const Navbar = () => {
                     <Link href={"/rechtliches"} className="navlink">Rechtliches</Link>
 
                     <HStack gap={{ base: 4, lg: 2 }} ml={2} className="max-lg:my-6! max-md:flex-col! max-lg:items-start! max-lg:px-[5vw]!">
-                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} rounded={"md"} px={2}>
+                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"md"} px={2}>
                             <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaPhoneAlt /></Text>
                                 <Text className=" max-lg:block! max-xl:hidden!">{telephone}</Text>
                             </Link>
                         </Button>
 
-                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} rounded={"md"} px={3}>
+                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"md"} px={3}>
                             <Link href={`/#contact`}>
                             Kostenloses Angebot
                             </Link>

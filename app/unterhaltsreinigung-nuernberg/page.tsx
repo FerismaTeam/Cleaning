@@ -85,14 +85,14 @@ const RegularCleaningServicePage = () => {
                         
                         <HStack gap={2} mt={5} flexWrap={"wrap"}>
 
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={"/#contact"}>
                                     <Text scale={0.75}><FaGift /></Text>
                                     Jetzt Angebot anfordern
                                 </Link>
                             </Button>
                             
-                            <Button asChild colorPalette={"blue"} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                     {telephone}
@@ -132,7 +132,7 @@ const RegularCleaningServicePage = () => {
                         <Text fontSize={"sm"} opacity={0.5}>Zuverlässigkeit</Text>
                     </Box>
 
-                    <Image alt="" src="./assets/regular-cleaning-page-hero-section.jpg" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
+                    <Image alt="" src="./assets/regular-cleaning-page-hero-section.webp" w={"90%"} mx="auto" h={"auto"} objectFit={"cover"} rounded={"xl"} shadow={"0px 0 50px 20px var(--chakra-colors-blue-100)"} />
                 </Box>
 
             </Flex>
@@ -642,8 +642,8 @@ const RegularCleaningServicePage = () => {
                                 <FaPhoneAlt />
                             </Center>
                         <Heading as={"h6"} fontWeight={"bolder"}>Telefon</Heading>
-                        <Link href={`tel:${telephone.replaceAll(" ", "")}`}>{telephone}</Link>
-                        <Link className="-mt-2!" href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
+                        <Link href={`tel:${telephone.replaceAll(" ", "")}`} className="hover:text-blue-300!">{telephone}</Link>
+                        <Link className="-mt-2! hover:text-blue-300!" href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
                         </VStack>
                     </GridItem>
 
