@@ -96,14 +96,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                     <HStack gap={6} justify={"center"} gapY={6} mt={12} flexWrap={"wrap"}>
     
-                        <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }}  textWrap={"wrap"} py={6} px={5} rounded={"lg"} fontSize={"16px"}>
+                        <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}    textWrap={"wrap"} py={6} px={5} rounded={"lg"} fontSize={"16px"}>
                             <Link href={"#contact"}>
                                 <Text scale={0.75}><FaStethoscope /></Text>
                                 Kostenlose Hygienebesichtigung
                             </Link>
                         </Button>
                         
-                        <Button asChild bg={"bg/15"} py={6} px={5} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }} border={"1px solid"} borderColor={"bg/40"} rounded={"lg"} fontSize={"16px"}>
+                        <Button asChild bg={"bg/15"} py={6} px={5} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}   border={"1px solid"} borderColor={"bg/40"} rounded={"lg"} fontSize={"16px"}>
                             <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaPhoneAlt /></Text>
                                 {telephone}
@@ -170,9 +170,9 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                             practiceCleaningServices.map((service, i) => {
                                 return <GridItem key={i}>
     
-                                        <VStack _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
+                                        <VStack _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
     
-                                            <Center w={10} aspectRatio={"square"} className="group-hover:bg-white! group-hover:text-blue-800! group-focus:bg-white! group-focus:text-blue-800! group-active:bg-white! group-active:text-blue-800!" tabIndex={0} rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"}>
+                                            <Center w={10} aspectRatio={"square"} className="group-hover:bg-white! group-hover:text-blue-800! group-focus:bg-white! group-focus:text-blue-800! group-   group-  " tabIndex={0} rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"}>
                                                 <service.icon />
                                             </Center>
     
@@ -180,12 +180,12 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                                             <Text opacity={0.65} fontSize={"sm"} lineHeight={1.4}>{service.des}</Text>
     
-                                            <List.Root gap={2} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} color={"bg.inverted/80"}>
+                                            <List.Root gap={2} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} color={"bg.inverted/80"}>
                                         
                                                 {
                                                     service.features.map((feature, i) => {
                                                         return <List.Item key={i}>
-                                                                    <List.Indicator asChild color="green.500" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} scale={0.8}>
+                                                                    <List.Indicator asChild color="green.500" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} scale={0.8}>
                                                                         <FaCheck />
                                                                     </List.Indicator>
                                                                 <Text fontSize={"sm"}>  
@@ -279,7 +279,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                     <Grid templateColumns={{ base: "1fr", md: "repeat(2, 1fr)", lg: "repeat(4, 1fr)" }} w={"full"} gap={5} mb={12}>
                     
-                        <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0} _active={{ borderColor: "blue.500/80", shadow: "xl" }} p={3} py={6} textAlign={"center"}>
+                        <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0}   p={3} py={6} textAlign={"center"}>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaHospital />
                             </Center>
@@ -287,7 +287,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                             <Text fontSize={"sm"}>Maxvorstadt, Altstadt-Lehel</Text>
                         </VStack>
                     
-                        <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0} _active={{ borderColor: "blue.500/80", shadow: "xl" }} p={3} py={6} textAlign={"center"}>
+                        <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0}   p={3} py={6} textAlign={"center"}>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaHospital />
                             </Center>
@@ -295,7 +295,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                             <Text fontSize={"sm"}>Schwabing, Milbertshofen</Text>
                         </VStack>
     
-                        <VStack minW={"200px"} gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0} _active={{ borderColor: "blue.500/80", shadow: "xl" }} p={3} py={6}>
+                        <VStack minW={"200px"} gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0}   p={3} py={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaUserDoctor />
                             </Center>
@@ -303,7 +303,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                             <Text fontSize={"sm"}>Haidhausen, Giesing</Text>
                         </VStack>
     
-                        <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0} _active={{ borderColor: "blue.500/80", shadow: "xl" }} p={3} py={6} textAlign={"center"}>
+                        <VStack gap={2} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/10"} rounded={"xl"} _hover={{ borderColor: "blue.500/80", shadow: "xl" }} _focus={{ borderColor: "blue.500/80", shadow: "xl" }} tabIndex={0}   p={3} py={6} textAlign={"center"}>
                             <Center w={12} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"blue.400"} fontSize={"3xl"}>
                                 <FaTooth />
                             </Center>
@@ -329,7 +329,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                     <Text fontSize={"2xl"} fontWeight={"bolder"}>Vertrauen & Zertifizierungen</Text>
                                 </HStack>
 
-                                <HStack align={"start"} gap={5} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/20"} w={"full"} _hover={{ borderColor: "blue.700/50" }} _focus={{ borderColor: "blue.700/50" }} tabIndex={0} _active={{ borderColor: "blue.700/50" }}>
+                                <HStack align={"start"} gap={5} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/20"} w={"full"} _hover={{ borderColor: "blue.700/50" }} _focus={{ borderColor: "blue.700/50" }} tabIndex={0}  >
 
                                     <Center mt={1} minW={12} aspectRatio={"square"} className="gradient_dark_background" fontSize={"xl"} rounded={"md"} color={"bg"}>
                                         <FaAward />
@@ -344,7 +344,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                                 </HStack>
 
-                                <HStack align={"start"} gap={5} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/20"} w={"full"} _hover={{ borderColor: "blue.700/50" }} _focus={{ borderColor: "blue.700/50" }} tabIndex={0} _active={{ borderColor: "blue.700/50" }}>
+                                <HStack align={"start"} gap={5} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/20"} w={"full"} _hover={{ borderColor: "blue.700/50" }} _focus={{ borderColor: "blue.700/50" }} tabIndex={0}  >
 
                                     <Center mt={1} minW={12} aspectRatio={"square"} className="gradient_dark_background" fontSize={"xl"} rounded={"md"} color={"bg"}>
                                         <FaUserCheck />
@@ -359,7 +359,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                                 </HStack>
 
-                                <HStack align={"start"} gap={5} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/20"} w={"full"} _hover={{ borderColor: "blue.700/50" }} _focus={{ borderColor: "blue.700/50" }} tabIndex={0} _active={{ borderColor: "blue.700/50" }}>
+                                <HStack align={"start"} gap={5} p={5} rounded={"md"} bg={"bg"} border={"1px solid"} borderColor={"bg.inverted/20"} w={"full"} _hover={{ borderColor: "blue.700/50" }} _focus={{ borderColor: "blue.700/50" }} tabIndex={0}  >
 
                                     <Center mt={1} minW={12} aspectRatio={"square"} className="gradient_dark_background" fontSize={"xl"} rounded={"md"} color={"bg"}>
                                         <IoShieldCheckmark />
@@ -477,14 +477,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild bg={"bg"} color={"bg.inverted"}  _hover={{ bg: "blue.100" }} _focus={{ bg: "blue.100" }} tabIndex={0} _active={{ bg: "blue.100" }}  rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"bg.inverted"}  _hover={{ bg: "blue.100" }} _focus={{ bg: "blue.100" }} tabIndex={0}    rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaCalendarCheck /></Text>
                                            Angebot für Ihre Praxis sichern
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg"} color={"bg.inverted"}  _hover={{ bg: "blue.100" }} _focus={{ bg: "blue.100" }} tabIndex={0} _active={{ bg: "blue.100" }}  rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"bg.inverted"}  _hover={{ bg: "blue.100" }} _focus={{ bg: "blue.100" }} tabIndex={0}    rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      {telephone}
@@ -532,14 +532,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }}  rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}    rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
                                          Kostenlose Beratung anfragen
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }} rounded={"lg"}>
+                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      Sofort anrufen
@@ -584,10 +584,10 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                 return <GridItem asChild key={i}>
     
                                        <Link href={service.link} className="group relative">
-                                            <VStack className=" group-hover:-translate-y-2! group-hover:shadow-xl! group-focus:-translate-y-2! group-focus:shadow-xl! group-active:-translate-y-2! group-active:shadow-xl! duration-150" tabIndex={0} bg={ isLast ? "blue.400/10" : "bg"} rounded={"lg"} border={"1px solid"} 
-                                            borderWidth={isLast ? "2px" : "1px" } borderColor={isLast ? "blue.600" : "blue.500/30"} gap={4} align={"start"} _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }} _active={{ bg: "blue.700", color: "bg" }} h="full" p={7}>
+                                            <VStack className=" group-hover:-translate-y-2! group-hover:shadow-xl! group-focus:-translate-y-2! group-focus:shadow-xl! group-   group-   duration-150" tabIndex={0} bg={ isLast ? "blue.400/10" : "bg"} rounded={"lg"} border={"1px solid"} 
+                                            borderWidth={isLast ? "2px" : "1px" } borderColor={isLast ? "blue.600" : "blue.500/30"} gap={4} align={"start"} _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }}   h="full" p={7}>
         
-                                                <Center w={10} aspectRatio={"square"} rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"} className="duration-150 group-hover:text-3xl! group-focus:text-3xl! group-active:text-3xl!" tabIndex={0}>
+                                                <Center w={10} aspectRatio={"square"} rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"} className="duration-150 group-hover:text-3xl! group-focus:text-3xl! group-  " tabIndex={0}>
                                                     <service.icon />
                                                 </Center>
         
@@ -595,10 +595,10 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
         
                                                 <Text opacity={0.65} fontSize={"sm"} lineHeight={1.4}>{service.des}</Text>
         
-                                                <Text _hover={{ textDecor: "underline" }} _focus={{ textDecor: "underline" }} _active={{ textDecor: "underline" }} fontSize={"sm"} fontWeight={"bold"} color={"blue.600"} display={"flex"} gap={2} className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} alignItems={"start"}>
+                                                <Text _hover={{ textDecor: "underline" }} _focus={{ textDecor: "underline" }}   fontSize={"sm"} fontWeight={"bold"} color={"blue.600"} display={"flex"} gap={2} className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} alignItems={"start"}>
                                                     
                                                     {service.redirect_label}
-                                                    <Text as={"span"} mt={1} className="duration-150 group-hover:ml-1! group-focus:ml-1! group-active:ml-1!" tabIndex={0}><FaArrowRight /></Text>
+                                                    <Text as={"span"} mt={1} className="duration-150 group-hover:ml-1! group-focus:ml-1! group-  " tabIndex={0}><FaArrowRight /></Text>
 
                                                 </Text>
         
@@ -621,14 +621,14 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild colorPalette={"yellow"} rounded={"lg"} _hover={{ bg: "yellow.500" }} _focus={{ bg: "yellow.500" }} tabIndex={0} _active={{ bg: "yellow.500" }}>
+                            <Button asChild colorPalette={"yellow"} rounded={"lg"} _hover={{ bg: "yellow.500" }} _focus={{ bg: "yellow.500" }} tabIndex={0}  >
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaCalendarCheck /></Text>
                                           Kostenlose Hygienebesichtigung
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }} rounded={"lg"}>
+                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      {telephone}
@@ -788,7 +788,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                 </Textarea>
                             </VStack>
                             
-                            <Button type="submit" color={"blue.800"} _hover={{ bg: "blue.200" }} _focus={{ bg: "blue.200" }} tabIndex={0} _active={{ bg: "blue.200" }} fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
+                            <Button type="submit" color={"blue.800"} _hover={{ bg: "blue.200" }} _focus={{ bg: "blue.200" }} tabIndex={0}   fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
                                 <HStack align={"start"} gap={1}>
                                     <Text scale={0.75}><BsSendFill /></Text>
                                     <Text>Kostenlose Hygienebesichtigung anfragen</Text>
@@ -820,7 +820,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                 </Center>
                                 <VStack align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Telefon Zentrale</Text>
-                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline! active:underline!" tabIndex={0} href={`tel:${telephone.replaceAll(" ", "")}`}>{telephone}</Link>
+                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline!   " tabIndex={0} href={`tel:${telephone.replaceAll(" ", "")}`}>{telephone}</Link>
                                 </VStack>
                             </HStack>
 
@@ -830,7 +830,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                 </Center>
                                 <VStack align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>24/7 Notfall-Hotline</Text>
-                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline! active:underline!" tabIndex={0} href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
+                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline!   " tabIndex={0} href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
                                 </VStack>
                             </HStack>
 
@@ -840,7 +840,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
                                 </Center>
                                 <VStack align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>E-mail</Text>
-                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline! active:underline!" tabIndex={0} href={`mailto:${official_mail}`}>{official_mail}</Link>
+                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline!   " tabIndex={0} href={`mailto:${official_mail}`}>{official_mail}</Link>
                                 </VStack>
                             </HStack>
 
@@ -901,7 +901,7 @@ MEDIZINISCHE REINIGUNG  Nürnberg, Fürth & Umgebung</Badge>
 
                             <Text>Bei hygienekritischen Situationen oder Kontaminationen sind wir rund um die Uhr für Ihre Praxis erreichbar.</Text>
 
-                            <Button asChild bg={"bg"} color={"red.600"} _hover={{ bg: "red.800", color: "bg" }} _focus={{ bg: "red.800", color: "bg" }} tabIndex={0} _active={{ bg: "red.800", color: "bg" }} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"red.600"} _hover={{ bg: "red.800", color: "bg" }} _focus={{ bg: "red.800", color: "bg" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                      Notfall-Hotline

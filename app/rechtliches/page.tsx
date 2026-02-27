@@ -32,15 +32,15 @@ const LegalPage = () => {
 
                 <Box>
                     <HStack gap={4} wrap={"wrap"} justify={"center"}>
-                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} textTransform={"capitalize"} asChild>
+                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   textTransform={"capitalize"} asChild>
                             <Link href={"#legal"}><LuBuilding /> Impressum</Link>
                         </Button>
 
-                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} textTransform={"capitalize"} asChild>
+                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   textTransform={"capitalize"} asChild>
                             <Link href={"#privacy"}><LuShieldAlert /> Datenschutz</Link>
                         </Button>
 
-                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} textTransform={"capitalize"} asChild>
+                        <Button bg={"blue.600"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   textTransform={"capitalize"} asChild>
                             <Link href={"#tnc"}><IoDocument /> AGB</Link>
                         </Button>
                     </HStack>
@@ -127,7 +127,7 @@ const LegalPage = () => {
                 
                 <Separator w={"full"} opacity={0.5} my={3} />
 
-                <Link className="flex! gap-2! items-center! w-auto! mx-auto! font-bold! text-blue-500! hover:underline! focus:underline! active:underline!" tabIndex={0} href={"#home"}>
+                <Link className="flex! gap-2! items-center! w-auto! mx-auto! font-bold! text-blue-500! hover:underline! focus:underline!   " tabIndex={0} href={"#home"}>
                     <FaArrowUp />
                     Nach oben
                 </Link>
@@ -210,7 +210,7 @@ const LegalPage = () => {
                 
                 <Separator w={"full"} opacity={0.5} my={3} />
 
-                <Link className="flex! gap-2! items-center! w-auto! mx-auto! font-bold! text-blue-500! hover:underline! focus:underline! active:underline!" tabIndex={0} href={"#home"}>
+                <Link className="flex! gap-2! items-center! w-auto! mx-auto! font-bold! text-blue-500! hover:underline! focus:underline!   " tabIndex={0} href={"#home"}>
                     <FaArrowUp />
                     Nach oben
                 </Link>
@@ -261,7 +261,7 @@ const LegalPage = () => {
                 
                 <Separator w={"full"} opacity={0.5} my={3} />
 
-                <Link className="flex! gap-2! items-center! w-auto! mx-auto! font-bold! text-blue-500! hover:underline! focus:underline! active:underline!" tabIndex={0} href={"#home"}>
+                <Link className="flex! gap-2! items-center! w-auto! mx-auto! font-bold! text-blue-500! hover:underline! focus:underline!   " tabIndex={0} href={"#home"}>
                     <FaArrowUp />
                     Nach oben
                 </Link>

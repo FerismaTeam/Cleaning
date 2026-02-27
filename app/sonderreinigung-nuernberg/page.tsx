@@ -120,7 +120,7 @@ const SpecialServicePage = () => {
                             
                             <HStack gap={2} gapY={3} mt={5} flexWrap={"wrap"}>
 
-                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} rounded={"lg"}>
+                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   rounded={"lg"}>
                                     <Link href={"#contact"}>
                                         <Text scale={0.75}><FaCalendarCheck /></Text>
                                         Jetzt Sonderreinigung anfragen
@@ -265,7 +265,7 @@ const SpecialServicePage = () => {
                                 const isLast = i == specialCleaningServicesInDetail.length - 1;
                                 return <GridItem asChild key={i}>
                                     <Box className="group">
-                                        <VStack w={"full"} h={"full"} className="group-hover:-translate-y-2.5! group-focus:-translate-y-2.5! group-active:-translate-y-2.5! duration-150 group-hover:shadow-lg group-focus:shadow-lg group-active:shadow-lg" rounded={"lg"} bg={ isFirst || isLast ? "blue.100/30" : "bg"} border={"1px solid"} align={"start"} borderColor={"blue.500/10"} borderTop={"6px solid"} borderTopColor={"blue.500"} tabIndex={0} p={{ base: 2, md: 6 }}>
+                                        <VStack w={"full"} h={"full"} className="group-hover:-translate-y-2.5! group-focus:-translate-y-2.5! group-   duration-150 group-hover:shadow-lg group-focus:shadow-lg group-  " rounded={"lg"} bg={ isFirst || isLast ? "blue.100/30" : "bg"} border={"1px solid"} align={"start"} borderColor={"blue.500/10"} borderTop={"6px solid"} borderTopColor={"blue.500"} tabIndex={0} p={{ base: 2, md: 6 }}>
 
                                             <HStack gap={6} w="full" align={"start"}>
 
@@ -530,14 +530,14 @@ const SpecialServicePage = () => {
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild  bg={"yellow.500"} gap={3} p={{ base: 8, md: 3 }} _hover={{ bg: "yellow.400" }} _focus={{ bg: "yellow.400" }} tabIndex={0}  _active={{ bg: "yellow.400" }} color={"bg.inverted"} rounded={"lg"}>
+                            <Button asChild  bg={"yellow.500"} gap={3} p={{ base: 8, md: 3 }} _hover={{ bg: "yellow.400" }} _focus={{ bg: "yellow.400" }} tabIndex={0}    color={"bg.inverted"} rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
                                      Kostenlose <br className="md:hidden" /> Objektbesichtigung sichern
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg"} color={"bg.inverted"} _hover={{ bg: "bg/85" }} _focus={{ bg: "bg/85" }} tabIndex={0} _active={{ bg: "bg/85" }} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"bg.inverted"} _hover={{ bg: "bg/85" }} _focus={{ bg: "bg/85" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                       {telephone}
@@ -582,25 +582,25 @@ const SpecialServicePage = () => {
                                 lg: "repeat(4, 1fr)"
                             }}
                         >
-                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={awards_won} suffix="+" /></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Auszeichnungen</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>für Qualität & Service</Text>
                             </GridItem>
     
-                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={satisfied_customers} suffix="+" /></Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Zufriedene Kunden</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>erfolgreich betreut</Text>
                             </GridItem>
 
-                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>24/7</Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Notfall-Service</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>bei Brand & Wasserschäden</Text>
                             </GridItem>
 
-                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}>100%</Text>
                                 <Text fontSize={"sm"} textAlign={"center"}>Geld-zurück-Garantie</Text>
                                 <Text fontSize={"xs"} opacity={0.75} textAlign={"center"}>bei Unzufriedenheit</Text>
@@ -617,7 +617,7 @@ const SpecialServicePage = () => {
                                 lg: "repeat(3, 1fr)"
                             }}
                         >
-                            <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <VStack gap={4} align={"start"}>
                                     <Center w={10} rounded={"md"} aspectRatio={"square"} color={"bg"} shadow={"lg"} bg={"blue.800"}>
                                         <IoShieldCheckmark />
@@ -630,7 +630,7 @@ const SpecialServicePage = () => {
                                 </VStack>
                             </GridItem>
 
-                            <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <VStack gap={4} align={"start"}>
                                     <Center w={10} rounded={"md"} aspectRatio={"square"} color={"bg"} shadow={"lg"} bg={"red.600"}>
                                         <FaClock />
@@ -643,7 +643,7 @@ const SpecialServicePage = () => {
                                 </VStack>
                             </GridItem>
 
-                            <GridItem colSpan={{ base: "auto", md: 2, lg: "auto" }}  textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                            <GridItem colSpan={{ base: "auto", md: 2, lg: "auto" }}  textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                 <VStack gap={4} align={"start"}>
                                     <Center w={10} rounded={"md"} aspectRatio={"square"} color={"bg"} shadow={"lg"} bg={"blue.800"}>
                                         <FaTools />
@@ -658,7 +658,7 @@ const SpecialServicePage = () => {
                             
                         </Grid>
 
-                        <VStack textAlign={"center"} _hover={{ bg: "bg/8" }} _focus={{ bg: "bg/8" }} tabIndex={0} _active={{ bg: "bg/8" }} w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <VStack textAlign={"center"} _hover={{ bg: "bg/8" }} _focus={{ bg: "bg/8" }} tabIndex={0}   w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             
                             <Heading as={"h3"} fontSize={"2xl"} display={"flex"} gap={2} mt={4}>
                                 <Text color={"blue.400"}><FaLocationDot /></Text>
@@ -713,7 +713,7 @@ const SpecialServicePage = () => {
                         >
 
                             <GridItem asChild>
-                                <VStack _hover={{ bg: "bg/15" }} _focus={{ bg: "bg/15" }} tabIndex={0} _active={{ bg: "bg/15" }} w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5} gap={4}>
+                                <VStack _hover={{ bg: "bg/15" }} _focus={{ bg: "bg/15" }} tabIndex={0}   w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5} gap={4}>
                                     <HStack gap={3} w={"full"}>
                                         <Text fontSize={"xl"} color={"blue.500"}><FaCircleCheck /></Text>
                                         <Heading as={"h5"} fontWeight={"bolder"} fontSize={"xl"}>Erfolgreiche Projekte</Heading>
@@ -737,7 +737,7 @@ const SpecialServicePage = () => {
                             </GridItem>
 
                             <GridItem asChild>
-                                <VStack _hover={{ bg: "bg/15" }} _focus={{ bg: "bg/15" }} tabIndex={0} _active={{ bg: "bg/15" }} w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                                <VStack _hover={{ bg: "bg/15" }} _focus={{ bg: "bg/15" }} tabIndex={0}   w={"full"} h={"full"} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                     <HStack gap={3} w={"full"}>
                                         <Text fontSize={"xl"} color={"blue.500"}><FaHandshake /></Text>
                                         <Heading as={"h5"} fontWeight={"bolder"} fontSize={"xl"}> Unsere Kunden</Heading>
@@ -788,7 +788,7 @@ const SpecialServicePage = () => {
 
                             <Grid templateColumns={{ base: "1fr", xl: "repeat(3, 1fr)" }} w={"full"} mt={9} gap={5}>
 
-                                <HStack asChild gap={3} align={"start"} bg={"bg/5"} rounded={"md"} p={4} _hover={{ bg: "bg/10" }} _focus={{ bg: "bg/10" }} tabIndex={0} _active={{ bg: "bg/10" }}>
+                                <HStack asChild gap={3} align={"start"} bg={"bg/5"} rounded={"md"} p={4} _hover={{ bg: "bg/10" }} _focus={{ bg: "bg/10" }} tabIndex={0}  >
                                     <Link href={'/unterhaltsreinigung-munchen'}>
                                         <Center w={14} mt={0.5} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"green.400"} fontSize={"3xl"}>
                                             <FaBroom />
@@ -800,7 +800,7 @@ const SpecialServicePage = () => {
                                     </Link>
                                 </HStack>
 
-                                <HStack asChild gap={3} align={"start"} bg={"bg/5"} rounded={"md"} p={4} _hover={{ bg: "bg/10" }} _focus={{ bg: "bg/10" }} tabIndex={0} _active={{ bg: "bg/10" }}>
+                                <HStack asChild gap={3} align={"start"} bg={"bg/5"} rounded={"md"} p={4} _hover={{ bg: "bg/10" }} _focus={{ bg: "bg/10" }} tabIndex={0}  >
                                     <Link href={'/unterhaltsreinigung-munchen'}>
                                         <Center w={14} mt={0.5} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"green.400"} fontSize={"3xl"}>
                                             <FaHospital />
@@ -812,7 +812,7 @@ const SpecialServicePage = () => {
                                     </Link>
                                 </HStack>
 
-                                <HStack asChild gap={3} align={"start"} bg={"bg/5"} rounded={"md"} p={4} _hover={{ bg: "bg/10" }} _focus={{ bg: "bg/10" }} tabIndex={0} _active={{ bg: "bg/10" }}>
+                                <HStack asChild gap={3} align={"start"} bg={"bg/5"} rounded={"md"} p={4} _hover={{ bg: "bg/10" }} _focus={{ bg: "bg/10" }} tabIndex={0}  >
                                     <Link href={'/'}>
                                         <Center w={14} mt={0.5} aspectRatio={"square"} rounded={"full"} bg={"none"} color={"green.400"} fontSize={"3xl"}>
                                             <FaHome />
@@ -828,7 +828,7 @@ const SpecialServicePage = () => {
                             
                         </VStack>
 
-                        <VStack gap={3} w={"full"} color={"bg"} rounded={"xl"} _hover={{ bg: "bg/7.5" }} _focus={{ bg: "bg/7.5" }} tabIndex={0} _active={{ bg: "bg/7.5" }} py={6} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} shadow={"xl"} px={6}>
+                        <VStack gap={3} w={"full"} color={"bg"} rounded={"xl"} _hover={{ bg: "bg/7.5" }} _focus={{ bg: "bg/7.5" }} tabIndex={0}   py={6} bg={"bg/5"} border={"1px solid"} borderColor={"bg/40"} shadow={"xl"} px={6}>
     
                             <Heading as={"h6"} mt={5} textAlign={"center"} fontWeight={"bolder"} fontSize={"2xl"}>Bereit für Ihre Sonderreinigung?</Heading>
         
@@ -838,14 +838,14 @@ const SpecialServicePage = () => {
         
                             <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
         
-                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} rounded={"lg"}>
+                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   rounded={"lg"}>
                                     <Link href={"#contact"}>
                                         <Text scale={0.75}><FaCalendarCheck /></Text>
                                          Kostenlose Objektbesichtigung
                                     </Link>
                                 </Button>
                                 
-                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} rounded={"lg"}>
+                                <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   rounded={"lg"}>
                                     <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                         <Text scale={0.75}><FaPhoneAlt /></Text>
                                         {telephone}
@@ -893,14 +893,14 @@ const SpecialServicePage = () => {
     
                         <HStack gap={4} justify={"center"} gapY={3} mt={5} flexWrap={"wrap"}>
     
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={"#contact"}>
                                     <Text scale={0.75}><FaMessage /></Text>
                                              Kostenlose Beratung anfragen
                                 </Link>
                             </Button>
                             
-                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0} _active={{ bg: "bg/25" }}  rounded={"lg"}>
+                            <Button asChild bg={"bg/15"} colorPalette={"blue"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} tabIndex={0}    rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                       {telephone}
@@ -1065,7 +1065,7 @@ const SpecialServicePage = () => {
                                 </Grid>
                             </VStack>
                             
-                            <Button type="submit" color={"blue.800"} _hover={{ bg: "blue.200" }} _focus={{ bg: "blue.200" }} tabIndex={0} _active={{ bg: "blue.200" }} fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
+                            <Button type="submit" color={"blue.800"} _hover={{ bg: "blue.200" }} _focus={{ bg: "blue.200" }} tabIndex={0}   fontSize={"16px"} fontWeight={"bolder"} textWrap={"wrap"} bg={"blue.100"} py={{ base: 8, md: 6 }} w="full" rounded={"lg"}>
                                 <HStack align={"start"} gap={1}>
                                     <Text scale={0.75}><FaCalendarCheck /></Text>
                                     <Text>Kostenlose Objektbesichtigung anfragen</Text>
@@ -1097,7 +1097,7 @@ const SpecialServicePage = () => {
                                 </Center>
                                 <VStack align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>Telefon Zentrale</Text>
-                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline! active:underline!" tabIndex={0} href={`tel:${telephone.replaceAll(" ", "")}`}>{telephone}</Link>
+                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline!   " tabIndex={0} href={`tel:${telephone.replaceAll(" ", "")}`}>{telephone}</Link>
                                 </VStack>
                             </HStack>
 
@@ -1107,7 +1107,7 @@ const SpecialServicePage = () => {
                                 </Center>
                                 <VStack align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>24/7 Notfall-Hotline</Text>
-                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline! active:underline!" tabIndex={0} href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
+                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline!   " tabIndex={0} href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
                                 </VStack>
                             </HStack>
 
@@ -1117,7 +1117,7 @@ const SpecialServicePage = () => {
                                 </Center>
                                 <VStack align={"start"}>
                                     <Text fontSize={"sm"} fontWeight={"bolder"} opacity={0.75}>E-mail</Text>
-                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline! active:underline!" tabIndex={0} href={`mailto:${official_mail}`}>{official_mail}</Link>
+                                    <Link className="-mt-1.5! font-bold! hover:underline! focus:underline!   " tabIndex={0} href={`mailto:${official_mail}`}>{official_mail}</Link>
                                 </VStack>
                             </HStack>
 
@@ -1162,7 +1162,7 @@ const SpecialServicePage = () => {
                                 </GridItem>
                             </Grid>
 
-                            <Button asChild bg={"bg"} color={"red.600"} _hover={{ bg: "red.800", color: "bg" }} _focus={{ bg: "red.800", color: "bg" }} tabIndex={0} _active={{ bg: "red.800", color: "bg" }} rounded={"lg"}>
+                            <Button asChild bg={"bg"} color={"red.600"} _hover={{ bg: "red.800", color: "bg" }} _focus={{ bg: "red.800", color: "bg" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                         {telephone}

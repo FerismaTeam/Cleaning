@@ -82,14 +82,14 @@ const OfficeCleaningPage = () => {
                         
                         <HStack gap={2} mt={5} flexWrap={"wrap"}>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={"/#contact"}>
                                     <Text scale={0.75}><FaGift /></Text>
                                     Jetzt Angebot anfordern
                                 </Link>
                             </Button>
                             
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                     {telephone}
@@ -166,7 +166,7 @@ const OfficeCleaningPage = () => {
                     my={3}
                 >
 
-                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5}>
+                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5}>
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaCalendarCheck /></Center>
                             <Heading as={"h5"}>Regelmäßige Reinigung</Heading>
@@ -174,7 +174,7 @@ const OfficeCleaningPage = () => {
                         </VStack>
                     </GridItem>
 
-                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5}>
+                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5}>
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaSliders /></Center>
                             <Heading as={"h5"}>Flexible Intervalle</Heading>
@@ -182,7 +182,7 @@ const OfficeCleaningPage = () => {
                         </VStack>
                     </GridItem>
 
-                    <GridItem colSpan={{ base: "auto", md: 2, lg: "auto" }} textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5}>
+                    <GridItem colSpan={{ base: "auto", md: 2, lg: "auto" }} textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5}>
                             <VStack align={"start"} gap={3}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaShieldVirus /></Center>
                             <Heading as={"h5"}>Hygienekonzepte</Heading>
@@ -326,9 +326,9 @@ const OfficeCleaningPage = () => {
                             return <GridItem asChild key={i}>
                                 <Box>
 
-                                    <VStack _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
+                                    <VStack _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
 
-                                        <Center w={10} aspectRatio={"square"} className="group-hover:bg-white! group-hover:text-blue-800! group-focus:bg-white! group-focus:text-blue-800! group-active:bg-white! group-active:text-blue-800!" tabIndex={0} rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"}>
+                                        <Center w={10} aspectRatio={"square"} className="group-hover:bg-white! group-hover:text-blue-800! group-focus:bg-white! group-focus:text-blue-800! group-   group-  " tabIndex={0} rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"}>
                                             <service.icon />
                                         </Center>
 
@@ -336,12 +336,12 @@ const OfficeCleaningPage = () => {
 
                                         <Text opacity={0.65} fontSize={"sm"} lineHeight={1.4}>{service.des}</Text>
 
-                                        <List.Root gap={2} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} color={"bg.inverted/80"}>
+                                        <List.Root gap={2} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} color={"bg.inverted/80"}>
                                     
                                             {
                                                 service.features.map((feature, i) => {
                                                     return <List.Item key={i}>
-                                                                <List.Indicator asChild color="green.500" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} scale={0.8}>
+                                                                <List.Indicator asChild color="green.500" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} scale={0.8}>
                                                                     <FaCheck />
                                                                 </List.Indicator>
                                                             <Text fontSize={"sm"}>  
@@ -442,12 +442,12 @@ const OfficeCleaningPage = () => {
                     my={3}
                 >
 
-                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} className="group" borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5} py={8}>
+                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} className="group" borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5} py={8}>
                         <VStack gap={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaUserTie /></Center>
                             <Heading as={"h5"} textAlign={"center"}>Feste Ansprechpartner</Heading>
                             <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Sie haben bei uns immer einen festen Ansprechpartner, der Ihre Wünsche kennt und für Sie erreichbar ist.</Text>
-                            <List.Root gap={2} w={"full"} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} color={"bg.inverted/80"}>
+                            <List.Root gap={2} w={"full"} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} color={"bg.inverted/80"}>
                                                             
                                 <List.Item>
                                     <List.Indicator asChild color="green.500">
@@ -479,12 +479,12 @@ const OfficeCleaningPage = () => {
                         </VStack>
                     </GridItem>
 
-                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} className="group" borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5} py={8}>
+                    <GridItem textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} className="group" borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5} py={8}>
                         <VStack gap={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaUserCheck /></Center>
                             <Heading as={"h5"} textAlign={"center"}>Geprüfte Mitarbeiter</Heading>
                             <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Alle unsere Reinigungskräfte sind sorgfältig ausgewählt, geschult und zertifiziert für höchste Qualitätsstandards.</Text>
-                            <List.Root gap={2} w={"full"} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} color={"bg.inverted/80"}>
+                            <List.Root gap={2} w={"full"} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} color={"bg.inverted/80"}>
                                                             
                                 <List.Item>
                                     <List.Indicator asChild color="green.500">
@@ -516,12 +516,12 @@ const OfficeCleaningPage = () => {
                         </VStack>
                     </GridItem>
 
-                    <GridItem colSpan={{ base: "auto", md: 2, lg: "auto" }} textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0} _active={{ bg: "blue.800", color: "bg" }} w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} className="group" borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5} py={8}>
+                    <GridItem colSpan={{ base: "auto", md: 2, lg: "auto" }} textAlign={"left"} _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} tabIndex={0}   w={"full"} h={"full"} bg={"blue.100/20"} border={"1px solid"} className="group" borderColor={"bg/40"} rounded={"xl"} shadow={"md"} p={5} py={8}>
                         <VStack gap={6}>
                             <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaClipboardCheck /></Center>
                             <Heading as={"h5"} textAlign={"center"}>Transparente Abläufe</Heading>
                             <Text opacity={0.7} textAlign={"center"} fontSize={"sm"}>Klare Leistungsbeschreibungen, nachvollziehbare Abrechnungen und dokumentierte Qualitätskontrollen.</Text>
-                            <List.Root gap={2} w={"full"} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-active:text-white!" tabIndex={0} color={"bg.inverted/80"}>
+                            <List.Root gap={2} w={"full"} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white! group-  " tabIndex={0} color={"bg.inverted/80"}>
                                                             
                                 <List.Item>
                                     <List.Indicator asChild color="green.500">
@@ -630,21 +630,21 @@ const OfficeCleaningPage = () => {
 
                 <HStack mt={7} gap={4} justify={"center"} flexWrap={"wrap"}>
                     
-                    <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} tabIndex={0} _active={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                    <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} tabIndex={0}   shadow={"md"}>
                             <Link href={"/#contact"}>
                                 <Text scale={0.75}><FaGift /></Text>
                                  Jetzt Angebot sichern
                             </Link>
                         </Button>
 
-                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} tabIndex={0} _active={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} tabIndex={0}   shadow={"md"}>
                             <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaPhoneAlt /></Text>
                                 {telephone}
                             </Link>
                         </Button>
 
-                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} tabIndex={0} _active={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} tabIndex={0}   shadow={"md"}>
                             <Link href={`tel:${mobile.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaMobileAlt /></Text>
                                 {mobile}
@@ -678,8 +678,8 @@ const OfficeCleaningPage = () => {
                                 <FaPhoneAlt />
                             </Center>
                         <Heading as={"h6"} fontWeight={"bolder"}>Telefon</Heading>
-                        <Link href={`tel:${telephone.replaceAll(" ", "")}`} className="hover:text-blue-300! focus:text-blue-300! active:text-blue-300! "tabIndex={0}>{telephone}</Link>
-                        <Link className="-mt-2! hover:text-blue-300! focus:text-blue-300! active:text-blue-300!" tabIndex={0}href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
+                        <Link href={`tel:${telephone.replaceAll(" ", "")}`} className="hover:text-blue-300! focus:text-blue-300!    "tabIndex={0}>{telephone}</Link>
+                        <Link className="-mt-2! hover:text-blue-300! focus:text-blue-300!   " tabIndex={0}href={`tel:${mobile.replaceAll(" ", "")}`}>{mobile}</Link>
                         </VStack>
                     </GridItem>
 
