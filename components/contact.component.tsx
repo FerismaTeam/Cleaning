@@ -20,14 +20,14 @@ const ContactInfo = () => {
                 
                     <Heading as={"h4"} fontSize={"sm"} px={3} opacity={0.6} pointerEvents={"none"}>Contact Details</Heading>
 
-                    <HStack bg={"green.500/1"} color={"green.700"} _hover={{ bg: "green.700", color: "bg" }} _focus={{ bg: "green.700", color: "bg" }}  tabIndex={0} _active={{ bg: "green.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
+                    <HStack bg={"green.500/1"} color={"green.700"} _hover={{ bg: "green.700", color: "bg" }} _active={{ bg: "green.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
                         <Link target="_blank" href={`https://wa.me/${whatsAppContact}`}>
                             <Text><FaWhatsapp /></Text>
                             <Text>Whatsapp</Text>
                         </Link>
                     </HStack>
 
-                    <HStack bg={"pink.500/1"} color={"pink.700"} _hover={{ bg: "pink.700", color: "bg" }} _focus={{ bg: "pink.700", color: "bg" }} tabIndex={0} _active={{ bg: "pink.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
+                    <HStack bg={"pink.500/1"} color={"pink.700"} _hover={{ bg: "pink.700", color: "bg" }} _active={{ bg: "pink.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
                         <Link target="_blank" href={`https://www.instagram.com/${instagramHandle}`}>
                             <Text><FaInstagram /></Text>
                             <Text>Instagram</Text>
@@ -35,21 +35,21 @@ const ContactInfo = () => {
                     </HStack>
 
 
-                    <HStack bg={"blue.500/1"} color={"blue.700"} _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }} tabIndex={0} _active={{ bg: "blue.700", color: "bg" }} w={"full"} p={2} px={3} pr={4} rounded={"md"} asChild>
+                    <HStack bg={"blue.500/1"} color={"blue.700"} _hover={{ bg: "blue.700", color: "bg" }} _active={{ bg: "blue.700", color: "bg" }} w={"full"} p={2} px={3} pr={4} rounded={"md"} asChild>
                         <Link target="_blank" href={`mailto:${official_mail}`}>
                             <Text><FaEnvelope /></Text>
                             <Text>Email</Text>
                         </Link>
                     </HStack>
 
-                    <HStack bg={"orange.500/1"} color={"orange.700"} _hover={{ bg: "orange.700", color: "bg" }} _focus={{ bg: "orange.700", color: "bg" }} tabIndex={0} _active={{ bg: "orange.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
+                    <HStack bg={"orange.500/1"} color={"orange.700"} _hover={{ bg: "orange.700", color: "bg" }} _active={{ bg: "orange.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
                         <Link target="_blank" href={`tel:${telephone.replaceAll(" ", "")}`}>
                             <Text><FaPhoneAlt /></Text>
                             <Text>{telephone}</Text>
                         </Link>
                     </HStack>
 
-                    <HStack bg={"orange.500/1"} color={"orange.700"} _hover={{ bg: "orange.700", color: "bg" }} _focus={{ bg: "orange.700", color: "bg" }} tabIndex={0}  _active={{ bg: "orange.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
+                    <HStack bg={"orange.500/1"} color={"orange.700"} _hover={{ bg: "orange.700", color: "bg" }} _active={{ bg: "orange.700", color: "bg" }} w={"full"} p={2} px={3} rounded={"md"} asChild>
                         <Link target="_blank" href={`tel:${mobile.replaceAll(" ", "")}`}>
                             <Text><FaMobileAlt /></Text>
                             <Text>{mobile}</Text>
