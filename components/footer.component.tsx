@@ -20,7 +20,7 @@ const Footer = () => {
                     <VStack align={"start"} gap={6}>
                         <Heading asChild fontSize={"3xl"} as={"h4"}><Link href={"/"}>{company_name}</Link></Heading>
                         <Text lineHeight={1.65}>{company_quote}</Text>
-                        <Button asChild variant={"outline"} w={8} colorPalette={"white"} _hover={{ color: "blue.800" }} color={"bg"} rounded={"full"}>
+                        <Button asChild variant={"outline"} w={8} colorPalette={"white"} _hover={{ color: "blue.800" }} _focus={{ color: "blue.800" }} color={"bg"} rounded={"full"}>
                             <Link href={`https://wa.me/${whatsAppContact}`} target="_blank">
                                 <FaWhatsapp />
                             </Link>
@@ -32,27 +32,27 @@ const Footer = () => {
                     <VStack align={"start"} gap={3}>
                         <Heading as={"h4"} color={"blue.300"} fontSize={"xl"} fontWeight={"bolder"} mb={4}>Navigation</Heading>
 
-                        <Link href={"/"} className="flex gap-2 items-center hover:opacity-70">
+                        <Link href={"/"} className="flex gap-2 items-center hover:opacity-70 focus:opacity-70">
                             <FaHome />
                             Home
                         </Link>
 
-                        <Link href={"/#services"} className="flex gap-2 items-center hover:opacity-70">
+                        <Link href={"/#services"} className="flex gap-2 items-center hover:opacity-70 focus:opacity-70">
                             <FaSuitcase />
                             Leistungen
                         </Link>
 
-                        <Link href={"/ueber-uns"} className="flex gap-2 items-center hover:opacity-70">
+                        <Link href={"/ueber-uns"} className="flex gap-2 items-center hover:opacity-70 focus:opacity-70">
                             <FaInfoCircle />
                             Über uns
                         </Link>
 
-                        <Link href={"/#references"} className="flex gap-2 items-center hover:opacity-70">
+                        <Link href={"/#references"} className="flex gap-2 items-center hover:opacity-70 focus:opacity-70">
                             <FaStar />
                             Referenzen
                         </Link>
 
-                        <Link href={"/#contact"} className="flex gap-2 items-center hover:opacity-70">
+                        <Link href={"/#contact"} className="flex gap-2 items-center hover:opacity-70 focus:opacity-70">
                             <FaEnvelope />
                             Kontakt
                         </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
                         {
                             services.map((item, i) => {
                                 return (
-                                    <Link key={i} href={`/${item.link?.toLocaleLowerCase()}`} className="flex gap-2 items-center hover:opacity-70">
+                                    <Link key={i} href={`/${item.link?.toLocaleLowerCase()}`} className="flex gap-2 items-center hover:opacity-70 focus:opacity-70">
                                         <item.icon />
                                         {item.name}
                                     </Link>
@@ -83,7 +83,7 @@ const Footer = () => {
                             <Box mt={-2}>
                                 <Text fontWeight={"bolder"}>Telefon</Text>
                                 <Text asChild opacity={0.85} fontWeight={"medium"}>
-                                    <Link href={`tel:${telephone.replaceAll(" ", "")}`} className="hover:opacity-100! hover:text-blue-300!">
+                                    <Link href={`tel:${telephone.replaceAll(" ", "")}`} className="hover:opacity-100! hover:text-blue-300! focus:opacity-100! focus:text-blue-300">
                                         {telephone}
                                     </Link>
                                 </Text>
@@ -95,7 +95,7 @@ const Footer = () => {
                             <Box mt={-2}>
                                 <Text fontWeight={"bolder"}>Mobil</Text>
                                 <Text asChild opacity={0.85} fontWeight={"medium"} >
-                                    <Link href={`tel:${mobile.replaceAll(" ", "")}`} className="hover:opacity-100! hover:text-blue-300!">
+                                    <Link href={`tel:${mobile.replaceAll(" ", "")}`} className="hover:opacity-100! hover:text-blue-300! focus:opacity-100! focus:text-blue-300">
                                         {mobile}
                                     </Link>
                                 </Text>
@@ -107,7 +107,7 @@ const Footer = () => {
                             <Box mt={-2}>
                                 <Text fontWeight={"bolder"}>E-mail</Text>
                                 <Text asChild opacity={0.85} fontWeight={"medium"} >
-                                    <Link href={`mailto:${official_mail}`} className="hover:opacity-100! hover:text-blue-300!">
+                                    <Link href={`mailto:${official_mail}`} className="hover:opacity-100! hover:text-blue-300! focus:opacity-100! focus:text-blue-300">
                                     {official_mail}
                                     </Link>
                                 </Text>
@@ -130,7 +130,7 @@ const Footer = () => {
                             </Box>
                         </Flex>
 
-                        <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} shadow={"xl"} mt={2} ml={2}>
+                        <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} shadow={"xl"} mt={2} ml={2}>
                             <Link href={"/#contact"}>
                                 <Text scale={0.75}><FaGift /></Text>
                                 Kostenloses Angebot
@@ -151,15 +151,15 @@ const Footer = () => {
 
                     <HStack gap={2}>
                         
-                        <Link href={"/rechtliches#imprint"} className="hover:opacity-80">
+                        <Link href={"/rechtliches#imprint"} className="hover:opacity-80 focus:opacity-80">
                         Impressum
                         </Link>
 
-                        <Link href={"/rechtliches#privacy"} className="hover:opacity-80">
+                        <Link href={"/rechtliches#privacy"} className="hover:opacity-80 focus:opacity-80">
                         Datenschutz
                         </Link>
 
-                        <Link href={"/rechtliches#tnc"} className="hover:opacity-80">
+                        <Link href={"/rechtliches#tnc"} className="hover:opacity-80 focus:opacity-80">
                         AGB
                         </Link>
 

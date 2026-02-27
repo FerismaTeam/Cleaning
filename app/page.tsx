@@ -70,7 +70,7 @@ const Page = () => {
                 <Box  w={{ base: "full", lg: "50%" }}>
                     <VStack gap={2} align={"start"} w={"fit"} mx={"auto"}>
 
-                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1}>Professionelle Gebäudereinigung Nürnberg, Fürth & Umgebung</Badge>
+                        <Badge color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} ml={{ base: -2.5, sm: 0 }}>Professionelle Gebäudereinigung Nürnberg, Fürth & Umgebung</Badge>
                         <Heading as={"h1"} fontSize={"2xl"} fontWeight={"bolder"}
                         >Ihr Profi für Gebäudereinigung in Nürnberg, Fürth & Umgebung</Heading>
 
@@ -124,14 +124,14 @@ const Page = () => {
                         
                         <HStack gap={2} mt={5} flexWrap={"wrap"}>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={"/#contact"}>
                                     <Text scale={0.75}><FaGift /></Text>
                                     Kostenloses Angebot sichern
                                 </Link>
                             </Button>
                             
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                     {telephone}
@@ -206,7 +206,7 @@ const Page = () => {
                     my={{ base: 12, lg: 24 }}
                 >
 
-                    <GridItem _hover={{ bg: "green.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={{ base: 3, sm: 5 }}>
+                    <GridItem _focus={{ bg: "green.100/50" }} _hover={{ bg: "green.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={{ base: 3, sm: 5 }}>
                         
                         <VStack align={"start"} gap={5}>
 
@@ -301,7 +301,7 @@ const Page = () => {
 
                     </GridItem>
 
-                    <GridItem _hover={{ bg: "blue.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={{ base: 3, sm: 5 }}>
+                    <GridItem _hover={{ bg: "blue.100/50" }} _focus={{ bg: "blue.100/50" }} shadow={"sm"} rounded={"sm"} bg={"bg"} p={{ base: 3, sm: 5 }}>
                         
                         <VStack align={"start"} gap={5}>
 
@@ -384,7 +384,7 @@ const Page = () => {
 
                             </HStack>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} w="full" shadow={"md"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} w="full" shadow={"md"}>
                                 <Link href={"/Gebaudereinigung-nuernberg"}>
                                     <Text scale={0.75}><FaArrowRight /></Text>
                                     Mehr zur Gebäudereinigung
@@ -405,7 +405,7 @@ const Page = () => {
                     
                     <Text textAlign={"center"} fontSize={"sm"}>Nutzen Sie unsere Kombi-Angebote für Büroreinigung und Gebäudereinigung. Ideal für Unternehmen mit Gewerbeflächen.</Text>
                     
-                    <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                    <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                         <Link href={"/#contact"}>
                             <Text scale={0.75}><FaEnvelope /></Text>
                             Kostenlose Beratung
@@ -429,7 +429,7 @@ const Page = () => {
                         <Text><b>Langjährige Erfahrung</b> – Über 15 Jahre Dienstleister in Nürnberg, Fürth & Umgebung & Umgebung.</Text>
                         <Text><b>Freundlicher Service</b> – Menschen, die mitdenken und Ihre Räume wertschätzen.</Text>
                     </VStack>
-                    <Button asChild bg={"bg/15"} border={"2px solid"} borderColor={"bg/40"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                    <Button asChild bg={"bg/15"} border={"2px solid"} borderColor={"bg/40"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                         <Link href={"/ueber-uns"}>
                             <Text scale={0.75}><FaUserGroup /></Text>
                              Mehr über uns erfahren
@@ -445,24 +445,24 @@ const Page = () => {
                             lg: "repeat(4, 1fr)"
                         }}
                     >
-                        <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={hours_worked} /></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Arbeitsstunden<br/> geleistete Arbeitszeit</Text>
                         </GridItem>
 
-                        <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={satisfied_customers}/></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Happy Customers<br />
 zufriedene Kunden</Text>
                         </GridItem>
 
-                        <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={awards_won} /></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Awards <br />
 Auszeichnungen</Text>
                         </GridItem>
 
-                        <GridItem _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                             <Text fontSize={"3xl"} textAlign={"center"} color={"cyan.400"} fontWeight={"semibold"}><Counter end={properties_cleaned} /></Text>
                             <Text fontSize={"xs"} textAlign={"center"}>Gebäude gereinigt<br />
 erfolgreich abgeschlossen</Text>
@@ -477,7 +477,7 @@ erfolgreich abgeschlossen</Text>
                             md: "repeat(2, 1fr)"
                         }}
                     >
-                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                              <VStack gap={1} align={"start"}>
                                 <HStack mb={3} gap={3}>
                                     <Center w={10} rounded={"md"} aspectRatio={"square"} color={"bg"} shadow={"lg"} bg={"blue.800"}>
@@ -525,7 +525,7 @@ erfolgreich abgeschlossen</Text>
                             </VStack>
                         </GridItem>
 
-                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                              <VStack gap={1} align={"start"}>
                                 <HStack mb={3} gap={3}>
                                     <Center w={10} rounded={"md"} aspectRatio={"square"} color={"bg"} shadow={"lg"} bg={"blue.800"}>
@@ -584,7 +584,7 @@ erfolgreich abgeschlossen</Text>
                             xl: "repeat(4, 1fr)"
                         }}
                     >
-                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                              <VStack align={"start"} gap={3}>
                                 <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaShieldAlt /></Center>
                                 <Heading as={"h5"}>Geld-zurück-Garantie</Heading>
@@ -592,7 +592,7 @@ erfolgreich abgeschlossen</Text>
                             </VStack>
                         </GridItem>
 
-                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                              <VStack align={"start"} gap={3}>
                                 <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaClock /></Center>
                                 <Heading as={"h5"}>100% Zuverlässigkeit</Heading>
@@ -600,7 +600,7 @@ erfolgreich abgeschlossen</Text>
                             </VStack>
                         </GridItem>
 
-                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                              <VStack align={"start"} gap={3}>
                                 <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaStar /></Center>
                                 <Heading as={"h5"}>Langjährige Erfahrung</Heading>
@@ -608,7 +608,7 @@ erfolgreich abgeschlossen</Text>
                             </VStack>
                         </GridItem>
 
-                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                        <GridItem textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                              <VStack align={"start"} gap={3}>
                                 <Center w={12} aspectRatio={"square"} rounded={"lg"} bg={"blue.200"} color={"blue.800"} fontSize={"xl"}><FaHandshake /></Center>
                                 <Heading as={"h5"}>Freundlicher Service</Heading>
@@ -631,7 +631,7 @@ erfolgreich abgeschlossen</Text>
                         >
                             {
                                 reviews.map((item, i) => {
-                                    return <GridItem key={i} textAlign={"left"} _hover={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
+                                    return <GridItem key={i} textAlign={"left"} _hover={{ bg: "bg/25" }} _focus={{ bg: "bg/25" }} w={"full"} h={"full"} bg={"bg/15"} border={"1px solid"} borderColor={"bg/40"} rounded={"xl"} shadow={"xl"} p={5}>
                                     <VStack align={"start"} gap={3}>
                                         <HStack mb={2} gap={0.5} color={"yellow.300"}>
                                             {
@@ -661,21 +661,21 @@ erfolgreich abgeschlossen</Text>
 
                         <HStack w={"full"} gap={4} mt={5} flexWrap={"wrap"} justify={"center"}>
 
-                            <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                            <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaPhoneAlt /></Text>
                                     {telephone}
                                 </Link>
                             </Button>
 
-                            <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                            <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                                 <Link href={`tel:${mobile.replaceAll(" ", "")}`}>
                                     <Text scale={0.75}><FaMobile /></Text>
                                     {mobile}
                                 </Link>
                             </Button>
 
-                            <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                            <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                                 <Link href={`/#contact`}>
                                     <Text scale={0.75}><FaEnvelope /></Text>
                                      Rückruf anfordern
@@ -693,7 +693,7 @@ erfolgreich abgeschlossen</Text>
         {/* all services section */}
         <Box as="section" bg={"blue.100/20"}>
             <VStack w="full">
-                <Badge mb={3} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaSuitcase /></Text> UNSERE LEISTUNGEN IN Nürnberg, Fürth & Umgebung</Badge>
+                <Badge mb={3}  textWrap={"wrap"} textAlign={"center"} shadow={"lg"} color={"bg"} bg={"blue.600"} rounded={"full"} px={3} py={1} size={"lg"}><Text as={"span"} scale={0.9} mr={0.5}><FaSuitcase /></Text> UNSERE LEISTUNGEN IN Nürnberg, Fürth & Umgebung</Badge>
                 
                 <Heading as={"h2"} textAlign={"center"} fontSize={"3xl"} lineHeight={1.4}>
                     Professionelle 
@@ -717,11 +717,11 @@ erfolgreich abgeschlossen</Text>
                     {
                         services.map((service, i) => {
                             return <GridItem asChild key={i}>
-                                <Link href={`/${service.name.replaceAll("ü", "u").replaceAll(" ", "-").toLowerCase()}`}>
+                                <Link href={`/${service.link}`}>
 
-                                    <VStack _hover={{ bg: "blue.800", color: "bg" }} className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
+                                    <VStack _hover={{ bg: "blue.800", color: "bg" }} _focus={{ bg: "blue.800", color: "bg" }} className="duration-150 group" bg={"bg"} rounded={"lg"} shadow={"md"} gap={3} align={"start"} h="full" p={5}>
 
-                                        <Center w={10} aspectRatio={"square"} className="group-hover:bg-white! group-hover:text-blue-800!" rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"}>
+                                        <Center w={10} aspectRatio={"square"} className="group-hover:bg-white! group-hover:text-blue-800! group-focus:bg-white! group-focus:text-blue-800!" rounded={"md"} bg={"blue.700"} color={"bg"} fontSize={"xl"}>
                                             <service.icon />
                                         </Center>
 
@@ -729,12 +729,12 @@ erfolgreich abgeschlossen</Text>
 
                                         <Text opacity={0.65} fontSize={"sm"} lineHeight={1.4}>{service.des}</Text>
 
-                                        <List.Root gap={2} variant="plain" align="center" className="group-hover:text-white!" color={"bg.inverted/80"}>
+                                        <List.Root gap={2} variant="plain" align="center" className="group-hover:text-white! group-focus:text-white!" color={"bg.inverted/80"}>
                                     
                                             {
                                                 service.features.map((feature, i) => {
                                                     return <List.Item key={i}>
-                                                                <List.Indicator asChild color="green.500" className="group-hover:text-white!" scale={0.8}>
+                                                                <List.Indicator asChild color="green.500" className="group-hover:text-white! group-focus:text-white!" scale={0.8}>
                                                                     <FaCheck />
                                                                 </List.Indicator>
                                                             <Text fontSize={"sm"}>  
@@ -802,14 +802,14 @@ erfolgreich abgeschlossen</Text>
                     
                     <HStack gap={4} justify={"center"} w={"full"} flexWrap={"wrap"}>
 
-                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                             <Link href={"/#contact"}>
                                 <Text scale={0.75}><FaGift /></Text>
                                  Jetzt Angebot sichern
                             </Link>
                         </Button>
 
-                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
+                        <Button asChild bg={"bg"} color={"blue.800"} _hover={{ bg: "blue.600", color: "bg" }} _focus={{ bg: "blue.600", color: "bg" }} shadow={"md"}>
                             <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaPhoneAlt /></Text>
                                 {telephone}
@@ -1104,14 +1104,14 @@ erfolgreich abgeschlossen</Text>
                         
                         <HStack gap={2} mt={5} flexWrap={"wrap"}>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} className="p-2! h-9!" rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} className="p-2! h-9!" rounded={"lg"}>
                                 <Link href={"/uber-uns"}>
                                     <Text scale={0.75}><FaInfoCircle /></Text>
                                      Mehr über uns erfahren
                                 </Link>
                             </Button>
                             
-                            <Button asChild color={"blue.600"} _hover={{ bg: "bg.muted/80" }} bg={"bg"} border={"1px solid"} borderColor={"blue.600"} className="p-2! h-9!" rounded={"lg"}>
+                            <Button asChild color={"blue.600"} _hover={{ bg: "bg.muted/80" }} _focus={{ bg: "bg.muted/80" }} bg={"bg"} border={"1px solid"} borderColor={"blue.600"} className="p-2! h-9!" rounded={"lg"}>
                                 <Link href={`/#contact`}>
                                     <Text scale={0.75}><FaHandshake /></Text>
                                      Termin vereinbaren
@@ -1246,7 +1246,7 @@ erfolgreich abgeschlossen</Text>
                             <Text fontWeight={"bolder"} mt={4}>Anrufen</Text>
                             <Text my={2} fontSize={"sm"} opacity={0.65}>Direkter Kontakt für schnelle Beratung</Text>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`tel:${mobile.replaceAll(" ", "")}`}>
                                     {mobile}
                                 </Link>
@@ -1264,7 +1264,7 @@ erfolgreich abgeschlossen</Text>
                             <Text fontWeight={"bolder"} mt={4}>E-mail</Text>
                             <Text my={2} fontSize={"sm"} opacity={0.65}>Schriftliche Anfrage mit Details</Text>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`mailto:${official_mail}`}>
                                     Kontaktformular
                                 </Link>
@@ -1282,7 +1282,7 @@ erfolgreich abgeschlossen</Text>
                             <Text fontWeight={"bolder"} mt={4}>Whatsapp</Text>
                             <Text my={2} fontSize={"sm"} opacity={0.65}>Einfach und unkompliziert</Text>
 
-                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} rounded={"lg"}>
+                            <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"lg"}>
                                 <Link href={`https://wa.me/${whatsAppContact}`} target="_blank">
                                     Whatsapp chat
                                 </Link>
@@ -1348,7 +1348,7 @@ erfolgreich abgeschlossen</Text>
                             
                         </Textarea>
                         
-                        <Button type="submit" colorPalette={"blue"} _hover={{ bg: "blue.700" }} w="full" rounded={"lg"}>
+                        <Button type="submit" colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} w="full" rounded={"lg"}>
                             <Text scale={0.75}><BsSendFill /></Text>
                             Kostenlose Beratung anfordern
                         </Button>

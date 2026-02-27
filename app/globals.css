@@ -10,7 +10,7 @@ section {
 }
 
 .navlink{
-    @apply px-[5vw] py-2 max-lg:border-b border-black/5 lg:px-2 lg:py-2 lg:rounded-sm hover:bg-blue-100 duration-100 hover:text-blue-600;
+    @apply px-[5vw] py-2 max-lg:border-b border-black/5 lg:px-2 lg:py-2 lg:rounded-sm hover:bg-blue-100 duration-100 hover:text-blue-600 focus:bg-blue-100 focus:text-blue-600;
 }
 
 .gradient_dark_background{
