@@ -142,40 +142,40 @@ const AboutPage = () => {
                                 gap={4}
                             >
 
-                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
+                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} tabIndex={0} _active={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
 
                                     <VStack align={"start"} gap={2}>
-                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! duration-500"><FaHandshake /></Center>
+                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} tabIndex={0} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! group-active:bg-white! group-active:text-blue-900! duration-500"><FaHandshake /></Center>
                                         <Heading as={"h5"}>Zuverlässigkeit</Heading>
                                         <Text opacity={0.7} fontSize={"sm"}>Pünktlichkeit und Verbindlichkeit – darauf können Sie sich verlasse</Text>
                                     </VStack>
 
                                 </Box>
 
-                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
+                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} tabIndex={0} _active={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
 
                                     <VStack align={"start"} gap={2}>
-                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! duration-500"><FaStar /></Center>
+                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} tabIndex={0} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! group-active:bg-white! group-active:text-blue-900! duration-500"><FaStar /></Center>
                                         <Heading as={"h5"}>Qualität</Heading>
                                         <Text opacity={0.7} fontSize={"sm"}>Professionelle Standards bei jedem Auftrag, ohne Kompromisse</Text>
                                     </VStack>
 
                                 </Box>
 
-                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
+                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} tabIndex={0} _active={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
 
                                     <VStack align={"start"} gap={2}>
-                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! duration-500"><FaHeart /></Center>
+                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} tabIndex={0} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! group-active:bg-white! group-active:text-blue-900! duration-500"><FaHeart /></Center>
                                         <Heading as={"h5"}>Menschlichkeit</Heading>
                                         <Text opacity={0.7} fontSize={"sm"}>Respektvoller Umgang mit Kunden und Mitarbeitern gleichermaßen</Text>
                                     </VStack>
 
                                 </Box>
 
-                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
+                                <Box bg={"blue.100"} _hover={{ bg: "blue.900", color: "bg" }} _focus={{ bg: "blue.900", color: "bg" }} tabIndex={0} _active={{ bg: "blue.900", color: "bg" }} className="duration-500 group" p={5} px={6} rounded={"lg"}>
 
                                     <VStack align={"start"} gap={2}>
-                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! duration-500"><FaEye /></Center>
+                                        <Center w={14} h={14} rounded={"full"} bg={"blue.900"} color={"bg"} fontSize={"3xl"} tabIndex={0} className="group-hover:bg-white! group-hover:text-blue-900! group-focus:bg-white! group-focus:text-blue-900! group-active:bg-white! group-active:text-blue-900! duration-500"><FaEye /></Center>
                                         <Heading as={"h5"}>Transparenz</Heading>
                                         <Text opacity={0.7} fontSize={"sm"}>Klare Kommunikation und faire Preise – keine versteckten Kosten</Text>
                                     </VStack>
@@ -238,7 +238,7 @@ const AboutPage = () => {
                     >
 
                         <Box className="group">
-                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} _focus={{ shadow: "xl" }} className="  group-hover:-translate-y-4 group-focus:-translate-y-4 duration-500">
+                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} tabIndex={0} _focus={{ shadow: "xl" }} _active={{ shadow: "xl" }}  className="  group-hover:-translate-y-4 group-focus:-translate-y-4 group-active:-translate-y-4 duration-500">
 
                                 <VStack align={"start"} gap={5}>
                                     <Center w={14} h={14} rounded={"lg"} className="gradient_light_background_one" color={"bg"} fontSize={"xl"}><FaCertificate /></Center>
@@ -250,7 +250,7 @@ const AboutPage = () => {
                         </Box>
 
                         <Box className="group">
-                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} _focus={{ shadow: "xl" }} className="  group-hover:-translate-y-4 group-focus:-translate-y-4 duration-500">
+                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} tabIndex={0} _focus={{ shadow: "xl" }} _active={{ shadow: "xl" }}  className="  group-hover:-translate-y-4 group-focus:-translate-y-4 group-active:-translate-y-4 duration-500">
 
                                 <VStack align={"start"} gap={5}>
                                     <Center w={14} h={14} rounded={"lg"} className="gradient_light_background_one" color={"bg"} fontSize={"2xl"}><IoSchool /></Center>
@@ -262,7 +262,7 @@ const AboutPage = () => {
                         </Box>
 
                         <Box className="group">
-                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} _focus={{ shadow: "xl" }} className="  group-hover:-translate-y-4 group-focus:-translate-y-4 duration-500">
+                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} tabIndex={0} _focus={{ shadow: "xl" }} _active={{ shadow: "xl" }}  className="  group-hover:-translate-y-4 group-focus:-translate-y-4 group-active:-translate-y-4 duration-500">
 
                                 <VStack align={"start"} gap={5}>
                                     <Center w={14} h={14} rounded={"lg"} className="gradient_light_background_one" color={"bg"} fontSize={"2xl"}><IoShieldCheckmarkSharp /></Center>
@@ -274,7 +274,7 @@ const AboutPage = () => {
                         </Box>
 
                         <Box className="group">
-                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} _focus={{ shadow: "xl" }} className="  group-hover:-translate-y-4 group-focus:-translate-y-4 duration-500">
+                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} tabIndex={0} _focus={{ shadow: "xl" }} _active={{ shadow: "xl" }}  className="  group-hover:-translate-y-4 group-focus:-translate-y-4 group-active:-translate-y-4 duration-500">
 
                                 <VStack align={"start"} gap={5}>
                                     <Center w={14} h={14} rounded={"lg"} className="gradient_light_background_one" color={"bg"} fontSize={"2xl"}><FaLeaf /></Center>
@@ -286,7 +286,7 @@ const AboutPage = () => {
                         </Box>
 
                         <Box className="group">
-                            <Box bg={"bg"} p={8}w={"full"} h={"full"}  rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} _focus={{ shadow: "xl" }} className="  group-hover:-translate-y-4 group-focus:-translate-y-4 duration-500">
+                            <Box bg={"bg"} p={8}w={"full"} h={"full"}  rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} tabIndex={0} _focus={{ shadow: "xl" }} _active={{ shadow: "xl" }}  className="  group-hover:-translate-y-4 group-focus:-translate-y-4 group-active:-translate-y-4 duration-500">
 
                                 <VStack align={"start"} gap={5}>
                                     <Center w={14} h={14} rounded={"lg"} className="gradient_light_background_one" color={"bg"} fontSize={"2xl"}><FaClipboardCheck /></Center>
@@ -298,7 +298,7 @@ const AboutPage = () => {
                         </Box>
 
                         <Box className="group">
-                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} _focus={{ shadow: "xl" }} className="  group-hover:-translate-y-4 group-focus:-translate-y-4 duration-500">
+                            <Box bg={"bg"} p={8} w={"full"} h={"full"} rounded={"lg"} shadow={"md"} _hover={{ shadow: "xl" }} tabIndex={0} _focus={{ shadow: "xl" }} _active={{ shadow: "xl" }}  className="  group-hover:-translate-y-4 group-focus:-translate-y-4 group-active:-translate-y-4 duration-500">
 
                                 <VStack align={"start"} gap={5}>
                                     <Center w={14} h={14} rounded={"lg"} className="gradient_light_background_one" color={"bg"} fontSize={"2xl"}><FaClock /></Center>
@@ -489,11 +489,11 @@ const AboutPage = () => {
                     >
                         
                         <GridItem>
-                            <Flex  asChild _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }} className="duration-150 group" gap={4} alignItems={"center"} p={6} bg={"bg"} rounded={"lg"} shadow={"3px 3px 0 0 var(--chakra-colors-blue-600), -3px -3px 0 0 var(--chakra-colors-blue-400)"} px={8} h={"full"}>
+                            <Flex  asChild _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }} tabIndex={0} _active={{ bg: "blue.700", color: "bg" }} className="duration-150 group" gap={4} alignItems={"center"} p={6} bg={"bg"} rounded={"lg"} shadow={"3px 3px 0 0 var(--chakra-colors-blue-600), -3px -3px 0 0 var(--chakra-colors-blue-400)"} px={8} h={"full"}>
 
                                 <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
 
-                                <Center w={14} fontSize={"2xl"} aspectRatio={"square"} bg={"blue.700"} rounded={"full"} color={"bg"} className="group-hover:bg-white! group-hover:text-blue-700! group-focus:bg-white! group-focus:text-blue-700! duration-150"><FaPhoneAlt /></Center>
+                                <Center w={14} fontSize={"2xl"} aspectRatio={"square"} bg={"blue.700"} rounded={"full"} tabIndex={0} color={"bg"} className="group-hover:bg-white! group-hover:text-blue-700! group-focus:bg-white! group-focus:text-blue-700! group-active:bg-white! group-active:text-blue-700! duration-150"><FaPhoneAlt /></Center>
 
                                 <Box>
                                     <Text fontSize={"sm"} opacity={0.65}>Rufen Sie uns an</Text>
@@ -506,11 +506,11 @@ const AboutPage = () => {
                         </GridItem>
 
                         <GridItem>
-                            <Flex asChild _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }} className="duration-150 group" gap={4} alignItems={"center"} p={6} bg={"bg"} rounded={"lg"} shadow={"3px 3px 0 0 var(--chakra-colors-blue-600), -3px -3px 0 0 var(--chakra-colors-blue-400)"} px={8} h={"full"}>
+                            <Flex asChild _hover={{ bg: "blue.700", color: "bg" }} _focus={{ bg: "blue.700", color: "bg" }} tabIndex={0} _active={{ bg: "blue.700", color: "bg" }} className="duration-150 group" gap={4} alignItems={"center"} p={6} bg={"bg"} rounded={"lg"} shadow={"3px 3px 0 0 var(--chakra-colors-blue-600), -3px -3px 0 0 var(--chakra-colors-blue-400)"} px={8} h={"full"}>
 
                                 <Link href={`/#contact`}>
 
-                                <Center w={14} fontSize={"2xl"} aspectRatio={"square"} bg={"blue.700"} rounded={"full"} color={"bg"} className="group-hover:bg-white! group-hover:text-blue-700! group-focus:bg-white! group-focus:text-blue-700! duration-150"><FaLocationDot /></Center>
+                                <Center w={14} fontSize={"2xl"} aspectRatio={"square"} bg={"blue.700"} rounded={"full"} tabIndex={0} color={"bg"} className="group-hover:bg-white! group-hover:text-blue-700! group-focus:bg-white! group-focus:text-blue-700! group-active:bg-white! group-active:text-blue-700! duration-150"><FaLocationDot /></Center>
 
                                 <Box>
                                     <Text fontSize={"sm"} opacity={0.65}>Besuchen Sie uns</Text>
