@@ -36,7 +36,7 @@ const Navbar = () => {
 
                 {/* logo */}
                 <Text asChild fontWeight="semibold">
-                    <Link href={"/"}>
+                    <Link href={"/"} tabIndex={0}>
                         <Image src={"./assets/logo.webp"} width={"100px"}  />
                     </Link>
                 </Text>
@@ -49,7 +49,7 @@ const Navbar = () => {
                 {/* links */}
                 <Flex shadow={{ base: "lg", lg: "none" }} className={ !showNavbar ? "max-lg:hidden!" : "" } gap={0} pos={{ base: "absolute", lg: "relative" }} flexDirection={{ base: "column", lg: "row" }} top={{ base: "80px", lg: 0 }} bg={{ base: "gray.50", lg: "bg" }} width={{ base: "full", lg: "auto" }} left={{ base: "0", lg: "0" }} px={0} overflowY={{ base: "auto", lg: "visible" }} maxH={{ base: "calc( 100vh - 80px )", lg: "auto" }}>
 
-                    <Link href={"/"} className="navlink">Home</Link>
+                    <Link href={"/"} tabIndex={0} className="navlink">Home</Link>
                     
                     <Box pos={"relative"} className="group">
                         <Text className="navlink cursor-pointer flex gap-1 items-center">Leistungen <RxCaretDown /></Text>
@@ -68,7 +68,7 @@ const Navbar = () => {
 
                             {
                                 services.map((item, i) => {
-                                    return <Link key={i} href={`/${item.link!.toLowerCase()}`} className={"flex max-lg:px-[5vw]! py-1.5!  border-black/5! text-[14px]! px-4! gap-4 w-full hover:bg-blue-100! hover:text-blue-600! focus:text-blue-600! focus:bg-blue-100! mb-0! items-start! " + (i == services.length - 1 ? " max-lg:border-b! " : " border-b! ")}>
+                                    return <Link key={i} href={`/${item.link!.toLowerCase()}`} className={"flex max-lg:px-[5vw]! py-1.5!  border-black/5! text-[14px]! px-4! gap-4 w-full hover:bg-blue-100! hover:text-blue-600! focus:text-blue-600! focus:bg-blue-100! active:text-blue-600! active:bg-blue-100! mb-0! items-start! " + (i == services.length - 1 ? " max-lg:border-b! " : " border-b! ")} tabIndex={0}>
                                             <Text mt={1.5}><item.icon /></Text>
                                             <Text w={"full"}>{item.name}</Text>
                                     </Link>
@@ -79,20 +79,20 @@ const Navbar = () => {
 
                     </Box>
 
-                    <Link href={"/ueber-uns"} className="navlink">Über uns</Link>
-                    <Link href={"/#references"} className="navlink">Referenzen</Link>
-                    <Link href={"/#contact"} className="navlink">Kontakt</Link>
-                    <Link href={"/rechtliches"} className="navlink">Rechtliches</Link>
+                    <Link href={"/ueber-uns"} tabIndex={0} className="navlink">Über uns</Link>
+                    <Link href={"/#references"} tabIndex={0} className="navlink">Referenzen</Link>
+                    <Link href={"/#contact"} tabIndex={0} className="navlink">Kontakt</Link>
+                    <Link href={"/rechtliches"} tabIndex={0} className="navlink">Rechtliches</Link>
 
                     <HStack gap={{ base: 4, lg: 2 }} ml={2} className="max-lg:my-6! max-md:flex-col! max-lg:items-start! max-lg:px-[5vw]!">
-                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"md"} px={2}>
+                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} _active={{ bg: "blue.700" }} tabIndex={0} rounded={"md"} px={2}>
                             <Link href={`tel:${telephone.replaceAll(" ", "")}`}>
                                 <Text scale={0.75}><FaPhoneAlt /></Text>
                                 <Text className=" max-lg:block! max-xl:hidden!">{telephone}</Text>
                             </Link>
                         </Button>
 
-                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} rounded={"md"} px={3}>
+                        <Button asChild variant={"solid"} w={{ base: "full", md: "50%" , lg: "auto" }} colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} _active={{ bg: "blue.700" }} tabIndex={0} rounded={"md"} px={3}>
                             <Link href={`/#contact`}>
                             Kostenloses Angebot
                             </Link>

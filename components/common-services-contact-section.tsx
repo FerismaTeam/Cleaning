@@ -123,7 +123,7 @@ const CommonServiceContactSection = () => {
                             </Text>
                         </HStack>
                         
-                        <Button type="submit" colorPalette={"blue"} _hover={{ bg: "blue.700" }}  _focus={{ bg: "blue.700" }} h={"45px !important"} w="full" rounded={"lg"}>
+                        <Button type="submit" colorPalette={"blue"} _hover={{ bg: "blue.700" }}  _focus={{ bg: "blue.700" }} tabIndex={0} _active={{ bg: "blue.700" }} h={"45px !important"} w="full" rounded={"lg"}>
                             <Text scale={0.75}><BsSendFill /></Text>
                             Nachricht senden
                         </Button>
