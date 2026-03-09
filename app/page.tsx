@@ -385,7 +385,7 @@ const Page = () => {
                             </HStack>
 
                             <Button asChild colorPalette={"blue"} _hover={{ bg: "blue.700" }} _focus={{ bg: "blue.700" }} tabIndex={0}   w="full" shadow={"md"}>
-                                <Link href={"/Gebaudereinigung-nuernberg"}>
+                                <Link href={"/unterhaltsreinigung-nuernberg"}>
                                     <Text scale={0.75}><FaArrowRight /></Text>
                                     Mehr zur Gebäudereinigung
                                 </Link>
